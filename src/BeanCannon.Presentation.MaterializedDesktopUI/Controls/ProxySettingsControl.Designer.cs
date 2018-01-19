@@ -28,37 +28,37 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.materialListViewProxies = new MaterialSkin.Controls.MaterialListView();
+			this.listViewProxies = new MaterialSkin.Controls.MaterialListView();
 			this.columnHeaderIp = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderPort = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderCountryCode = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderStatus = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.SuspendLayout();
 			// 
-			// materialListViewProxies
+			// listViewProxies
 			// 
-			this.materialListViewProxies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.listViewProxies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialListViewProxies.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.materialListViewProxies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listViewProxies.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.listViewProxies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderIp,
             this.columnHeaderPort,
             this.columnHeaderCountryCode,
             this.columnHeaderStatus});
-			this.materialListViewProxies.Depth = 0;
-			this.materialListViewProxies.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-			this.materialListViewProxies.FullRowSelect = true;
-			this.materialListViewProxies.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.materialListViewProxies.Location = new System.Drawing.Point(3, 3);
-			this.materialListViewProxies.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialListViewProxies.MouseState = MaterialSkin.MouseState.OUT;
-			this.materialListViewProxies.Name = "materialListViewProxies";
-			this.materialListViewProxies.OwnerDraw = true;
-			this.materialListViewProxies.Size = new System.Drawing.Size(874, 431);
-			this.materialListViewProxies.TabIndex = 0;
-			this.materialListViewProxies.UseCompatibleStateImageBehavior = false;
-			this.materialListViewProxies.View = System.Windows.Forms.View.Details;
+			this.listViewProxies.Depth = 0;
+			this.listViewProxies.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+			this.listViewProxies.FullRowSelect = true;
+			this.listViewProxies.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listViewProxies.Location = new System.Drawing.Point(3, 3);
+			this.listViewProxies.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.listViewProxies.MouseState = MaterialSkin.MouseState.OUT;
+			this.listViewProxies.Name = "listViewProxies";
+			this.listViewProxies.OwnerDraw = true;
+			this.listViewProxies.Size = new System.Drawing.Size(874, 431);
+			this.listViewProxies.TabIndex = 0;
+			this.listViewProxies.UseCompatibleStateImageBehavior = false;
+			this.listViewProxies.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeaderIp
 			// 
@@ -86,7 +86,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.materialListViewProxies);
+			this.Controls.Add(this.listViewProxies);
 			this.Name = "ProxySettingsControl";
 			this.Size = new System.Drawing.Size(880, 437);
 			this.ResumeLayout(false);
@@ -94,11 +94,10 @@
 		}
 
 		#endregion
-
-		private MaterialSkin.Controls.MaterialListView materialListViewProxies;
 		private Components.ColumnHeaderEx columnHeaderIp;
 		private Components.ColumnHeaderEx columnHeaderPort;
 		private Components.ColumnHeaderEx columnHeaderCountryCode;
 		private Components.ColumnHeaderEx columnHeaderStatus;
+		public MaterialSkin.Controls.MaterialListView listViewProxies;
 	}
 }

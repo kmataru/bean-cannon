@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 {
-	class TopItemIndexEventArgs : EventArgs
+	public class TopItemIndexEventArgs : EventArgs
 	{
 		public TopItemIndexEventArgs(int? topItemIndex)
 		{
@@ -15,7 +15,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 		public int? TopItemIndex { get; set; }
 	}
 
-	class LastColumnSizeEventArgs : TopItemIndexEventArgs
+	public class LastColumnSizeEventArgs : TopItemIndexEventArgs
 	{
 		public LastColumnSizeEventArgs(int? topItemIndex, int width) : base(topItemIndex)
 		{
@@ -28,7 +28,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 	/// <summary>
 	/// FROM https://stackoverflow.com/questions/8792097/winforms-listview-topitem-changed-event
 	/// </summary>
-	class MaterialListViewEx : MaterialListView
+	public class MaterialListViewEx : MaterialListView
 	{
 		public delegate void TopItemIndexEventHandler(object sender, TopItemIndexEventArgs e);
 		public delegate void LastColumnSizeEventHandler(object sender, LastColumnSizeEventArgs e);

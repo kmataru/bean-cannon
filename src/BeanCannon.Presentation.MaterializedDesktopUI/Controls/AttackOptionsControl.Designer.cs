@@ -28,205 +28,205 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.materialSingleLineTextFieldTimeout = new MaterialSkin.Controls.MaterialSingleLineTextField();
-			this.materialSingleLineTextFieldPort = new MaterialSkin.Controls.MaterialSingleLineTextField();
-			this.materialSingleLineTextFieldThreads = new MaterialSkin.Controls.MaterialSingleLineTextField();
-			this.materialSingleLineTextFieldSocketsPerThread = new MaterialSkin.Controls.MaterialSingleLineTextField();
-			this.materialRadioButtonHttpMethodGet = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonHttpMethodPost = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonHttpMethodHead = new MaterialSkin.Controls.MaterialRadioButton();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.textFieldTimeout = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.textFieldPort = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.textFieldThreads = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.textFieldSocketsPerThread = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.radioButtonHttpMethodGet = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonHttpMethodPost = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonHttpMethodHead = new MaterialSkin.Controls.MaterialRadioButton();
+			this.panelHttpMethod = new System.Windows.Forms.Panel();
 			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel4 = new System.Windows.Forms.Panel();
-			this.materialRadioButtonAttackMethodIcmp = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonAttackMethodSlowLoic = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonAttackMethodReCoil = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonAttackMethodHttp = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonAttackMethodTcp = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonAttackMethodUdp = new MaterialSkin.Controls.MaterialRadioButton();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.materialCheckBoxUseRandomReferer = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBoxUseRandomUserAgent = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBoxAppendRandomCharactersToUrl = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBoxAppendRandomCharactersToMessage = new MaterialSkin.Controls.MaterialCheckBox();
+			this.radioButtonAttackMethodIcmp = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonAttackMethodSlowLoic = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonAttackMethodReCoil = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonAttackMethodHttp = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonAttackMethodTcp = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonAttackMethodUdp = new MaterialSkin.Controls.MaterialRadioButton();
+			this.panelGenericInputs = new System.Windows.Forms.Panel();
+			this.panelRandomness = new System.Windows.Forms.Panel();
+			this.checkBoxUseRandomReferer = new MaterialSkin.Controls.MaterialCheckBox();
+			this.checkBoxUseRandomUserAgent = new MaterialSkin.Controls.MaterialCheckBox();
+			this.checkBoxAppendRandomCharactersToUrl = new MaterialSkin.Controls.MaterialCheckBox();
+			this.checkBoxAppendRandomCharactersToMessage = new MaterialSkin.Controls.MaterialCheckBox();
 			this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-			this.panel10 = new System.Windows.Forms.Panel();
-			this.materialCheckBoxWaitForReply = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBoxUseGzip = new MaterialSkin.Controls.MaterialCheckBox();
+			this.panelGenericButtons = new System.Windows.Forms.Panel();
+			this.checkBoxWaitForReply = new MaterialSkin.Controls.MaterialCheckBox();
+			this.checkBoxUseGzip = new MaterialSkin.Controls.MaterialCheckBox();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel11 = new System.Windows.Forms.Panel();
 			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-			this.panel12 = new System.Windows.Forms.Panel();
-			this.materialRadioButtonProxyChained = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonProxyRandom = new MaterialSkin.Controls.MaterialRadioButton();
-			this.materialRadioButtonProxyNone = new MaterialSkin.Controls.MaterialRadioButton();
-			this.panel1.SuspendLayout();
+			this.panelProxy = new System.Windows.Forms.Panel();
+			this.radioButtonProxyChained = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonProxyRandom = new MaterialSkin.Controls.MaterialRadioButton();
+			this.radioButtonProxyNone = new MaterialSkin.Controls.MaterialRadioButton();
+			this.panelHttpMethod.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel4.SuspendLayout();
-			this.panel6.SuspendLayout();
-			this.panel7.SuspendLayout();
+			this.panelGenericInputs.SuspendLayout();
+			this.panelRandomness.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.panel9.SuspendLayout();
-			this.panel10.SuspendLayout();
+			this.panelGenericButtons.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel11.SuspendLayout();
-			this.panel12.SuspendLayout();
+			this.panelProxy.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// materialSingleLineTextFieldTimeout
+			// textFieldTimeout
 			// 
-			this.materialSingleLineTextFieldTimeout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.textFieldTimeout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialSingleLineTextFieldTimeout.Depth = 0;
-			this.materialSingleLineTextFieldTimeout.Hint = "";
-			this.materialSingleLineTextFieldTimeout.Location = new System.Drawing.Point(0, 0);
-			this.materialSingleLineTextFieldTimeout.MaxLength = 32767;
-			this.materialSingleLineTextFieldTimeout.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextFieldTimeout.Name = "materialSingleLineTextFieldTimeout";
-			this.materialSingleLineTextFieldTimeout.PasswordChar = '\0';
-			this.materialSingleLineTextFieldTimeout.SelectedText = "";
-			this.materialSingleLineTextFieldTimeout.SelectionLength = 0;
-			this.materialSingleLineTextFieldTimeout.SelectionStart = 0;
-			this.materialSingleLineTextFieldTimeout.Size = new System.Drawing.Size(136, 23);
-			this.materialSingleLineTextFieldTimeout.TabIndex = 0;
-			this.materialSingleLineTextFieldTimeout.TabStop = false;
-			this.materialSingleLineTextFieldTimeout.Text = "Timeout";
-			this.materialSingleLineTextFieldTimeout.UseSystemPasswordChar = false;
+			this.textFieldTimeout.Depth = 0;
+			this.textFieldTimeout.Hint = "";
+			this.textFieldTimeout.Location = new System.Drawing.Point(0, 0);
+			this.textFieldTimeout.MaxLength = 32767;
+			this.textFieldTimeout.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldTimeout.Name = "textFieldTimeout";
+			this.textFieldTimeout.PasswordChar = '\0';
+			this.textFieldTimeout.SelectedText = "";
+			this.textFieldTimeout.SelectionLength = 0;
+			this.textFieldTimeout.SelectionStart = 0;
+			this.textFieldTimeout.Size = new System.Drawing.Size(136, 23);
+			this.textFieldTimeout.TabIndex = 0;
+			this.textFieldTimeout.TabStop = false;
+			this.textFieldTimeout.Text = "Timeout";
+			this.textFieldTimeout.UseSystemPasswordChar = false;
 			// 
-			// materialSingleLineTextFieldPort
+			// textFieldPort
 			// 
-			this.materialSingleLineTextFieldPort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.textFieldPort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialSingleLineTextFieldPort.Depth = 0;
-			this.materialSingleLineTextFieldPort.Hint = "";
-			this.materialSingleLineTextFieldPort.Location = new System.Drawing.Point(0, 30);
-			this.materialSingleLineTextFieldPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
-			this.materialSingleLineTextFieldPort.MaxLength = 32767;
-			this.materialSingleLineTextFieldPort.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextFieldPort.Name = "materialSingleLineTextFieldPort";
-			this.materialSingleLineTextFieldPort.PasswordChar = '\0';
-			this.materialSingleLineTextFieldPort.SelectedText = "";
-			this.materialSingleLineTextFieldPort.SelectionLength = 0;
-			this.materialSingleLineTextFieldPort.SelectionStart = 0;
-			this.materialSingleLineTextFieldPort.Size = new System.Drawing.Size(136, 23);
-			this.materialSingleLineTextFieldPort.TabIndex = 1;
-			this.materialSingleLineTextFieldPort.TabStop = false;
-			this.materialSingleLineTextFieldPort.Text = "Port";
-			this.materialSingleLineTextFieldPort.UseSystemPasswordChar = false;
+			this.textFieldPort.Depth = 0;
+			this.textFieldPort.Hint = "";
+			this.textFieldPort.Location = new System.Drawing.Point(0, 30);
+			this.textFieldPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
+			this.textFieldPort.MaxLength = 32767;
+			this.textFieldPort.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldPort.Name = "textFieldPort";
+			this.textFieldPort.PasswordChar = '\0';
+			this.textFieldPort.SelectedText = "";
+			this.textFieldPort.SelectionLength = 0;
+			this.textFieldPort.SelectionStart = 0;
+			this.textFieldPort.Size = new System.Drawing.Size(136, 23);
+			this.textFieldPort.TabIndex = 1;
+			this.textFieldPort.TabStop = false;
+			this.textFieldPort.Text = "Port";
+			this.textFieldPort.UseSystemPasswordChar = false;
 			// 
-			// materialSingleLineTextFieldThreads
+			// textFieldThreads
 			// 
-			this.materialSingleLineTextFieldThreads.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.textFieldThreads.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialSingleLineTextFieldThreads.Depth = 0;
-			this.materialSingleLineTextFieldThreads.Hint = "";
-			this.materialSingleLineTextFieldThreads.Location = new System.Drawing.Point(0, 60);
-			this.materialSingleLineTextFieldThreads.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
-			this.materialSingleLineTextFieldThreads.MaxLength = 32767;
-			this.materialSingleLineTextFieldThreads.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextFieldThreads.Name = "materialSingleLineTextFieldThreads";
-			this.materialSingleLineTextFieldThreads.PasswordChar = '\0';
-			this.materialSingleLineTextFieldThreads.SelectedText = "";
-			this.materialSingleLineTextFieldThreads.SelectionLength = 0;
-			this.materialSingleLineTextFieldThreads.SelectionStart = 0;
-			this.materialSingleLineTextFieldThreads.Size = new System.Drawing.Size(136, 23);
-			this.materialSingleLineTextFieldThreads.TabIndex = 2;
-			this.materialSingleLineTextFieldThreads.TabStop = false;
-			this.materialSingleLineTextFieldThreads.Text = "Threads";
-			this.materialSingleLineTextFieldThreads.UseSystemPasswordChar = false;
+			this.textFieldThreads.Depth = 0;
+			this.textFieldThreads.Hint = "";
+			this.textFieldThreads.Location = new System.Drawing.Point(0, 60);
+			this.textFieldThreads.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
+			this.textFieldThreads.MaxLength = 32767;
+			this.textFieldThreads.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldThreads.Name = "textFieldThreads";
+			this.textFieldThreads.PasswordChar = '\0';
+			this.textFieldThreads.SelectedText = "";
+			this.textFieldThreads.SelectionLength = 0;
+			this.textFieldThreads.SelectionStart = 0;
+			this.textFieldThreads.Size = new System.Drawing.Size(136, 23);
+			this.textFieldThreads.TabIndex = 2;
+			this.textFieldThreads.TabStop = false;
+			this.textFieldThreads.Text = "Threads";
+			this.textFieldThreads.UseSystemPasswordChar = false;
 			// 
-			// materialSingleLineTextFieldSocketsPerThread
+			// textFieldSocketsPerThread
 			// 
-			this.materialSingleLineTextFieldSocketsPerThread.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.textFieldSocketsPerThread.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialSingleLineTextFieldSocketsPerThread.Depth = 0;
-			this.materialSingleLineTextFieldSocketsPerThread.Hint = "";
-			this.materialSingleLineTextFieldSocketsPerThread.Location = new System.Drawing.Point(0, 90);
-			this.materialSingleLineTextFieldSocketsPerThread.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
-			this.materialSingleLineTextFieldSocketsPerThread.MaxLength = 32767;
-			this.materialSingleLineTextFieldSocketsPerThread.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextFieldSocketsPerThread.Name = "materialSingleLineTextFieldSocketsPerThread";
-			this.materialSingleLineTextFieldSocketsPerThread.PasswordChar = '\0';
-			this.materialSingleLineTextFieldSocketsPerThread.SelectedText = "";
-			this.materialSingleLineTextFieldSocketsPerThread.SelectionLength = 0;
-			this.materialSingleLineTextFieldSocketsPerThread.SelectionStart = 0;
-			this.materialSingleLineTextFieldSocketsPerThread.Size = new System.Drawing.Size(136, 23);
-			this.materialSingleLineTextFieldSocketsPerThread.TabIndex = 3;
-			this.materialSingleLineTextFieldSocketsPerThread.TabStop = false;
-			this.materialSingleLineTextFieldSocketsPerThread.Text = "Sockets / Threads";
-			this.materialSingleLineTextFieldSocketsPerThread.UseSystemPasswordChar = false;
+			this.textFieldSocketsPerThread.Depth = 0;
+			this.textFieldSocketsPerThread.Hint = "";
+			this.textFieldSocketsPerThread.Location = new System.Drawing.Point(0, 90);
+			this.textFieldSocketsPerThread.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
+			this.textFieldSocketsPerThread.MaxLength = 32767;
+			this.textFieldSocketsPerThread.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldSocketsPerThread.Name = "textFieldSocketsPerThread";
+			this.textFieldSocketsPerThread.PasswordChar = '\0';
+			this.textFieldSocketsPerThread.SelectedText = "";
+			this.textFieldSocketsPerThread.SelectionLength = 0;
+			this.textFieldSocketsPerThread.SelectionStart = 0;
+			this.textFieldSocketsPerThread.Size = new System.Drawing.Size(136, 23);
+			this.textFieldSocketsPerThread.TabIndex = 3;
+			this.textFieldSocketsPerThread.TabStop = false;
+			this.textFieldSocketsPerThread.Text = "Sockets / Threads";
+			this.textFieldSocketsPerThread.UseSystemPasswordChar = false;
 			// 
-			// materialRadioButtonHttpMethodGet
+			// radioButtonHttpMethodGet
 			// 
-			this.materialRadioButtonHttpMethodGet.AutoSize = true;
-			this.materialRadioButtonHttpMethodGet.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonHttpMethodGet.Depth = 0;
-			this.materialRadioButtonHttpMethodGet.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonHttpMethodGet.Location = new System.Drawing.Point(75, 0);
-			this.materialRadioButtonHttpMethodGet.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonHttpMethodGet.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonHttpMethodGet.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonHttpMethodGet.Name = "materialRadioButtonHttpMethodGet";
-			this.materialRadioButtonHttpMethodGet.Ripple = true;
-			this.materialRadioButtonHttpMethodGet.Size = new System.Drawing.Size(54, 30);
-			this.materialRadioButtonHttpMethodGet.TabIndex = 10;
-			this.materialRadioButtonHttpMethodGet.Text = "GET";
-			this.materialRadioButtonHttpMethodGet.UseVisualStyleBackColor = true;
+			this.radioButtonHttpMethodGet.AutoSize = true;
+			this.radioButtonHttpMethodGet.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonHttpMethodGet.Depth = 0;
+			this.radioButtonHttpMethodGet.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonHttpMethodGet.Location = new System.Drawing.Point(75, 0);
+			this.radioButtonHttpMethodGet.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonHttpMethodGet.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonHttpMethodGet.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonHttpMethodGet.Name = "radioButtonHttpMethodGet";
+			this.radioButtonHttpMethodGet.Ripple = true;
+			this.radioButtonHttpMethodGet.Size = new System.Drawing.Size(54, 30);
+			this.radioButtonHttpMethodGet.TabIndex = 10;
+			this.radioButtonHttpMethodGet.Text = "GET";
+			this.radioButtonHttpMethodGet.UseVisualStyleBackColor = true;
 			// 
-			// materialRadioButtonHttpMethodPost
+			// radioButtonHttpMethodPost
 			// 
-			this.materialRadioButtonHttpMethodPost.AutoSize = true;
-			this.materialRadioButtonHttpMethodPost.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonHttpMethodPost.Depth = 0;
-			this.materialRadioButtonHttpMethodPost.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonHttpMethodPost.Location = new System.Drawing.Point(139, 0);
-			this.materialRadioButtonHttpMethodPost.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonHttpMethodPost.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonHttpMethodPost.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonHttpMethodPost.Name = "materialRadioButtonHttpMethodPost";
-			this.materialRadioButtonHttpMethodPost.Ripple = true;
-			this.materialRadioButtonHttpMethodPost.Size = new System.Drawing.Size(64, 30);
-			this.materialRadioButtonHttpMethodPost.TabIndex = 11;
-			this.materialRadioButtonHttpMethodPost.Text = "POST";
-			this.materialRadioButtonHttpMethodPost.UseVisualStyleBackColor = true;
+			this.radioButtonHttpMethodPost.AutoSize = true;
+			this.radioButtonHttpMethodPost.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonHttpMethodPost.Depth = 0;
+			this.radioButtonHttpMethodPost.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonHttpMethodPost.Location = new System.Drawing.Point(139, 0);
+			this.radioButtonHttpMethodPost.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonHttpMethodPost.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonHttpMethodPost.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonHttpMethodPost.Name = "radioButtonHttpMethodPost";
+			this.radioButtonHttpMethodPost.Ripple = true;
+			this.radioButtonHttpMethodPost.Size = new System.Drawing.Size(64, 30);
+			this.radioButtonHttpMethodPost.TabIndex = 11;
+			this.radioButtonHttpMethodPost.Text = "POST";
+			this.radioButtonHttpMethodPost.UseVisualStyleBackColor = true;
 			// 
-			// materialRadioButtonHttpMethodHead
+			// radioButtonHttpMethodHead
 			// 
-			this.materialRadioButtonHttpMethodHead.AutoSize = true;
-			this.materialRadioButtonHttpMethodHead.Checked = true;
-			this.materialRadioButtonHttpMethodHead.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonHttpMethodHead.Depth = 0;
-			this.materialRadioButtonHttpMethodHead.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonHttpMethodHead.Location = new System.Drawing.Point(0, 0);
-			this.materialRadioButtonHttpMethodHead.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonHttpMethodHead.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonHttpMethodHead.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonHttpMethodHead.Name = "materialRadioButtonHttpMethodHead";
-			this.materialRadioButtonHttpMethodHead.Ripple = true;
-			this.materialRadioButtonHttpMethodHead.Size = new System.Drawing.Size(65, 30);
-			this.materialRadioButtonHttpMethodHead.TabIndex = 12;
-			this.materialRadioButtonHttpMethodHead.TabStop = true;
-			this.materialRadioButtonHttpMethodHead.Text = "HEAD";
-			this.materialRadioButtonHttpMethodHead.UseVisualStyleBackColor = true;
+			this.radioButtonHttpMethodHead.AutoSize = true;
+			this.radioButtonHttpMethodHead.Checked = true;
+			this.radioButtonHttpMethodHead.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonHttpMethodHead.Depth = 0;
+			this.radioButtonHttpMethodHead.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonHttpMethodHead.Location = new System.Drawing.Point(0, 0);
+			this.radioButtonHttpMethodHead.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonHttpMethodHead.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonHttpMethodHead.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonHttpMethodHead.Name = "radioButtonHttpMethodHead";
+			this.radioButtonHttpMethodHead.Ripple = true;
+			this.radioButtonHttpMethodHead.Size = new System.Drawing.Size(65, 30);
+			this.radioButtonHttpMethodHead.TabIndex = 12;
+			this.radioButtonHttpMethodHead.TabStop = true;
+			this.radioButtonHttpMethodHead.Text = "HEAD";
+			this.radioButtonHttpMethodHead.UseVisualStyleBackColor = true;
 			// 
-			// panel1
+			// panelHttpMethod
 			// 
-			this.panel1.Controls.Add(this.materialRadioButtonHttpMethodHead);
-			this.panel1.Controls.Add(this.materialRadioButtonHttpMethodGet);
-			this.panel1.Controls.Add(this.materialRadioButtonHttpMethodPost);
-			this.panel1.Location = new System.Drawing.Point(114, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(471, 30);
-			this.panel1.TabIndex = 14;
+			this.panelHttpMethod.Controls.Add(this.radioButtonHttpMethodHead);
+			this.panelHttpMethod.Controls.Add(this.radioButtonHttpMethodGet);
+			this.panelHttpMethod.Controls.Add(this.radioButtonHttpMethodPost);
+			this.panelHttpMethod.Location = new System.Drawing.Point(114, 0);
+			this.panelHttpMethod.Name = "panelHttpMethod";
+			this.panelHttpMethod.Size = new System.Drawing.Size(471, 30);
+			this.panelHttpMethod.TabIndex = 14;
 			// 
 			// materialLabel1
 			// 
@@ -245,7 +245,7 @@
 			// panel2
 			// 
 			this.panel2.Controls.Add(this.materialLabel1);
-			this.panel2.Controls.Add(this.panel1);
+			this.panel2.Controls.Add(this.panelHttpMethod);
 			this.panel2.Location = new System.Drawing.Point(3, 39);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(624, 30);
@@ -276,228 +276,234 @@
 			// 
 			// panel4
 			// 
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodIcmp);
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodSlowLoic);
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodReCoil);
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodHttp);
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodTcp);
-			this.panel4.Controls.Add(this.materialRadioButtonAttackMethodUdp);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodIcmp);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodSlowLoic);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodReCoil);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodHttp);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodTcp);
+			this.panel4.Controls.Add(this.radioButtonAttackMethodUdp);
 			this.panel4.Location = new System.Drawing.Point(114, 0);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(471, 30);
 			this.panel4.TabIndex = 14;
 			// 
-			// materialRadioButtonAttackMethodIcmp
+			// radioButtonAttackMethodIcmp
 			// 
-			this.materialRadioButtonAttackMethodIcmp.AutoSize = true;
-			this.materialRadioButtonAttackMethodIcmp.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodIcmp.Depth = 0;
-			this.materialRadioButtonAttackMethodIcmp.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodIcmp.Location = new System.Drawing.Point(383, 0);
-			this.materialRadioButtonAttackMethodIcmp.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodIcmp.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodIcmp.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodIcmp.Name = "materialRadioButtonAttackMethodIcmp";
-			this.materialRadioButtonAttackMethodIcmp.Ripple = true;
-			this.materialRadioButtonAttackMethodIcmp.Size = new System.Drawing.Size(63, 30);
-			this.materialRadioButtonAttackMethodIcmp.TabIndex = 16;
-			this.materialRadioButtonAttackMethodIcmp.Text = "ICMP";
-			this.materialRadioButtonAttackMethodIcmp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodIcmp.AutoSize = true;
+			this.radioButtonAttackMethodIcmp.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodIcmp.Depth = 0;
+			this.radioButtonAttackMethodIcmp.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodIcmp.Location = new System.Drawing.Point(383, 0);
+			this.radioButtonAttackMethodIcmp.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodIcmp.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodIcmp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodIcmp.Name = "radioButtonAttackMethodIcmp";
+			this.radioButtonAttackMethodIcmp.Ripple = true;
+			this.radioButtonAttackMethodIcmp.Size = new System.Drawing.Size(63, 30);
+			this.radioButtonAttackMethodIcmp.TabIndex = 16;
+			this.radioButtonAttackMethodIcmp.Text = "ICMP";
+			this.radioButtonAttackMethodIcmp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodIcmp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodIcmp_CheckedChanged);
 			// 
-			// materialRadioButtonAttackMethodSlowLoic
+			// radioButtonAttackMethodSlowLoic
 			// 
-			this.materialRadioButtonAttackMethodSlowLoic.AutoSize = true;
-			this.materialRadioButtonAttackMethodSlowLoic.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodSlowLoic.Depth = 0;
-			this.materialRadioButtonAttackMethodSlowLoic.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodSlowLoic.Location = new System.Drawing.Point(284, 0);
-			this.materialRadioButtonAttackMethodSlowLoic.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodSlowLoic.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodSlowLoic.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodSlowLoic.Name = "materialRadioButtonAttackMethodSlowLoic";
-			this.materialRadioButtonAttackMethodSlowLoic.Ripple = true;
-			this.materialRadioButtonAttackMethodSlowLoic.Size = new System.Drawing.Size(89, 30);
-			this.materialRadioButtonAttackMethodSlowLoic.TabIndex = 15;
-			this.materialRadioButtonAttackMethodSlowLoic.Text = "SlowLOIC";
-			this.materialRadioButtonAttackMethodSlowLoic.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodSlowLoic.AutoSize = true;
+			this.radioButtonAttackMethodSlowLoic.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodSlowLoic.Depth = 0;
+			this.radioButtonAttackMethodSlowLoic.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodSlowLoic.Location = new System.Drawing.Point(284, 0);
+			this.radioButtonAttackMethodSlowLoic.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodSlowLoic.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodSlowLoic.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodSlowLoic.Name = "radioButtonAttackMethodSlowLoic";
+			this.radioButtonAttackMethodSlowLoic.Ripple = true;
+			this.radioButtonAttackMethodSlowLoic.Size = new System.Drawing.Size(89, 30);
+			this.radioButtonAttackMethodSlowLoic.TabIndex = 15;
+			this.radioButtonAttackMethodSlowLoic.Text = "SlowLOIC";
+			this.radioButtonAttackMethodSlowLoic.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodSlowLoic.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodSlowLoic_CheckedChanged);
 			// 
-			// materialRadioButtonAttackMethodReCoil
+			// radioButtonAttackMethodReCoil
 			// 
-			this.materialRadioButtonAttackMethodReCoil.AutoSize = true;
-			this.materialRadioButtonAttackMethodReCoil.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodReCoil.Depth = 0;
-			this.materialRadioButtonAttackMethodReCoil.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodReCoil.Location = new System.Drawing.Point(205, 0);
-			this.materialRadioButtonAttackMethodReCoil.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodReCoil.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodReCoil.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodReCoil.Name = "materialRadioButtonAttackMethodReCoil";
-			this.materialRadioButtonAttackMethodReCoil.Ripple = true;
-			this.materialRadioButtonAttackMethodReCoil.Size = new System.Drawing.Size(69, 30);
-			this.materialRadioButtonAttackMethodReCoil.TabIndex = 13;
-			this.materialRadioButtonAttackMethodReCoil.Text = "ReCoil";
-			this.materialRadioButtonAttackMethodReCoil.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodReCoil.AutoSize = true;
+			this.radioButtonAttackMethodReCoil.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodReCoil.Depth = 0;
+			this.radioButtonAttackMethodReCoil.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodReCoil.Location = new System.Drawing.Point(205, 0);
+			this.radioButtonAttackMethodReCoil.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodReCoil.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodReCoil.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodReCoil.Name = "radioButtonAttackMethodReCoil";
+			this.radioButtonAttackMethodReCoil.Ripple = true;
+			this.radioButtonAttackMethodReCoil.Size = new System.Drawing.Size(69, 30);
+			this.radioButtonAttackMethodReCoil.TabIndex = 13;
+			this.radioButtonAttackMethodReCoil.Text = "ReCoil";
+			this.radioButtonAttackMethodReCoil.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodReCoil.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodReCoil_CheckedChanged);
 			// 
-			// materialRadioButtonAttackMethodHttp
+			// radioButtonAttackMethodHttp
 			// 
-			this.materialRadioButtonAttackMethodHttp.AutoSize = true;
-			this.materialRadioButtonAttackMethodHttp.Checked = true;
-			this.materialRadioButtonAttackMethodHttp.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodHttp.Depth = 0;
-			this.materialRadioButtonAttackMethodHttp.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodHttp.Location = new System.Drawing.Point(0, 0);
-			this.materialRadioButtonAttackMethodHttp.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodHttp.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodHttp.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodHttp.Name = "materialRadioButtonAttackMethodHttp";
-			this.materialRadioButtonAttackMethodHttp.Ripple = true;
-			this.materialRadioButtonAttackMethodHttp.Size = new System.Drawing.Size(64, 30);
-			this.materialRadioButtonAttackMethodHttp.TabIndex = 12;
-			this.materialRadioButtonAttackMethodHttp.TabStop = true;
-			this.materialRadioButtonAttackMethodHttp.Text = "HTTP";
-			this.materialRadioButtonAttackMethodHttp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodHttp.AutoSize = true;
+			this.radioButtonAttackMethodHttp.Checked = true;
+			this.radioButtonAttackMethodHttp.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodHttp.Depth = 0;
+			this.radioButtonAttackMethodHttp.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodHttp.Location = new System.Drawing.Point(0, 0);
+			this.radioButtonAttackMethodHttp.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodHttp.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodHttp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodHttp.Name = "radioButtonAttackMethodHttp";
+			this.radioButtonAttackMethodHttp.Ripple = true;
+			this.radioButtonAttackMethodHttp.Size = new System.Drawing.Size(64, 30);
+			this.radioButtonAttackMethodHttp.TabIndex = 12;
+			this.radioButtonAttackMethodHttp.TabStop = true;
+			this.radioButtonAttackMethodHttp.Text = "HTTP";
+			this.radioButtonAttackMethodHttp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodHttp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodHttp_CheckedChanged);
 			// 
-			// materialRadioButtonAttackMethodTcp
+			// radioButtonAttackMethodTcp
 			// 
-			this.materialRadioButtonAttackMethodTcp.AutoSize = true;
-			this.materialRadioButtonAttackMethodTcp.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodTcp.Depth = 0;
-			this.materialRadioButtonAttackMethodTcp.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodTcp.Location = new System.Drawing.Point(74, 0);
-			this.materialRadioButtonAttackMethodTcp.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodTcp.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodTcp.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodTcp.Name = "materialRadioButtonAttackMethodTcp";
-			this.materialRadioButtonAttackMethodTcp.Ripple = true;
-			this.materialRadioButtonAttackMethodTcp.Size = new System.Drawing.Size(55, 30);
-			this.materialRadioButtonAttackMethodTcp.TabIndex = 10;
-			this.materialRadioButtonAttackMethodTcp.Text = "TCP";
-			this.materialRadioButtonAttackMethodTcp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodTcp.AutoSize = true;
+			this.radioButtonAttackMethodTcp.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodTcp.Depth = 0;
+			this.radioButtonAttackMethodTcp.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodTcp.Location = new System.Drawing.Point(74, 0);
+			this.radioButtonAttackMethodTcp.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodTcp.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodTcp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodTcp.Name = "radioButtonAttackMethodTcp";
+			this.radioButtonAttackMethodTcp.Ripple = true;
+			this.radioButtonAttackMethodTcp.Size = new System.Drawing.Size(55, 30);
+			this.radioButtonAttackMethodTcp.TabIndex = 10;
+			this.radioButtonAttackMethodTcp.Text = "TCP";
+			this.radioButtonAttackMethodTcp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodTcp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodTcp_CheckedChanged);
 			// 
-			// materialRadioButtonAttackMethodUdp
+			// radioButtonAttackMethodUdp
 			// 
-			this.materialRadioButtonAttackMethodUdp.AutoSize = true;
-			this.materialRadioButtonAttackMethodUdp.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonAttackMethodUdp.Depth = 0;
-			this.materialRadioButtonAttackMethodUdp.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonAttackMethodUdp.Location = new System.Drawing.Point(139, 0);
-			this.materialRadioButtonAttackMethodUdp.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonAttackMethodUdp.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonAttackMethodUdp.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonAttackMethodUdp.Name = "materialRadioButtonAttackMethodUdp";
-			this.materialRadioButtonAttackMethodUdp.Ripple = true;
-			this.materialRadioButtonAttackMethodUdp.Size = new System.Drawing.Size(56, 30);
-			this.materialRadioButtonAttackMethodUdp.TabIndex = 11;
-			this.materialRadioButtonAttackMethodUdp.Text = "UDP";
-			this.materialRadioButtonAttackMethodUdp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodUdp.AutoSize = true;
+			this.radioButtonAttackMethodUdp.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonAttackMethodUdp.Depth = 0;
+			this.radioButtonAttackMethodUdp.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonAttackMethodUdp.Location = new System.Drawing.Point(139, 0);
+			this.radioButtonAttackMethodUdp.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonAttackMethodUdp.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonAttackMethodUdp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonAttackMethodUdp.Name = "radioButtonAttackMethodUdp";
+			this.radioButtonAttackMethodUdp.Ripple = true;
+			this.radioButtonAttackMethodUdp.Size = new System.Drawing.Size(56, 30);
+			this.radioButtonAttackMethodUdp.TabIndex = 11;
+			this.radioButtonAttackMethodUdp.Text = "UDP";
+			this.radioButtonAttackMethodUdp.UseVisualStyleBackColor = true;
+			this.radioButtonAttackMethodUdp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodUdp_CheckedChanged);
 			// 
-			// panel6
+			// panelGenericInputs
 			// 
-			this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.panelGenericInputs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel6.Controls.Add(this.materialSingleLineTextFieldTimeout);
-			this.panel6.Controls.Add(this.materialSingleLineTextFieldPort);
-			this.panel6.Controls.Add(this.materialSingleLineTextFieldThreads);
-			this.panel6.Controls.Add(this.materialSingleLineTextFieldSocketsPerThread);
-			this.panel6.Location = new System.Drawing.Point(7, 33);
-			this.panel6.Margin = new System.Windows.Forms.Padding(7, 10, 7, 3);
-			this.panel6.MinimumSize = new System.Drawing.Size(125, 140);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(136, 201);
-			this.panel6.TabIndex = 19;
+			this.panelGenericInputs.Controls.Add(this.textFieldTimeout);
+			this.panelGenericInputs.Controls.Add(this.textFieldPort);
+			this.panelGenericInputs.Controls.Add(this.textFieldThreads);
+			this.panelGenericInputs.Controls.Add(this.textFieldSocketsPerThread);
+			this.panelGenericInputs.Location = new System.Drawing.Point(7, 33);
+			this.panelGenericInputs.Margin = new System.Windows.Forms.Padding(7, 10, 7, 3);
+			this.panelGenericInputs.MinimumSize = new System.Drawing.Size(125, 140);
+			this.panelGenericInputs.Name = "panelGenericInputs";
+			this.panelGenericInputs.Size = new System.Drawing.Size(136, 201);
+			this.panelGenericInputs.TabIndex = 19;
 			// 
-			// panel7
+			// panelRandomness
 			// 
-			this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.panelRandomness.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel7.Controls.Add(this.materialCheckBoxUseRandomReferer);
-			this.panel7.Controls.Add(this.materialCheckBoxUseRandomUserAgent);
-			this.panel7.Controls.Add(this.materialCheckBoxAppendRandomCharactersToUrl);
-			this.panel7.Controls.Add(this.materialCheckBoxAppendRandomCharactersToMessage);
-			this.panel7.Location = new System.Drawing.Point(0, 29);
-			this.panel7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-			this.panel7.MinimumSize = new System.Drawing.Size(245, 120);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(245, 205);
-			this.panel7.TabIndex = 20;
+			this.panelRandomness.Controls.Add(this.checkBoxUseRandomReferer);
+			this.panelRandomness.Controls.Add(this.checkBoxUseRandomUserAgent);
+			this.panelRandomness.Controls.Add(this.checkBoxAppendRandomCharactersToUrl);
+			this.panelRandomness.Controls.Add(this.checkBoxAppendRandomCharactersToMessage);
+			this.panelRandomness.Location = new System.Drawing.Point(0, 29);
+			this.panelRandomness.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+			this.panelRandomness.MinimumSize = new System.Drawing.Size(245, 120);
+			this.panelRandomness.Name = "panelRandomness";
+			this.panelRandomness.Size = new System.Drawing.Size(245, 205);
+			this.panelRandomness.TabIndex = 20;
 			// 
-			// materialCheckBoxUseRandomReferer
+			// checkBoxUseRandomReferer
 			// 
-			this.materialCheckBoxUseRandomReferer.AutoSize = true;
-			this.materialCheckBoxUseRandomReferer.Checked = true;
-			this.materialCheckBoxUseRandomReferer.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.materialCheckBoxUseRandomReferer.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxUseRandomReferer.Depth = 0;
-			this.materialCheckBoxUseRandomReferer.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxUseRandomReferer.Location = new System.Drawing.Point(0, 90);
-			this.materialCheckBoxUseRandomReferer.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxUseRandomReferer.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxUseRandomReferer.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxUseRandomReferer.Name = "materialCheckBoxUseRandomReferer";
-			this.materialCheckBoxUseRandomReferer.Ripple = true;
-			this.materialCheckBoxUseRandomReferer.Size = new System.Drawing.Size(75, 30);
-			this.materialCheckBoxUseRandomReferer.TabIndex = 11;
-			this.materialCheckBoxUseRandomReferer.Text = "Referer";
-			this.materialCheckBoxUseRandomReferer.UseVisualStyleBackColor = true;
+			this.checkBoxUseRandomReferer.AutoSize = true;
+			this.checkBoxUseRandomReferer.Checked = true;
+			this.checkBoxUseRandomReferer.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxUseRandomReferer.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxUseRandomReferer.Depth = 0;
+			this.checkBoxUseRandomReferer.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxUseRandomReferer.Location = new System.Drawing.Point(0, 90);
+			this.checkBoxUseRandomReferer.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxUseRandomReferer.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxUseRandomReferer.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxUseRandomReferer.Name = "checkBoxUseRandomReferer";
+			this.checkBoxUseRandomReferer.Ripple = true;
+			this.checkBoxUseRandomReferer.Size = new System.Drawing.Size(75, 30);
+			this.checkBoxUseRandomReferer.TabIndex = 11;
+			this.checkBoxUseRandomReferer.Text = "Referer";
+			this.checkBoxUseRandomReferer.UseVisualStyleBackColor = true;
 			// 
-			// materialCheckBoxUseRandomUserAgent
+			// checkBoxUseRandomUserAgent
 			// 
-			this.materialCheckBoxUseRandomUserAgent.AutoSize = true;
-			this.materialCheckBoxUseRandomUserAgent.Checked = true;
-			this.materialCheckBoxUseRandomUserAgent.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.materialCheckBoxUseRandomUserAgent.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxUseRandomUserAgent.Depth = 0;
-			this.materialCheckBoxUseRandomUserAgent.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxUseRandomUserAgent.Location = new System.Drawing.Point(0, 60);
-			this.materialCheckBoxUseRandomUserAgent.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxUseRandomUserAgent.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxUseRandomUserAgent.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxUseRandomUserAgent.Name = "materialCheckBoxUseRandomUserAgent";
-			this.materialCheckBoxUseRandomUserAgent.Ripple = true;
-			this.materialCheckBoxUseRandomUserAgent.Size = new System.Drawing.Size(96, 30);
-			this.materialCheckBoxUseRandomUserAgent.TabIndex = 10;
-			this.materialCheckBoxUseRandomUserAgent.Text = "User agent";
-			this.materialCheckBoxUseRandomUserAgent.UseVisualStyleBackColor = true;
+			this.checkBoxUseRandomUserAgent.AutoSize = true;
+			this.checkBoxUseRandomUserAgent.Checked = true;
+			this.checkBoxUseRandomUserAgent.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxUseRandomUserAgent.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxUseRandomUserAgent.Depth = 0;
+			this.checkBoxUseRandomUserAgent.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxUseRandomUserAgent.Location = new System.Drawing.Point(0, 60);
+			this.checkBoxUseRandomUserAgent.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxUseRandomUserAgent.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxUseRandomUserAgent.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxUseRandomUserAgent.Name = "checkBoxUseRandomUserAgent";
+			this.checkBoxUseRandomUserAgent.Ripple = true;
+			this.checkBoxUseRandomUserAgent.Size = new System.Drawing.Size(96, 30);
+			this.checkBoxUseRandomUserAgent.TabIndex = 10;
+			this.checkBoxUseRandomUserAgent.Text = "User agent";
+			this.checkBoxUseRandomUserAgent.UseVisualStyleBackColor = true;
 			// 
-			// materialCheckBoxAppendRandomCharactersToUrl
+			// checkBoxAppendRandomCharactersToUrl
 			// 
-			this.materialCheckBoxAppendRandomCharactersToUrl.AutoSize = true;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Checked = true;
-			this.materialCheckBoxAppendRandomCharactersToUrl.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Depth = 0;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxAppendRandomCharactersToUrl.Location = new System.Drawing.Point(0, 0);
-			this.materialCheckBoxAppendRandomCharactersToUrl.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxAppendRandomCharactersToUrl.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxAppendRandomCharactersToUrl.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Name = "materialCheckBoxAppendRandomCharactersToUrl";
-			this.materialCheckBoxAppendRandomCharactersToUrl.Ripple = true;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Size = new System.Drawing.Size(190, 30);
-			this.materialCheckBoxAppendRandomCharactersToUrl.TabIndex = 9;
-			this.materialCheckBoxAppendRandomCharactersToUrl.Text = "Append characters to URL";
-			this.materialCheckBoxAppendRandomCharactersToUrl.UseVisualStyleBackColor = true;
+			this.checkBoxAppendRandomCharactersToUrl.AutoSize = true;
+			this.checkBoxAppendRandomCharactersToUrl.Checked = true;
+			this.checkBoxAppendRandomCharactersToUrl.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxAppendRandomCharactersToUrl.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxAppendRandomCharactersToUrl.Depth = 0;
+			this.checkBoxAppendRandomCharactersToUrl.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxAppendRandomCharactersToUrl.Location = new System.Drawing.Point(0, 0);
+			this.checkBoxAppendRandomCharactersToUrl.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxAppendRandomCharactersToUrl.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxAppendRandomCharactersToUrl.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxAppendRandomCharactersToUrl.Name = "checkBoxAppendRandomCharactersToUrl";
+			this.checkBoxAppendRandomCharactersToUrl.Ripple = true;
+			this.checkBoxAppendRandomCharactersToUrl.Size = new System.Drawing.Size(190, 30);
+			this.checkBoxAppendRandomCharactersToUrl.TabIndex = 9;
+			this.checkBoxAppendRandomCharactersToUrl.Text = "Append characters to URL";
+			this.checkBoxAppendRandomCharactersToUrl.UseVisualStyleBackColor = true;
 			// 
-			// materialCheckBoxAppendRandomCharactersToMessage
+			// checkBoxAppendRandomCharactersToMessage
 			// 
-			this.materialCheckBoxAppendRandomCharactersToMessage.AutoSize = true;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Checked = true;
-			this.materialCheckBoxAppendRandomCharactersToMessage.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Depth = 0;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxAppendRandomCharactersToMessage.Location = new System.Drawing.Point(0, 30);
-			this.materialCheckBoxAppendRandomCharactersToMessage.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxAppendRandomCharactersToMessage.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxAppendRandomCharactersToMessage.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Name = "materialCheckBoxAppendRandomCharactersToMessage";
-			this.materialCheckBoxAppendRandomCharactersToMessage.Ripple = true;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Size = new System.Drawing.Size(222, 30);
-			this.materialCheckBoxAppendRandomCharactersToMessage.TabIndex = 8;
-			this.materialCheckBoxAppendRandomCharactersToMessage.Text = "Append characters to message";
-			this.materialCheckBoxAppendRandomCharactersToMessage.UseVisualStyleBackColor = true;
+			this.checkBoxAppendRandomCharactersToMessage.AutoSize = true;
+			this.checkBoxAppendRandomCharactersToMessage.Checked = true;
+			this.checkBoxAppendRandomCharactersToMessage.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxAppendRandomCharactersToMessage.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxAppendRandomCharactersToMessage.Depth = 0;
+			this.checkBoxAppendRandomCharactersToMessage.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxAppendRandomCharactersToMessage.Location = new System.Drawing.Point(0, 30);
+			this.checkBoxAppendRandomCharactersToMessage.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxAppendRandomCharactersToMessage.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxAppendRandomCharactersToMessage.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxAppendRandomCharactersToMessage.Name = "checkBoxAppendRandomCharactersToMessage";
+			this.checkBoxAppendRandomCharactersToMessage.Ripple = true;
+			this.checkBoxAppendRandomCharactersToMessage.Size = new System.Drawing.Size(222, 30);
+			this.checkBoxAppendRandomCharactersToMessage.TabIndex = 8;
+			this.checkBoxAppendRandomCharactersToMessage.Text = "Append characters to message";
+			this.checkBoxAppendRandomCharactersToMessage.UseVisualStyleBackColor = true;
 			// 
 			// materialLabel3
 			// 
@@ -515,7 +521,7 @@
 			// panel8
 			// 
 			this.panel8.Controls.Add(this.materialLabel3);
-			this.panel8.Controls.Add(this.panel7);
+			this.panel8.Controls.Add(this.panelRandomness);
 			this.panel8.Location = new System.Drawing.Point(290, 87);
 			this.panel8.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel8.MinimumSize = new System.Drawing.Size(245, 120);
@@ -526,7 +532,7 @@
 			// panel9
 			// 
 			this.panel9.Controls.Add(this.materialLabel4);
-			this.panel9.Controls.Add(this.panel10);
+			this.panel9.Controls.Add(this.panelGenericButtons);
 			this.panel9.Location = new System.Drawing.Point(159, 87);
 			this.panel9.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel9.MinimumSize = new System.Drawing.Size(125, 100);
@@ -547,60 +553,60 @@
 			this.materialLabel4.TabIndex = 21;
 			this.materialLabel4.Text = "Generic";
 			// 
-			// panel10
+			// panelGenericButtons
 			// 
-			this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.panelGenericButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel10.Controls.Add(this.materialCheckBoxWaitForReply);
-			this.panel10.Controls.Add(this.materialCheckBoxUseGzip);
-			this.panel10.Location = new System.Drawing.Point(0, 29);
-			this.panel10.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-			this.panel10.MinimumSize = new System.Drawing.Size(125, 100);
-			this.panel10.Name = "panel10";
-			this.panel10.Size = new System.Drawing.Size(125, 205);
-			this.panel10.TabIndex = 20;
+			this.panelGenericButtons.Controls.Add(this.checkBoxWaitForReply);
+			this.panelGenericButtons.Controls.Add(this.checkBoxUseGzip);
+			this.panelGenericButtons.Location = new System.Drawing.Point(0, 29);
+			this.panelGenericButtons.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+			this.panelGenericButtons.MinimumSize = new System.Drawing.Size(125, 100);
+			this.panelGenericButtons.Name = "panelGenericButtons";
+			this.panelGenericButtons.Size = new System.Drawing.Size(125, 205);
+			this.panelGenericButtons.TabIndex = 20;
 			// 
-			// materialCheckBoxWaitForReply
+			// checkBoxWaitForReply
 			// 
-			this.materialCheckBoxWaitForReply.AutoSize = true;
-			this.materialCheckBoxWaitForReply.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxWaitForReply.Depth = 0;
-			this.materialCheckBoxWaitForReply.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxWaitForReply.Location = new System.Drawing.Point(0, 0);
-			this.materialCheckBoxWaitForReply.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxWaitForReply.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxWaitForReply.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxWaitForReply.Name = "materialCheckBoxWaitForReply";
-			this.materialCheckBoxWaitForReply.Ripple = true;
-			this.materialCheckBoxWaitForReply.Size = new System.Drawing.Size(112, 30);
-			this.materialCheckBoxWaitForReply.TabIndex = 10;
-			this.materialCheckBoxWaitForReply.Text = "Wait for reply";
-			this.materialCheckBoxWaitForReply.UseVisualStyleBackColor = true;
+			this.checkBoxWaitForReply.AutoSize = true;
+			this.checkBoxWaitForReply.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxWaitForReply.Depth = 0;
+			this.checkBoxWaitForReply.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxWaitForReply.Location = new System.Drawing.Point(0, 0);
+			this.checkBoxWaitForReply.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxWaitForReply.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxWaitForReply.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxWaitForReply.Name = "checkBoxWaitForReply";
+			this.checkBoxWaitForReply.Ripple = true;
+			this.checkBoxWaitForReply.Size = new System.Drawing.Size(112, 30);
+			this.checkBoxWaitForReply.TabIndex = 10;
+			this.checkBoxWaitForReply.Text = "Wait for reply";
+			this.checkBoxWaitForReply.UseVisualStyleBackColor = true;
 			// 
-			// materialCheckBoxUseGzip
+			// checkBoxUseGzip
 			// 
-			this.materialCheckBoxUseGzip.AutoSize = true;
-			this.materialCheckBoxUseGzip.Checked = true;
-			this.materialCheckBoxUseGzip.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.materialCheckBoxUseGzip.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialCheckBoxUseGzip.Depth = 0;
-			this.materialCheckBoxUseGzip.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBoxUseGzip.Location = new System.Drawing.Point(1, 30);
-			this.materialCheckBoxUseGzip.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBoxUseGzip.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBoxUseGzip.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBoxUseGzip.Name = "materialCheckBoxUseGzip";
-			this.materialCheckBoxUseGzip.Ripple = true;
-			this.materialCheckBoxUseGzip.Size = new System.Drawing.Size(86, 30);
-			this.materialCheckBoxUseGzip.TabIndex = 12;
-			this.materialCheckBoxUseGzip.Text = "Use GZip";
-			this.materialCheckBoxUseGzip.UseVisualStyleBackColor = true;
+			this.checkBoxUseGzip.AutoSize = true;
+			this.checkBoxUseGzip.Checked = true;
+			this.checkBoxUseGzip.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxUseGzip.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxUseGzip.Depth = 0;
+			this.checkBoxUseGzip.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxUseGzip.Location = new System.Drawing.Point(1, 30);
+			this.checkBoxUseGzip.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxUseGzip.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxUseGzip.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxUseGzip.Name = "checkBoxUseGzip";
+			this.checkBoxUseGzip.Ripple = true;
+			this.checkBoxUseGzip.Size = new System.Drawing.Size(86, 30);
+			this.checkBoxUseGzip.TabIndex = 12;
+			this.checkBoxUseGzip.Text = "Use GZip";
+			this.checkBoxUseGzip.UseVisualStyleBackColor = true;
 			// 
 			// panel5
 			// 
 			this.panel5.Controls.Add(this.materialLabel5);
-			this.panel5.Controls.Add(this.panel6);
+			this.panel5.Controls.Add(this.panelGenericInputs);
 			this.panel5.Location = new System.Drawing.Point(3, 87);
 			this.panel5.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel5.Name = "panel5";
@@ -623,7 +629,7 @@
 			// panel11
 			// 
 			this.panel11.Controls.Add(this.materialLabel6);
-			this.panel11.Controls.Add(this.panel12);
+			this.panel11.Controls.Add(this.panelProxy);
 			this.panel11.Location = new System.Drawing.Point(541, 87);
 			this.panel11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel11.MinimumSize = new System.Drawing.Size(245, 120);
@@ -644,73 +650,73 @@
 			this.materialLabel6.TabIndex = 21;
 			this.materialLabel6.Text = "Proxy";
 			// 
-			// panel12
+			// panelProxy
 			// 
-			this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.panelProxy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel12.Controls.Add(this.materialRadioButtonProxyChained);
-			this.panel12.Controls.Add(this.materialRadioButtonProxyRandom);
-			this.panel12.Controls.Add(this.materialRadioButtonProxyNone);
-			this.panel12.Location = new System.Drawing.Point(0, 29);
-			this.panel12.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-			this.panel12.MinimumSize = new System.Drawing.Size(245, 120);
-			this.panel12.Name = "panel12";
-			this.panel12.Size = new System.Drawing.Size(245, 205);
-			this.panel12.TabIndex = 20;
+			this.panelProxy.Controls.Add(this.radioButtonProxyChained);
+			this.panelProxy.Controls.Add(this.radioButtonProxyRandom);
+			this.panelProxy.Controls.Add(this.radioButtonProxyNone);
+			this.panelProxy.Location = new System.Drawing.Point(0, 29);
+			this.panelProxy.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+			this.panelProxy.MinimumSize = new System.Drawing.Size(245, 120);
+			this.panelProxy.Name = "panelProxy";
+			this.panelProxy.Size = new System.Drawing.Size(245, 205);
+			this.panelProxy.TabIndex = 20;
 			// 
-			// materialRadioButtonProxyChained
+			// radioButtonProxyChained
 			// 
-			this.materialRadioButtonProxyChained.AutoSize = true;
-			this.materialRadioButtonProxyChained.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonProxyChained.Depth = 0;
-			this.materialRadioButtonProxyChained.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonProxyChained.Location = new System.Drawing.Point(0, 59);
-			this.materialRadioButtonProxyChained.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonProxyChained.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonProxyChained.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonProxyChained.Name = "materialRadioButtonProxyChained";
-			this.materialRadioButtonProxyChained.Ripple = true;
-			this.materialRadioButtonProxyChained.Size = new System.Drawing.Size(172, 30);
-			this.materialRadioButtonProxyChained.TabIndex = 28;
-			this.materialRadioButtonProxyChained.Text = "Chained (experimental)";
-			this.materialRadioButtonProxyChained.UseVisualStyleBackColor = true;
+			this.radioButtonProxyChained.AutoSize = true;
+			this.radioButtonProxyChained.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonProxyChained.Depth = 0;
+			this.radioButtonProxyChained.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonProxyChained.Location = new System.Drawing.Point(0, 59);
+			this.radioButtonProxyChained.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonProxyChained.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonProxyChained.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonProxyChained.Name = "radioButtonProxyChained";
+			this.radioButtonProxyChained.Ripple = true;
+			this.radioButtonProxyChained.Size = new System.Drawing.Size(172, 30);
+			this.radioButtonProxyChained.TabIndex = 28;
+			this.radioButtonProxyChained.Text = "Chained (experimental)";
+			this.radioButtonProxyChained.UseVisualStyleBackColor = true;
 			// 
-			// materialRadioButtonProxyRandom
+			// radioButtonProxyRandom
 			// 
-			this.materialRadioButtonProxyRandom.AutoSize = true;
-			this.materialRadioButtonProxyRandom.Checked = true;
-			this.materialRadioButtonProxyRandom.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonProxyRandom.Depth = 0;
-			this.materialRadioButtonProxyRandom.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonProxyRandom.Location = new System.Drawing.Point(0, 29);
-			this.materialRadioButtonProxyRandom.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonProxyRandom.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonProxyRandom.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonProxyRandom.Name = "materialRadioButtonProxyRandom";
-			this.materialRadioButtonProxyRandom.Ripple = true;
-			this.materialRadioButtonProxyRandom.Size = new System.Drawing.Size(80, 30);
-			this.materialRadioButtonProxyRandom.TabIndex = 27;
-			this.materialRadioButtonProxyRandom.TabStop = true;
-			this.materialRadioButtonProxyRandom.Text = "Random";
-			this.materialRadioButtonProxyRandom.UseVisualStyleBackColor = true;
+			this.radioButtonProxyRandom.AutoSize = true;
+			this.radioButtonProxyRandom.Checked = true;
+			this.radioButtonProxyRandom.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonProxyRandom.Depth = 0;
+			this.radioButtonProxyRandom.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonProxyRandom.Location = new System.Drawing.Point(0, 29);
+			this.radioButtonProxyRandom.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonProxyRandom.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonProxyRandom.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonProxyRandom.Name = "radioButtonProxyRandom";
+			this.radioButtonProxyRandom.Ripple = true;
+			this.radioButtonProxyRandom.Size = new System.Drawing.Size(80, 30);
+			this.radioButtonProxyRandom.TabIndex = 27;
+			this.radioButtonProxyRandom.TabStop = true;
+			this.radioButtonProxyRandom.Text = "Random";
+			this.radioButtonProxyRandom.UseVisualStyleBackColor = true;
 			// 
-			// materialRadioButtonProxyNone
+			// radioButtonProxyNone
 			// 
-			this.materialRadioButtonProxyNone.AutoSize = true;
-			this.materialRadioButtonProxyNone.Cursor = System.Windows.Forms.Cursors.Default;
-			this.materialRadioButtonProxyNone.Depth = 0;
-			this.materialRadioButtonProxyNone.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialRadioButtonProxyNone.Location = new System.Drawing.Point(0, -1);
-			this.materialRadioButtonProxyNone.Margin = new System.Windows.Forms.Padding(0);
-			this.materialRadioButtonProxyNone.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialRadioButtonProxyNone.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRadioButtonProxyNone.Name = "materialRadioButtonProxyNone";
-			this.materialRadioButtonProxyNone.Ripple = true;
-			this.materialRadioButtonProxyNone.Size = new System.Drawing.Size(62, 30);
-			this.materialRadioButtonProxyNone.TabIndex = 26;
-			this.materialRadioButtonProxyNone.Text = "None";
-			this.materialRadioButtonProxyNone.UseVisualStyleBackColor = true;
+			this.radioButtonProxyNone.AutoSize = true;
+			this.radioButtonProxyNone.Cursor = System.Windows.Forms.Cursors.Default;
+			this.radioButtonProxyNone.Depth = 0;
+			this.radioButtonProxyNone.Font = new System.Drawing.Font("Roboto", 10F);
+			this.radioButtonProxyNone.Location = new System.Drawing.Point(0, -1);
+			this.radioButtonProxyNone.Margin = new System.Windows.Forms.Padding(0);
+			this.radioButtonProxyNone.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.radioButtonProxyNone.MouseState = MaterialSkin.MouseState.HOVER;
+			this.radioButtonProxyNone.Name = "radioButtonProxyNone";
+			this.radioButtonProxyNone.Ripple = true;
+			this.radioButtonProxyNone.Size = new System.Drawing.Size(62, 30);
+			this.radioButtonProxyNone.TabIndex = 26;
+			this.radioButtonProxyNone.Text = "None";
+			this.radioButtonProxyNone.UseVisualStyleBackColor = true;
 			// 
 			// AttackOptionsControl
 			// 
@@ -724,74 +730,74 @@
 			this.Controls.Add(this.panel2);
 			this.Name = "AttackOptionsControl";
 			this.Size = new System.Drawing.Size(936, 365);
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
+			this.panelHttpMethod.ResumeLayout(false);
+			this.panelHttpMethod.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
-			this.panel6.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
-			this.panel7.PerformLayout();
+			this.panelGenericInputs.ResumeLayout(false);
+			this.panelRandomness.ResumeLayout(false);
+			this.panelRandomness.PerformLayout();
 			this.panel8.ResumeLayout(false);
 			this.panel8.PerformLayout();
 			this.panel9.ResumeLayout(false);
 			this.panel9.PerformLayout();
-			this.panel10.ResumeLayout(false);
-			this.panel10.PerformLayout();
+			this.panelGenericButtons.ResumeLayout(false);
+			this.panelGenericButtons.PerformLayout();
 			this.panel5.ResumeLayout(false);
 			this.panel5.PerformLayout();
 			this.panel11.ResumeLayout(false);
 			this.panel11.PerformLayout();
-			this.panel12.ResumeLayout(false);
-			this.panel12.PerformLayout();
+			this.panelProxy.ResumeLayout(false);
+			this.panelProxy.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextFieldTimeout;
-		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextFieldPort;
-		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextFieldThreads;
-		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextFieldSocketsPerThread;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonHttpMethodGet;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonHttpMethodPost;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonHttpMethodHead;
-		private System.Windows.Forms.Panel panel1;
+		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldTimeout;
+		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldPort;
+		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldThreads;
+		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldSocketsPerThread;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodGet;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodPost;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodHead;
+		private System.Windows.Forms.Panel panelHttpMethod;
 		private MaterialSkin.Controls.MaterialLabel materialLabel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel3;
 		private MaterialSkin.Controls.MaterialLabel materialLabel2;
 		private System.Windows.Forms.Panel panel4;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodHttp;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodTcp;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodUdp;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodReCoil;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodIcmp;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonAttackMethodSlowLoic;
-		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Panel panel7;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxAppendRandomCharactersToUrl;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxAppendRandomCharactersToMessage;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodHttp;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodTcp;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodUdp;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodReCoil;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodIcmp;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodSlowLoic;
+		private System.Windows.Forms.Panel panelGenericInputs;
+		private System.Windows.Forms.Panel panelRandomness;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToUrl;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToMessage;
 		private MaterialSkin.Controls.MaterialLabel materialLabel3;
 		private System.Windows.Forms.Panel panel8;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxUseRandomReferer;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxUseRandomUserAgent;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomReferer;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomUserAgent;
 		private System.Windows.Forms.Panel panel9;
 		private MaterialSkin.Controls.MaterialLabel materialLabel4;
-		private System.Windows.Forms.Panel panel10;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxWaitForReply;
-		private MaterialSkin.Controls.MaterialCheckBox materialCheckBoxUseGzip;
+		private System.Windows.Forms.Panel panelGenericButtons;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxWaitForReply;
+		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseGzip;
 		private System.Windows.Forms.Panel panel5;
 		private MaterialSkin.Controls.MaterialLabel materialLabel5;
 		private System.Windows.Forms.Panel panel11;
 		private MaterialSkin.Controls.MaterialLabel materialLabel6;
-		private System.Windows.Forms.Panel panel12;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonProxyChained;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonProxyRandom;
-		private MaterialSkin.Controls.MaterialRadioButton materialRadioButtonProxyNone;
+		private System.Windows.Forms.Panel panelProxy;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyChained;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyRandom;
+		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyNone;
 	}
 }

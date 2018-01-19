@@ -85,6 +85,7 @@
     <Compile Include="Controls\WorkersControl.Designer.cs">
       <DependentUpon>WorkersControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="FluentControlActivator.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,11 +146,16 @@
     <None Include="Resources\minus.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BeanCannon.BusinessLogic.Core\BeanCannon.BusinessLogic.Core.csproj">
+      <Project>{4244d199-f572-458c-b90c-1c3e143a3526}</Project>
+      <Name>BeanCannon.BusinessLogic.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Modded\MaterialSkin\MaterialSkin\MaterialSkin.csproj">
       <Project>{8eb7611b-68cd-4b8b-987a-11717e2b250c}</Project>
       <Name>MaterialSkin</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

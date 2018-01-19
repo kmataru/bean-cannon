@@ -28,21 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.materialListViewProxies = new MaterialSkin.Controls.MaterialListView();
-			this.materialListViewAttacks = new MaterialSkin.Controls.MaterialListView();
-			this.panel11 = new System.Windows.Forms.Panel();
-			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-			this.panel12 = new System.Windows.Forms.Panel();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.columnHeaderAttackIdle = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackConnecting = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackRequesting = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackDownloading = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackDownloaded = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderAttackFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.listViewProxies = new MaterialSkin.Controls.MaterialListView();
 			this.columnHeaderProxySocketType = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderProxyTotal = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderProxyTypes = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
@@ -50,16 +36,30 @@
 			this.columnHeaderProxyTested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderProxyFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderProxyAvailable = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.listViewAttacks = new MaterialSkin.Controls.MaterialListView();
+			this.columnHeaderAttackIdle = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackConnecting = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackRequesting = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackDownloading = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackDownloaded = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.panel11 = new System.Windows.Forms.Panel();
+			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+			this.panel12 = new System.Windows.Forms.Panel();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel11.SuspendLayout();
 			this.panel12.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// materialListViewProxies
+			// listViewProxies
 			// 
-			this.materialListViewProxies.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.materialListViewProxies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listViewProxies.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.listViewProxies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderProxySocketType,
             this.columnHeaderProxyTotal,
             this.columnHeaderProxyTypes,
@@ -67,156 +67,21 @@
             this.columnHeaderProxyTested,
             this.columnHeaderProxyFailed,
             this.columnHeaderProxyAvailable});
-			this.materialListViewProxies.Depth = 0;
-			this.materialListViewProxies.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.materialListViewProxies.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-			this.materialListViewProxies.FullRowSelect = true;
-			this.materialListViewProxies.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.materialListViewProxies.Location = new System.Drawing.Point(0, 0);
-			this.materialListViewProxies.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialListViewProxies.MouseState = MaterialSkin.MouseState.OUT;
-			this.materialListViewProxies.Name = "materialListViewProxies";
-			this.materialListViewProxies.OwnerDraw = true;
-			this.materialListViewProxies.Scrollable = false;
-			this.materialListViewProxies.Size = new System.Drawing.Size(1110, 95);
-			this.materialListViewProxies.TabIndex = 0;
-			this.materialListViewProxies.UseCompatibleStateImageBehavior = false;
-			this.materialListViewProxies.View = System.Windows.Forms.View.Details;
-			// 
-			// materialListViewAttacks
-			// 
-			this.materialListViewAttacks.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.materialListViewAttacks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderAttackIdle,
-            this.columnHeaderAttackConnecting,
-            this.columnHeaderAttackRequesting,
-            this.columnHeaderAttackDownloading,
-            this.columnHeaderAttackDownloaded,
-            this.columnHeaderAttackRequested,
-            this.columnHeaderAttackFailed});
-			this.materialListViewAttacks.Depth = 0;
-			this.materialListViewAttacks.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.materialListViewAttacks.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-			this.materialListViewAttacks.FullRowSelect = true;
-			this.materialListViewAttacks.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.materialListViewAttacks.Location = new System.Drawing.Point(0, 0);
-			this.materialListViewAttacks.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialListViewAttacks.MouseState = MaterialSkin.MouseState.OUT;
-			this.materialListViewAttacks.Name = "materialListViewAttacks";
-			this.materialListViewAttacks.OwnerDraw = true;
-			this.materialListViewAttacks.Scrollable = false;
-			this.materialListViewAttacks.Size = new System.Drawing.Size(1110, 95);
-			this.materialListViewAttacks.TabIndex = 1;
-			this.materialListViewAttacks.UseCompatibleStateImageBehavior = false;
-			this.materialListViewAttacks.View = System.Windows.Forms.View.Details;
-			// 
-			// panel11
-			// 
-			this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel11.Controls.Add(this.materialLabel6);
-			this.panel11.Controls.Add(this.panel12);
-			this.panel11.Location = new System.Drawing.Point(3, 0);
-			this.panel11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-			this.panel11.Name = "panel11";
-			this.panel11.Size = new System.Drawing.Size(1110, 114);
-			this.panel11.TabIndex = 26;
-			// 
-			// materialLabel6
-			// 
-			this.materialLabel6.AutoSize = true;
-			this.materialLabel6.Depth = 0;
-			this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel6.Location = new System.Drawing.Point(3, 0);
-			this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel6.Name = "materialLabel6";
-			this.materialLabel6.Size = new System.Drawing.Size(105, 19);
-			this.materialLabel6.TabIndex = 21;
-			this.materialLabel6.Text = "Proxies status";
-			// 
-			// panel12
-			// 
-			this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel12.Controls.Add(this.materialListViewProxies);
-			this.panel12.Location = new System.Drawing.Point(0, 19);
-			this.panel12.Margin = new System.Windows.Forms.Padding(0);
-			this.panel12.Name = "panel12";
-			this.panel12.Size = new System.Drawing.Size(1110, 95);
-			this.panel12.TabIndex = 20;
-			// 
-			// panel1
-			// 
-			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.Controls.Add(this.materialLabel1);
-			this.panel1.Controls.Add(this.panel2);
-			this.panel1.Location = new System.Drawing.Point(3, 117);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1110, 114);
-			this.panel1.TabIndex = 27;
-			// 
-			// materialLabel1
-			// 
-			this.materialLabel1.AutoSize = true;
-			this.materialLabel1.Depth = 0;
-			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel1.Location = new System.Drawing.Point(3, 0);
-			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel1.Name = "materialLabel1";
-			this.materialLabel1.Size = new System.Drawing.Size(99, 19);
-			this.materialLabel1.TabIndex = 21;
-			this.materialLabel1.Text = "Attack status";
-			// 
-			// panel2
-			// 
-			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel2.Controls.Add(this.materialListViewAttacks);
-			this.panel2.Location = new System.Drawing.Point(0, 19);
-			this.panel2.Margin = new System.Windows.Forms.Padding(0);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1110, 95);
-			this.panel2.TabIndex = 20;
-			// 
-			// columnHeaderAttackIdle
-			// 
-			this.columnHeaderAttackIdle.Text = "Idle";
-			this.columnHeaderAttackIdle.Width = 73;
-			// 
-			// columnHeaderAttackConnecting
-			// 
-			this.columnHeaderAttackConnecting.Text = "Connecting";
-			this.columnHeaderAttackConnecting.Width = 184;
-			// 
-			// columnHeaderAttackRequesting
-			// 
-			this.columnHeaderAttackRequesting.Text = "Requesting";
-			this.columnHeaderAttackRequesting.Width = 186;
-			// 
-			// columnHeaderAttackDownloading
-			// 
-			this.columnHeaderAttackDownloading.Text = "Downloading";
-			this.columnHeaderAttackDownloading.Width = 204;
-			// 
-			// columnHeaderAttackDownloaded
-			// 
-			this.columnHeaderAttackDownloaded.Text = "Downloaded";
-			this.columnHeaderAttackDownloaded.Width = 193;
-			// 
-			// columnHeaderAttackRequested
-			// 
-			this.columnHeaderAttackRequested.Text = "Requested";
-			this.columnHeaderAttackRequested.Width = 168;
-			// 
-			// columnHeaderAttackFailed
-			// 
-			this.columnHeaderAttackFailed.Text = "Failed";
-			this.columnHeaderAttackFailed.Width = 99;
+			this.listViewProxies.Depth = 0;
+			this.listViewProxies.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.listViewProxies.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+			this.listViewProxies.FullRowSelect = true;
+			this.listViewProxies.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listViewProxies.Location = new System.Drawing.Point(0, 0);
+			this.listViewProxies.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.listViewProxies.MouseState = MaterialSkin.MouseState.OUT;
+			this.listViewProxies.Name = "listViewProxies";
+			this.listViewProxies.OwnerDraw = true;
+			this.listViewProxies.Scrollable = false;
+			this.listViewProxies.Size = new System.Drawing.Size(1110, 95);
+			this.listViewProxies.TabIndex = 0;
+			this.listViewProxies.UseCompatibleStateImageBehavior = false;
+			this.listViewProxies.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeaderProxySocketType
 			// 
@@ -253,6 +118,141 @@
 			this.columnHeaderProxyAvailable.Text = "Available";
 			this.columnHeaderProxyAvailable.Width = 151;
 			// 
+			// listViewAttacks
+			// 
+			this.listViewAttacks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.listViewAttacks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderAttackIdle,
+            this.columnHeaderAttackConnecting,
+            this.columnHeaderAttackRequesting,
+            this.columnHeaderAttackDownloading,
+            this.columnHeaderAttackDownloaded,
+            this.columnHeaderAttackRequested,
+            this.columnHeaderAttackFailed});
+			this.listViewAttacks.Depth = 0;
+			this.listViewAttacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.listViewAttacks.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+			this.listViewAttacks.FullRowSelect = true;
+			this.listViewAttacks.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listViewAttacks.Location = new System.Drawing.Point(0, 0);
+			this.listViewAttacks.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.listViewAttacks.MouseState = MaterialSkin.MouseState.OUT;
+			this.listViewAttacks.Name = "listViewAttacks";
+			this.listViewAttacks.OwnerDraw = true;
+			this.listViewAttacks.Scrollable = false;
+			this.listViewAttacks.Size = new System.Drawing.Size(1110, 95);
+			this.listViewAttacks.TabIndex = 1;
+			this.listViewAttacks.UseCompatibleStateImageBehavior = false;
+			this.listViewAttacks.View = System.Windows.Forms.View.Details;
+			// 
+			// columnHeaderAttackIdle
+			// 
+			this.columnHeaderAttackIdle.Text = "Idle";
+			this.columnHeaderAttackIdle.Width = 73;
+			// 
+			// columnHeaderAttackConnecting
+			// 
+			this.columnHeaderAttackConnecting.Text = "Connecting";
+			this.columnHeaderAttackConnecting.Width = 184;
+			// 
+			// columnHeaderAttackRequesting
+			// 
+			this.columnHeaderAttackRequesting.Text = "Requesting";
+			this.columnHeaderAttackRequesting.Width = 186;
+			// 
+			// columnHeaderAttackDownloading
+			// 
+			this.columnHeaderAttackDownloading.Text = "Downloading";
+			this.columnHeaderAttackDownloading.Width = 204;
+			// 
+			// columnHeaderAttackDownloaded
+			// 
+			this.columnHeaderAttackDownloaded.Text = "Downloaded";
+			this.columnHeaderAttackDownloaded.Width = 193;
+			// 
+			// columnHeaderAttackRequested
+			// 
+			this.columnHeaderAttackRequested.Text = "Requested";
+			this.columnHeaderAttackRequested.Width = 168;
+			// 
+			// columnHeaderAttackFailed
+			// 
+			this.columnHeaderAttackFailed.Text = "Failed";
+			this.columnHeaderAttackFailed.Width = 99;
+			// 
+			// panel11
+			// 
+			this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel11.Controls.Add(this.materialLabel6);
+			this.panel11.Controls.Add(this.panel12);
+			this.panel11.Location = new System.Drawing.Point(3, 0);
+			this.panel11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+			this.panel11.Name = "panel11";
+			this.panel11.Size = new System.Drawing.Size(1110, 114);
+			this.panel11.TabIndex = 26;
+			// 
+			// materialLabel6
+			// 
+			this.materialLabel6.AutoSize = true;
+			this.materialLabel6.Depth = 0;
+			this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel6.Location = new System.Drawing.Point(3, 0);
+			this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel6.Name = "materialLabel6";
+			this.materialLabel6.Size = new System.Drawing.Size(105, 19);
+			this.materialLabel6.TabIndex = 21;
+			this.materialLabel6.Text = "Proxies status";
+			// 
+			// panel12
+			// 
+			this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel12.Controls.Add(this.listViewProxies);
+			this.panel12.Location = new System.Drawing.Point(0, 19);
+			this.panel12.Margin = new System.Windows.Forms.Padding(0);
+			this.panel12.Name = "panel12";
+			this.panel12.Size = new System.Drawing.Size(1110, 95);
+			this.panel12.TabIndex = 20;
+			// 
+			// panel1
+			// 
+			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.Controls.Add(this.materialLabel1);
+			this.panel1.Controls.Add(this.panel2);
+			this.panel1.Location = new System.Drawing.Point(3, 117);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1110, 114);
+			this.panel1.TabIndex = 27;
+			// 
+			// materialLabel1
+			// 
+			this.materialLabel1.AutoSize = true;
+			this.materialLabel1.Depth = 0;
+			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel1.Location = new System.Drawing.Point(3, 0);
+			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel1.Name = "materialLabel1";
+			this.materialLabel1.Size = new System.Drawing.Size(99, 19);
+			this.materialLabel1.TabIndex = 21;
+			this.materialLabel1.Text = "Attack status";
+			// 
+			// panel2
+			// 
+			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel2.Controls.Add(this.listViewAttacks);
+			this.panel2.Location = new System.Drawing.Point(0, 19);
+			this.panel2.Margin = new System.Windows.Forms.Padding(0);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(1110, 95);
+			this.panel2.TabIndex = 20;
+			// 
 			// StatusControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,9 +273,6 @@
 		}
 
 		#endregion
-
-		private MaterialSkin.Controls.MaterialListView materialListViewProxies;
-		private MaterialSkin.Controls.MaterialListView materialListViewAttacks;
 		private Components.ColumnHeaderEx columnHeaderProxySocketType;
 		private Components.ColumnHeaderEx columnHeaderProxyTotal;
 		private Components.ColumnHeaderEx columnHeaderProxyTypes;
@@ -296,5 +293,7 @@
 		private System.Windows.Forms.Panel panel1;
 		private MaterialSkin.Controls.MaterialLabel materialLabel1;
 		private System.Windows.Forms.Panel panel2;
+		public MaterialSkin.Controls.MaterialListView listViewProxies;
+		public MaterialSkin.Controls.MaterialListView listViewAttacks;
 	}
 }

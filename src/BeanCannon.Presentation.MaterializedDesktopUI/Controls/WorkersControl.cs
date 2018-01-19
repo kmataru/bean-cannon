@@ -22,9 +22,9 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 			SeedListView();
 
-			this.materialListViewWorkers.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
-			this.materialListViewWorkers.LastColumnSizeChanged += MaterialListView1_LastColumnSizeChanged;
-			this.materialListViewWorkers.TopItemChanged += MaterialListView1_TopItemChanged;
+			this.listViewWorkers.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
+			this.listViewWorkers.LastColumnSizeChanged += MaterialListView1_LastColumnSizeChanged;
+			this.listViewWorkers.TopItemChanged += MaterialListView1_TopItemChanged;
 		}
 
 		private void MaterialListView1_LastColumnSizeChanged(object sender, LastColumnSizeEventArgs e)
@@ -89,7 +89,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			for (int idx = 1; idx <= 10; ++idx)
 			{
 				var item = new ListViewItem(new[] { $"W-0{idx}", "Downloading", "999M", "999M", "999M", "999.99ms" });
-				materialListViewWorkers.Items.Add(item);
+				listViewWorkers.Items.Add(item);
 
 				{
 					MaterialProgressBar materialProgressBar = new MaterialProgressBar();
@@ -102,7 +102,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 					materialProgressBar.Value = idx;
 					//materialProgressBar1.TabIndex = 1;
 
-					materialListViewWorkers.Controls.Add(materialProgressBar);
+					listViewWorkers.Controls.Add(materialProgressBar);
 				}
 			}
 		}

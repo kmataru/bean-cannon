@@ -18,8 +18,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 
 			SeedListView();
 
-			this.materialListViewProxies.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
-			this.materialListViewAttacks.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
+			this.listViewProxies.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
+			this.listViewAttacks.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
 		}
 
 		private void SeedListView()
@@ -32,13 +32,13 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			foreach (string[] version in data)
 			{
 				var item = new ListViewItem(version);
-				materialListViewProxies.Items.Add(item);
+				listViewProxies.Items.Add(item);
 			}
 
 			foreach (string[] version in data)
 			{
 				var item = new ListViewItem(version);
-				materialListViewAttacks.Items.Add(item);
+				listViewAttacks.Items.Add(item);
 			}
 		}
 	}

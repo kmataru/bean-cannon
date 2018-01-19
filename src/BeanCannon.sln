@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeanCannon.Presentation.Mat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkin", "..\Modded\MaterialSkin\MaterialSkin\MaterialSkin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeanCannon.BusinessLogic.Core", "BeanCannon.BusinessLogic.Core\BeanCannon.BusinessLogic.Core.csproj", "{4244D199-F572-458C-B90C-1C3E143A3526}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppVeyor|Any CPU = AppVeyor|Any CPU
@@ -38,6 +40,12 @@ Global
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.AppVeyor|Any CPU.ActiveCfg = Release|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.AppVeyor|Any CPU.Build.0 = Release|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4244D199-F572-458C-B90C-1C3E143A3526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{0CAC039F-86D1-4BA4-BF46-EE7058ABAE6C} = {809AF96E-360F-47AE-910E-3E73F2F32BA6}
 		{47409AA5-62AE-4189-8E83-C471502DF5E9} = {0CAC039F-86D1-4BA4-BF46-EE7058ABAE6C}
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C} = {F2142110-C571-4750-BF40-EE8F10C4A901}
+		{4244D199-F572-458C-B90C-1C3E143A3526} = {F2142110-C571-4750-BF40-EE8F10C4A901}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E21557E1-65D6-4FB4-A608-263C3CA30D7A}

@@ -28,38 +28,38 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.materialListViewPaths = new MaterialSkin.Controls.MaterialListView();
+			this.listViewPaths = new MaterialSkin.Controls.MaterialListView();
 			this.columnHeaderPathAndQuery = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-			this.materialSingleLineTextFieldUrlOrIp = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.textFieldUrlOrIp = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.SuspendLayout();
 			// 
-			// materialListViewPaths
+			// listViewPaths
 			// 
-			this.materialListViewPaths.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.listViewPaths.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialListViewPaths.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.materialListViewPaths.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listViewPaths.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.listViewPaths.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderPathAndQuery,
             this.columnHeaderRequested,
             this.columnHeaderFailed});
-			this.materialListViewPaths.Depth = 0;
-			this.materialListViewPaths.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-			this.materialListViewPaths.FullRowSelect = true;
-			this.materialListViewPaths.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.materialListViewPaths.Location = new System.Drawing.Point(10, 106);
-			this.materialListViewPaths.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialListViewPaths.MouseState = MaterialSkin.MouseState.OUT;
-			this.materialListViewPaths.Name = "materialListViewPaths";
-			this.materialListViewPaths.OwnerDraw = true;
-			this.materialListViewPaths.Size = new System.Drawing.Size(690, 225);
-			this.materialListViewPaths.TabIndex = 6;
-			this.materialListViewPaths.UseCompatibleStateImageBehavior = false;
-			this.materialListViewPaths.View = System.Windows.Forms.View.Details;
+			this.listViewPaths.Depth = 0;
+			this.listViewPaths.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+			this.listViewPaths.FullRowSelect = true;
+			this.listViewPaths.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listViewPaths.Location = new System.Drawing.Point(10, 106);
+			this.listViewPaths.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.listViewPaths.MouseState = MaterialSkin.MouseState.OUT;
+			this.listViewPaths.Name = "listViewPaths";
+			this.listViewPaths.OwnerDraw = true;
+			this.listViewPaths.Size = new System.Drawing.Size(690, 225);
+			this.listViewPaths.TabIndex = 6;
+			this.listViewPaths.UseCompatibleStateImageBehavior = false;
+			this.listViewPaths.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeaderPathAndQuery
 			// 
@@ -115,35 +115,35 @@
 			this.materialRaisedButton1.Text = "Lock on";
 			this.materialRaisedButton1.UseVisualStyleBackColor = true;
 			// 
-			// materialSingleLineTextFieldUrlOrIp
+			// textFieldUrlOrIp
 			// 
-			this.materialSingleLineTextFieldUrlOrIp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.textFieldUrlOrIp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialSingleLineTextFieldUrlOrIp.Depth = 0;
-			this.materialSingleLineTextFieldUrlOrIp.Hint = "URL or IP address";
-			this.materialSingleLineTextFieldUrlOrIp.Location = new System.Drawing.Point(10, 15);
-			this.materialSingleLineTextFieldUrlOrIp.Margin = new System.Windows.Forms.Padding(10, 15, 15, 5);
-			this.materialSingleLineTextFieldUrlOrIp.MaxLength = 32767;
-			this.materialSingleLineTextFieldUrlOrIp.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextFieldUrlOrIp.Name = "materialSingleLineTextFieldUrlOrIp";
-			this.materialSingleLineTextFieldUrlOrIp.PasswordChar = '\0';
-			this.materialSingleLineTextFieldUrlOrIp.SelectedText = "";
-			this.materialSingleLineTextFieldUrlOrIp.SelectionLength = 0;
-			this.materialSingleLineTextFieldUrlOrIp.SelectionStart = 0;
-			this.materialSingleLineTextFieldUrlOrIp.Size = new System.Drawing.Size(594, 23);
-			this.materialSingleLineTextFieldUrlOrIp.TabIndex = 0;
-			this.materialSingleLineTextFieldUrlOrIp.TabStop = false;
-			this.materialSingleLineTextFieldUrlOrIp.UseSystemPasswordChar = false;
+			this.textFieldUrlOrIp.Depth = 0;
+			this.textFieldUrlOrIp.Hint = "URL or IP address";
+			this.textFieldUrlOrIp.Location = new System.Drawing.Point(10, 15);
+			this.textFieldUrlOrIp.Margin = new System.Windows.Forms.Padding(10, 15, 15, 5);
+			this.textFieldUrlOrIp.MaxLength = 32767;
+			this.textFieldUrlOrIp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldUrlOrIp.Name = "textFieldUrlOrIp";
+			this.textFieldUrlOrIp.PasswordChar = '\0';
+			this.textFieldUrlOrIp.SelectedText = "";
+			this.textFieldUrlOrIp.SelectionLength = 0;
+			this.textFieldUrlOrIp.SelectionStart = 0;
+			this.textFieldUrlOrIp.Size = new System.Drawing.Size(594, 23);
+			this.textFieldUrlOrIp.TabIndex = 0;
+			this.textFieldUrlOrIp.TabStop = false;
+			this.textFieldUrlOrIp.UseSystemPasswordChar = false;
 			// 
 			// TargetControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
-			this.Controls.Add(this.materialListViewPaths);
+			this.Controls.Add(this.listViewPaths);
 			this.Controls.Add(this.materialLabel1);
 			this.Controls.Add(this.materialRaisedButton1);
-			this.Controls.Add(this.materialSingleLineTextFieldUrlOrIp);
+			this.Controls.Add(this.textFieldUrlOrIp);
 			this.Name = "TargetControl";
 			this.Size = new System.Drawing.Size(705, 334);
 			this.ResumeLayout(false);
@@ -152,13 +152,12 @@
 		}
 
 		#endregion
-
-		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextFieldUrlOrIp;
 		private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
 		private MaterialSkin.Controls.MaterialLabel materialLabel1;
-		private MaterialSkin.Controls.MaterialListView materialListViewPaths;
 		private Components.ColumnHeaderEx columnHeaderPathAndQuery;
 		private Components.ColumnHeaderEx columnHeaderRequested;
 		private Components.ColumnHeaderEx columnHeaderFailed;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldUrlOrIp;
+		public MaterialSkin.Controls.MaterialListView listViewPaths;
 	}
 }

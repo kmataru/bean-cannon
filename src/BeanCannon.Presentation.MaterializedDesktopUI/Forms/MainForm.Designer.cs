@@ -36,20 +36,20 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
 			this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
 			this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
-			this.materialButtonChangeTheme = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.buttonChangeTheme = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.materialTabSelectorMain = new MaterialSkin.Controls.MaterialTabSelector();
 			this.materialTabControlMain = new MaterialSkin.Controls.MaterialTabControl();
 			this.tabPageProxySettings = new System.Windows.Forms.TabPage();
 			this.proxySettingsControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.ProxySettingsControl();
 			this.tabPageTargetAndCrawler = new System.Windows.Forms.TabPage();
 			this.targetControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.TargetControl();
-			this.attackOptionsControl = new System.Windows.Forms.TabPage();
-			this.attackOptionsControl1 = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.AttackOptionsControl();
+			this.tabAttackOptions = new System.Windows.Forms.TabPage();
+			this.attackOptionsControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.AttackOptionsControl();
 			this.tabPageWorkers = new System.Windows.Forms.TabPage();
 			this.workersControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.WorkersControl();
 			this.tabPageAbout = new System.Windows.Forms.TabPage();
 			this.aboutControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.AboutControl();
-			this.materialRaisedButtonChangeColorScheme = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.buttonChangeColorScheme = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
 			this.item1ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
 			this.subItem1ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
@@ -64,7 +64,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialTabControlMain.SuspendLayout();
 			this.tabPageProxySettings.SuspendLayout();
 			this.tabPageTargetAndCrawler.SuspendLayout();
-			this.attackOptionsControl.SuspendLayout();
+			this.tabAttackOptions.SuspendLayout();
 			this.tabPageWorkers.SuspendLayout();
 			this.tabPageAbout.SuspendLayout();
 			this.materialContextMenuStrip1.SuspendLayout();
@@ -119,22 +119,22 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialDivider1.TabIndex = 16;
 			this.materialDivider1.Text = "materialDivider1";
 			// 
-			// materialButtonChangeTheme
+			// buttonChangeTheme
 			// 
-			this.materialButtonChangeTheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.materialButtonChangeTheme.AutoSize = true;
-			this.materialButtonChangeTheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.materialButtonChangeTheme.Depth = 0;
-			this.materialButtonChangeTheme.Icon = null;
-			this.materialButtonChangeTheme.Location = new System.Drawing.Point(14, 657);
-			this.materialButtonChangeTheme.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialButtonChangeTheme.Name = "materialButtonChangeTheme";
-			this.materialButtonChangeTheme.Primary = true;
-			this.materialButtonChangeTheme.Size = new System.Drawing.Size(125, 36);
-			this.materialButtonChangeTheme.TabIndex = 0;
-			this.materialButtonChangeTheme.Text = "Change Theme";
-			this.materialButtonChangeTheme.UseVisualStyleBackColor = true;
-			this.materialButtonChangeTheme.Click += new System.EventHandler(this.materialButton1_Click);
+			this.buttonChangeTheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonChangeTheme.AutoSize = true;
+			this.buttonChangeTheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.buttonChangeTheme.Depth = 0;
+			this.buttonChangeTheme.Icon = null;
+			this.buttonChangeTheme.Location = new System.Drawing.Point(14, 657);
+			this.buttonChangeTheme.MouseState = MaterialSkin.MouseState.HOVER;
+			this.buttonChangeTheme.Name = "buttonChangeTheme";
+			this.buttonChangeTheme.Primary = true;
+			this.buttonChangeTheme.Size = new System.Drawing.Size(125, 36);
+			this.buttonChangeTheme.TabIndex = 0;
+			this.buttonChangeTheme.Text = "Change Theme";
+			this.buttonChangeTheme.UseVisualStyleBackColor = true;
+			this.buttonChangeTheme.Click += new System.EventHandler(this.ButtonChangeTheme_Click);
 			// 
 			// materialTabSelectorMain
 			// 
@@ -156,7 +156,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.materialTabControlMain.Controls.Add(this.tabPageProxySettings);
 			this.materialTabControlMain.Controls.Add(this.tabPageTargetAndCrawler);
-			this.materialTabControlMain.Controls.Add(this.attackOptionsControl);
+			this.materialTabControlMain.Controls.Add(this.tabAttackOptions);
 			this.materialTabControlMain.Controls.Add(this.tabPageWorkers);
 			this.materialTabControlMain.Controls.Add(this.tabPageAbout);
 			this.materialTabControlMain.Depth = 0;
@@ -204,22 +204,23 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.targetControl.Size = new System.Drawing.Size(926, 273);
 			this.targetControl.TabIndex = 0;
 			// 
+			// tabAttackOptions
+			// 
+			this.tabAttackOptions.Controls.Add(this.attackOptionsControl);
+			this.tabAttackOptions.Location = new System.Drawing.Point(4, 22);
+			this.tabAttackOptions.Name = "tabAttackOptions";
+			this.tabAttackOptions.Size = new System.Drawing.Size(926, 273);
+			this.tabAttackOptions.TabIndex = 7;
+			this.tabAttackOptions.Text = "Attack options";
+			this.tabAttackOptions.UseVisualStyleBackColor = true;
+			// 
 			// attackOptionsControl
 			// 
-			this.attackOptionsControl.Controls.Add(this.attackOptionsControl1);
-			this.attackOptionsControl.Location = new System.Drawing.Point(4, 22);
+			this.attackOptionsControl.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.attackOptionsControl.Location = new System.Drawing.Point(0, 0);
 			this.attackOptionsControl.Name = "attackOptionsControl";
 			this.attackOptionsControl.Size = new System.Drawing.Size(926, 273);
-			this.attackOptionsControl.TabIndex = 7;
-			this.attackOptionsControl.Text = "Attack options";
-			this.attackOptionsControl.UseVisualStyleBackColor = true;
-			// 
-			// attackOptionsControl1
-			// 
-			this.attackOptionsControl1.Location = new System.Drawing.Point(3, 3);
-			this.attackOptionsControl1.Name = "attackOptionsControl1";
-			this.attackOptionsControl1.Size = new System.Drawing.Size(744, 413);
-			this.attackOptionsControl1.TabIndex = 0;
+			this.attackOptionsControl.TabIndex = 0;
 			// 
 			// tabPageWorkers
 			// 
@@ -257,22 +258,22 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.aboutControl.Size = new System.Drawing.Size(926, 273);
 			this.aboutControl.TabIndex = 0;
 			// 
-			// materialRaisedButtonChangeColorScheme
+			// buttonChangeColorScheme
 			// 
-			this.materialRaisedButtonChangeColorScheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.materialRaisedButtonChangeColorScheme.AutoSize = true;
-			this.materialRaisedButtonChangeColorScheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.materialRaisedButtonChangeColorScheme.Depth = 0;
-			this.materialRaisedButtonChangeColorScheme.Icon = null;
-			this.materialRaisedButtonChangeColorScheme.Location = new System.Drawing.Point(145, 657);
-			this.materialRaisedButtonChangeColorScheme.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialRaisedButtonChangeColorScheme.Name = "materialRaisedButtonChangeColorScheme";
-			this.materialRaisedButtonChangeColorScheme.Primary = true;
-			this.materialRaisedButtonChangeColorScheme.Size = new System.Drawing.Size(181, 36);
-			this.materialRaisedButtonChangeColorScheme.TabIndex = 21;
-			this.materialRaisedButtonChangeColorScheme.Text = "Change color scheme";
-			this.materialRaisedButtonChangeColorScheme.UseVisualStyleBackColor = true;
-			this.materialRaisedButtonChangeColorScheme.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+			this.buttonChangeColorScheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonChangeColorScheme.AutoSize = true;
+			this.buttonChangeColorScheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.buttonChangeColorScheme.Depth = 0;
+			this.buttonChangeColorScheme.Icon = null;
+			this.buttonChangeColorScheme.Location = new System.Drawing.Point(145, 657);
+			this.buttonChangeColorScheme.MouseState = MaterialSkin.MouseState.HOVER;
+			this.buttonChangeColorScheme.Name = "buttonChangeColorScheme";
+			this.buttonChangeColorScheme.Primary = true;
+			this.buttonChangeColorScheme.Size = new System.Drawing.Size(181, 36);
+			this.buttonChangeColorScheme.TabIndex = 21;
+			this.buttonChangeColorScheme.Text = "Change color scheme";
+			this.buttonChangeColorScheme.UseVisualStyleBackColor = true;
+			this.buttonChangeColorScheme.Click += new System.EventHandler(this.ButtonChangeColorScheme_Click);
 			// 
 			// materialContextMenuStrip1
 			// 
@@ -386,11 +387,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.ClientSize = new System.Drawing.Size(960, 700);
 			this.ContextMenuStrip = this.materialContextMenuStrip1;
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.materialRaisedButtonChangeColorScheme);
+			this.Controls.Add(this.buttonChangeColorScheme);
 			this.Controls.Add(this.materialFlatButton3);
 			this.Controls.Add(this.materialFlatButton2);
 			this.Controls.Add(this.materialTabSelectorMain);
-			this.Controls.Add(this.materialButtonChangeTheme);
+			this.Controls.Add(this.buttonChangeTheme);
 			this.Controls.Add(this.materialTabControlMain);
 			this.Controls.Add(this.materialDivider1);
 			this.Controls.Add(this.materialFlatButton1);
@@ -401,7 +402,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialTabControlMain.ResumeLayout(false);
 			this.tabPageProxySettings.ResumeLayout(false);
 			this.tabPageTargetAndCrawler.ResumeLayout(false);
-			this.attackOptionsControl.ResumeLayout(false);
+			this.tabAttackOptions.ResumeLayout(false);
 			this.tabPageWorkers.ResumeLayout(false);
 			this.tabPageAbout.ResumeLayout(false);
 			this.materialContextMenuStrip1.ResumeLayout(false);
@@ -413,7 +414,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialRaisedButton materialButtonChangeTheme;
+        private MaterialSkin.Controls.MaterialRaisedButton buttonChangeTheme;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialFlatButton materialFlatButton2;
         private MaterialDivider materialDivider1;
@@ -427,14 +428,14 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
         private MaterialSkin.Controls.MaterialToolStripMenuItem item3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem disabledItemToolStripMenuItem;
-		private MaterialRaisedButton materialRaisedButtonChangeColorScheme;
+		private MaterialRaisedButton buttonChangeColorScheme;
         private MaterialFlatButton materialFlatButton3;
 		private TabPage tabPageTargetAndCrawler;
 		private Controls.TargetControl targetControl;
 		private TabPage tabPageProxySettings;
 		private Controls.ProxySettingsControl proxySettingsControl;
-		private TabPage attackOptionsControl;
-		private Controls.AttackOptionsControl attackOptionsControl1;
+		private TabPage tabAttackOptions;
+		private Controls.AttackOptionsControl attackOptionsControl;
 		private Panel panel1;
 		private Controls.Common.StatusControl statusControl;
 		private TabPage tabPageWorkers;

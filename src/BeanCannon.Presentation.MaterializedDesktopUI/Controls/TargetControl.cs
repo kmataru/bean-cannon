@@ -23,7 +23,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			// Add dummy data to the listview
 			seedListView();
 
-			this.materialListViewPaths.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
+			this.listViewPaths.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
 		}
 
 		private void Page1Component_Load(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			foreach (string[] version in data)
 			{
 				var item = new ListViewItem(version);
-				materialListViewPaths.Items.Add(item);
+				listViewPaths.Items.Add(item);
 			}
 
 			//materialListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);

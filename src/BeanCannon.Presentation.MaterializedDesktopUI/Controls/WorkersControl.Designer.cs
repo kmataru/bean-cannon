@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.materialListViewWorkers = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common.MaterialListViewEx();
+			this.listViewWorkers = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common.MaterialListViewEx();
 			this.columnHeaderName = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderState = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
@@ -38,13 +38,13 @@
 			this.columnHeaderResponsiveness = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.SuspendLayout();
 			// 
-			// materialListViewWorkers
+			// listViewWorkers
 			// 
-			this.materialListViewWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.listViewWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialListViewWorkers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.materialListViewWorkers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listViewWorkers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.listViewWorkers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderName,
             this.columnHeaderState,
             this.columnHeaderRequested,
@@ -52,19 +52,19 @@
             this.columnHeaderFailed,
             this.columnHeaderElapsed,
             this.columnHeaderResponsiveness});
-			this.materialListViewWorkers.Depth = 0;
-			this.materialListViewWorkers.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-			this.materialListViewWorkers.FullRowSelect = true;
-			this.materialListViewWorkers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.materialListViewWorkers.Location = new System.Drawing.Point(3, 3);
-			this.materialListViewWorkers.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialListViewWorkers.MouseState = MaterialSkin.MouseState.OUT;
-			this.materialListViewWorkers.Name = "materialListViewWorkers";
-			this.materialListViewWorkers.OwnerDraw = true;
-			this.materialListViewWorkers.Size = new System.Drawing.Size(998, 290);
-			this.materialListViewWorkers.TabIndex = 0;
-			this.materialListViewWorkers.UseCompatibleStateImageBehavior = false;
-			this.materialListViewWorkers.View = System.Windows.Forms.View.Details;
+			this.listViewWorkers.Depth = 0;
+			this.listViewWorkers.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+			this.listViewWorkers.FullRowSelect = true;
+			this.listViewWorkers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listViewWorkers.Location = new System.Drawing.Point(3, 3);
+			this.listViewWorkers.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.listViewWorkers.MouseState = MaterialSkin.MouseState.OUT;
+			this.listViewWorkers.Name = "listViewWorkers";
+			this.listViewWorkers.OwnerDraw = true;
+			this.listViewWorkers.Size = new System.Drawing.Size(998, 290);
+			this.listViewWorkers.TabIndex = 0;
+			this.listViewWorkers.UseCompatibleStateImageBehavior = false;
+			this.listViewWorkers.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeaderName
 			// 
@@ -110,7 +110,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.materialListViewWorkers);
+			this.Controls.Add(this.listViewWorkers);
 			this.Name = "WorkersControl";
 			this.Size = new System.Drawing.Size(1004, 296);
 			this.ResumeLayout(false);
@@ -118,8 +118,6 @@
 		}
 
 		#endregion
-
-		private Common.MaterialListViewEx materialListViewWorkers;
 		private Components.ColumnHeaderEx columnHeaderName;
 		private Components.ColumnHeaderEx columnHeaderState;
 		private Components.ColumnHeaderEx columnHeaderRequested;
@@ -127,5 +125,6 @@
 		private Components.ColumnHeaderEx columnHeaderFailed;
 		private Components.ColumnHeaderEx columnHeaderElapsed;
 		private Components.ColumnHeaderEx columnHeaderResponsiveness;
+		public Common.MaterialListViewEx listViewWorkers;
 	}
 }
