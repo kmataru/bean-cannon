@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using BeanCannon.Presentation.MaterializedDesktopUI.Components;
 using System.Net;
 using System.Globalization;
+using static System.Windows.Forms.ListViewItem;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
 	public partial class TargetControl : UserControl
 	{
+		private ControlsStore beanControls;
+
 		public TargetControl()
 		{
 			InitializeComponent();
@@ -22,40 +25,17 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			//this.BackColor = Color.White;
 			this.Load += Page1Component_Load;
 
-			// Add dummy data to the listview
-			seedListView();
-
 			this.listViewPaths.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
-			//textFieldUrlOrIp.TextChanged
+		}
+
+		public void RegisterControlsStore(ControlsStore beanControls)
+		{
+			this.beanControls = beanControls;
 		}
 
 		private void Page1Component_Load(object sender, EventArgs e)
 		{
 			this.BackColor = Parent.BackColor;
-		}
-
-		private void seedListView()
-		{
-			//Define
-			var data = new[]
-			{
-				new []{ "/path/1", "666", "0" },
-				new []{ "/path/2", "666", "7" },
-				new []{ "/path/3", "666", "3" },
-				new []{ "/path/4", "666", "7" },
-				new []{ "/path/5", "666", "6" },
-				new []{ "/path/6", "666", "5" }
-			};
-
-			//Add
-			foreach (string[] version in data)
-			{
-				var item = new ListViewItem(version);
-				listViewPaths.Items.Add(item);
-			}
-
-			//materialListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-			//materialListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 		}
 
 		private void SetErrorMessage(string message)
@@ -68,36 +48,46 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 		{
 			timerTextFieldUrlOrIp.Stop();
 			timerTextFieldUrlOrIp.Start();
+
+			(beanControls.TabAttackOptions as Control).Enabled = false;
+			panelCrawler.Enabled = false;
 		}
 
 		private void timerTextFieldUrlOrIp_Tick(object sender, EventArgs e)
 		{
 			timerTextFieldUrlOrIp.Stop();
 
-			var text = textFieldUrlOrIp.Text;
+			var testText = textFieldUrlOrIp.Text;
+			var fineUrlText = textFieldUrlOrIp.Text;
+
 			bool canGetHostInfo = false;
 
-			if (text.Contains(Uri.SchemeDelimiter))
+			if (testText.Contains(Uri.SchemeDelimiter))
 			{
-				canGetHostInfo = ProcessText(ref text);
+				canGetHostInfo = ProcessText(ref testText);
 			}
-			else if (text.Contains("/") || (text.Count(w => w == '.') != 3))
+			else if (testText.Contains("/") || (testText.Count(w => w == '.') != 3))
 			{
-				text = $"{Uri.UriSchemeHttp}{Uri.SchemeDelimiter}{text}";
+				testText = $"{Uri.UriSchemeHttp}{Uri.SchemeDelimiter}{testText}";
 
-				canGetHostInfo = ProcessText(ref text);
+				canGetHostInfo = ProcessText(ref testText);
+
+				if (canGetHostInfo)
+				{
+					fineUrlText = $"{Uri.UriSchemeHttp}{Uri.SchemeDelimiter}{fineUrlText}";
+				}
 			}
 			else
 			{
-				if (!text.Contains(":"))
+				if (!testText.Contains(":"))
 				{
-					text = $"{text}:80";
+					testText = $"{testText}:80";
 				}
 
-				canGetHostInfo = TryCreateIpEndPoint(text, out IPEndPoint ipEndPoint);
+				canGetHostInfo = TryCreateIpEndPoint(testText, out IPEndPoint ipEndPoint);
 				if (canGetHostInfo)
 				{
-					text = ipEndPoint.Address.ToString();
+					testText = ipEndPoint.Address.ToString();
 				}
 			}
 
@@ -105,34 +95,24 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			{
 				try
 				{
-					IPHostEntry hostInfo = Dns.GetHostEntry(text);
+					IPHostEntry hostInfo = Dns.GetHostEntry(testText);
 
 					materialLabel1.ForeColor = Color.FromArgb(222, 0, 0, 0);
 					//materialLabel1.Text = String.Join("; ", hostInfo.AddressList.Select(w => w.ToString()));
 					materialLabel1.Text = hostInfo.AddressList[0].ToString();
+
+					(beanControls.TabAttackOptions as Control).Enabled = true;
+					panelCrawler.Enabled = true;
+					AddOrUpdateToListViewContent(fineUrlText, 0);
 				}
 				catch (Exception ex)
 				{
+					(beanControls.TabAttackOptions as Control).Enabled = false;
+					panelCrawler.Enabled = false;
+
 					SetErrorMessage($"Something horrible happened: {ex.Message}");
 				}
 			}
-
-			/*
-			bool isValidUri = Uri.TryCreate(textFieldUrlOrIp.Text, UriKind.Absolute, out Uri uriResult)
-				&& (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
-
-			if (isValidUri)
-			{
-				//
-				//
-			}
-			else
-			{
-				if (!IPAddress.TryParse(textFieldUrlOrIp.Text, out IPAddress ipAddress))
-				{
-				}
-			}
-			*/
 		}
 
 		private bool ProcessText(ref string text)
@@ -213,6 +193,56 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			ipEndPoint = new IPEndPoint(ip, port);
 
 			return true;
+		}
+
+		private void checkBoxEnableCrawler_CheckedChanged(object sender, EventArgs e)
+		{
+			(sender as CheckBox).Enabled = false;
+			buttonLockOn.PerformClick();
+		}
+
+		private void AddOrUpdateToListViewContent(string path, int? forceIndex = null)
+		{
+			ListViewItem currentListViewItem;
+
+			if (forceIndex.HasValue && listViewPaths.Items.Count > 0)
+			{
+				currentListViewItem = listViewPaths.Items[forceIndex.Value];
+			}
+			else
+			{
+				currentListViewItem = listViewPaths.Items.Cast<ListViewItem>()
+					.FirstOrDefault(w => w.Text == path);
+			}
+
+			var listViewItemExists = null != currentListViewItem;
+
+			listViewPaths.BeginUpdate();
+
+			if (!listViewItemExists)
+			{
+				var item = new ListViewItem(path);
+				var data = new[] {
+					"0",
+					"0",
+				};
+
+				item.SubItems.AddRange(data);
+				listViewPaths.Items.Add(item);
+			}
+			else
+			{
+				ListViewSubItemCollection subItems = currentListViewItem.SubItems;
+
+				subItems[0].Text = path;
+			}
+
+			listViewPaths.EndUpdate();
+		}
+
+		private void buttonLockOn_Click(object sender, EventArgs e)
+		{
+			textFieldUrlOrIp.Enabled = false;
 		}
 	}
 }

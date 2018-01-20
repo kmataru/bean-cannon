@@ -143,8 +143,16 @@ namespace MaterialSkin.Controls
             {
                 if (_tabRects[i].Contains(e.Location))
                 {
-                    _baseTabControl.SelectedIndex = i;
-                }
+                    if ((_baseTabControl.TabPages[i] as Control).Enabled)
+                    {
+                        _baseTabControl.SelectedIndex = i;
+                        break;
+                    }
+                    else
+                    {
+                        return;
+					}
+				}
             }
 
             _animationSource = e.Location;

@@ -33,10 +33,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
         /// </summary>
         private void InitializeComponent()
         {
-			this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
-			this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
 			this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
-			this.buttonChangeTheme = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.buttonChangeTheme = new MaterialSkin.Controls.MaterialFlatButton();
 			this.materialTabSelectorMain = new MaterialSkin.Controls.MaterialTabSelector();
 			this.materialTabControlMain = new MaterialSkin.Controls.MaterialTabControl();
 			this.tabPageProxySettings = new System.Windows.Forms.TabPage();
@@ -49,7 +47,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.workersControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.WorkersControl();
 			this.tabPageAbout = new System.Windows.Forms.TabPage();
 			this.aboutControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.AboutControl();
-			this.buttonChangeColorScheme = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.buttonChangeColorScheme = new MaterialSkin.Controls.MaterialFlatButton();
 			this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
 			this.item1ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
 			this.subItem1ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
@@ -58,10 +56,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.item2ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.item3ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
-			this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.statusControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common.StatusControl();
 			this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+			this.buttonNext = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.materialTabControlMain.SuspendLayout();
 			this.tabPageProxySettings.SuspendLayout();
 			this.tabPageTargetAndCrawler.SuspendLayout();
@@ -71,40 +69,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialContextMenuStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// materialFlatButton2
-			// 
-			this.materialFlatButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialFlatButton2.AutoSize = true;
-			this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.materialFlatButton2.Depth = 0;
-			this.materialFlatButton2.Icon = null;
-			this.materialFlatButton2.Location = new System.Drawing.Point(770, 657);
-			this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-			this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialFlatButton2.Name = "materialFlatButton2";
-			this.materialFlatButton2.Primary = false;
-			this.materialFlatButton2.Size = new System.Drawing.Size(100, 36);
-			this.materialFlatButton2.TabIndex = 13;
-			this.materialFlatButton2.Text = "Secondary";
-			this.materialFlatButton2.UseVisualStyleBackColor = true;
-			// 
-			// materialFlatButton1
-			// 
-			this.materialFlatButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialFlatButton1.AutoSize = true;
-			this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.materialFlatButton1.Depth = 0;
-			this.materialFlatButton1.Icon = null;
-			this.materialFlatButton1.Location = new System.Drawing.Point(870, 657);
-			this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-			this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialFlatButton1.Name = "materialFlatButton1";
-			this.materialFlatButton1.Primary = true;
-			this.materialFlatButton1.Size = new System.Drawing.Size(80, 36);
-			this.materialFlatButton1.TabIndex = 1;
-			this.materialFlatButton1.Text = "Primary";
-			this.materialFlatButton1.UseVisualStyleBackColor = true;
 			// 
 			// materialDivider1
 			// 
@@ -128,6 +92,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.buttonChangeTheme.Depth = 0;
 			this.buttonChangeTheme.Icon = null;
 			this.buttonChangeTheme.Location = new System.Drawing.Point(14, 657);
+			this.buttonChangeTheme.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
 			this.buttonChangeTheme.MouseState = MaterialSkin.MouseState.HOVER;
 			this.buttonChangeTheme.Name = "buttonChangeTheme";
 			this.buttonChangeTheme.Primary = true;
@@ -267,6 +232,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.buttonChangeColorScheme.Depth = 0;
 			this.buttonChangeColorScheme.Icon = null;
 			this.buttonChangeColorScheme.Location = new System.Drawing.Point(145, 657);
+			this.buttonChangeColorScheme.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
 			this.buttonChangeColorScheme.MouseState = MaterialSkin.MouseState.HOVER;
 			this.buttonChangeColorScheme.Name = "buttonChangeColorScheme";
 			this.buttonChangeColorScheme.Primary = true;
@@ -343,24 +309,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.item3ToolStripMenuItem.Size = new System.Drawing.Size(170, 30);
 			this.item3ToolStripMenuItem.Text = "Item 3";
 			// 
-			// materialFlatButton3
-			// 
-			this.materialFlatButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialFlatButton3.AutoSize = true;
-			this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.materialFlatButton3.Depth = 0;
-			this.materialFlatButton3.Enabled = false;
-			this.materialFlatButton3.Icon = null;
-			this.materialFlatButton3.Location = new System.Drawing.Point(686, 657);
-			this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-			this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialFlatButton3.Name = "materialFlatButton3";
-			this.materialFlatButton3.Primary = false;
-			this.materialFlatButton3.Size = new System.Drawing.Size(84, 36);
-			this.materialFlatButton3.TabIndex = 19;
-			this.materialFlatButton3.Text = "DISABLED";
-			this.materialFlatButton3.UseVisualStyleBackColor = true;
-			// 
 			// panel1
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -394,6 +342,23 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialDivider2.TabIndex = 24;
 			this.materialDivider2.Text = "materialDivider2";
 			// 
+			// buttonNext
+			// 
+			this.buttonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonNext.AutoSize = true;
+			this.buttonNext.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.buttonNext.Depth = 0;
+			this.buttonNext.Icon = null;
+			this.buttonNext.Location = new System.Drawing.Point(893, 657);
+			this.buttonNext.MouseState = MaterialSkin.MouseState.HOVER;
+			this.buttonNext.Name = "buttonNext";
+			this.buttonNext.Primary = true;
+			this.buttonNext.Size = new System.Drawing.Size(55, 36);
+			this.buttonNext.TabIndex = 25;
+			this.buttonNext.Text = "Next";
+			this.buttonNext.UseVisualStyleBackColor = true;
+			this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,16 +366,14 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(960, 700);
 			this.ContextMenuStrip = this.materialContextMenuStrip1;
+			this.Controls.Add(this.buttonNext);
 			this.Controls.Add(this.materialDivider2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.buttonChangeColorScheme);
-			this.Controls.Add(this.materialFlatButton3);
-			this.Controls.Add(this.materialFlatButton2);
 			this.Controls.Add(this.materialTabSelectorMain);
 			this.Controls.Add(this.buttonChangeTheme);
 			this.Controls.Add(this.materialTabControlMain);
 			this.Controls.Add(this.materialDivider1);
-			this.Controls.Add(this.materialFlatButton1);
 			this.MaximizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(800, 600);
 			this.Name = "MainForm";
@@ -430,9 +393,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialRaisedButton buttonChangeTheme;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialFlatButton materialFlatButton2;
+        private MaterialSkin.Controls.MaterialFlatButton buttonChangeTheme;
         private MaterialDivider materialDivider1;
         private MaterialTabSelector materialTabSelectorMain;
         private MaterialTabControl materialTabControlMain;
@@ -444,8 +405,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
         private MaterialSkin.Controls.MaterialToolStripMenuItem item3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem disabledItemToolStripMenuItem;
-		private MaterialRaisedButton buttonChangeColorScheme;
-        private MaterialFlatButton materialFlatButton3;
+		private MaterialSkin.Controls.MaterialFlatButton buttonChangeColorScheme;
 		private TabPage tabPageTargetAndCrawler;
 		private Controls.TargetControl targetControl;
 		private TabPage tabPageProxySettings;
@@ -459,5 +419,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 		private TabPage tabPageAbout;
 		private Controls.AboutControl aboutControl;
 		private MaterialDivider materialDivider2;
+		private MaterialRaisedButton buttonNext;
 	}
 }

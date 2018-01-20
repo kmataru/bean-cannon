@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI
 {
@@ -15,7 +16,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			TargetControl targetControl,
 			AttackOptionsControl attackOptionsControl,
 			WorkersControl workersControl,
-			StatusControl statusControl
+			StatusControl statusControl,
+			TabPage tabAttackOptions
 			)
 		{
 			ProxySettingsControl = proxySettingsControl;
@@ -23,6 +25,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			AttackOptionsControl = attackOptionsControl;
 			WorkersControl = workersControl;
 			StatusControl = statusControl;
+			TabAttackOptions = tabAttackOptions;
 		}
 
 		public ProxySettingsControl ProxySettingsControl { get; }
@@ -35,9 +38,12 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 
 		public StatusControl StatusControl { get; }
 
+		public TabPage TabAttackOptions { get; }
+
 		public void Register()
 		{
 			ProxySettingsControl.RegisterControlsStore(this);
+			TargetControl.RegisterControlsStore(this);
 		}
 	}
 }

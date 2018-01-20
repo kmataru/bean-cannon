@@ -22,9 +22,14 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 				this.targetControl,
 				this.attackOptionsControl,
 				this.workersControl,
-				this.statusControl
+				this.statusControl,
+				this.tabAttackOptions
 				);
 			beanControls.Register();
+
+			buttonNext.Visible = false;
+
+			(tabAttackOptions as Control).Enabled = false;
 
 			settings = new ApplicationSettings(beanControls);
 
@@ -59,6 +64,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 					materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
 					break;
 			}
+		}
+
+		private void buttonNext_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

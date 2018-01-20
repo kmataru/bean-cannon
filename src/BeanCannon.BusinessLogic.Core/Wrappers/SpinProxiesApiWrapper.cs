@@ -29,17 +29,26 @@ namespace BeanCannon.BusinessLogic.Core.Wrappers
 			using (var client = new WebClient())
 			{
 				client.Headers[HttpRequestHeader.Accept] = "application/json";
-				string result = client.DownloadString(
-					$"https://spinproxies.com/api/v1/proxylist?key={apiKey}&type=anonymous&protocols={normalizedProxyClass}&format=json"
-					);
-
-				SpinProxiesRootResponse data = null;
+				string result=null;
 
 				try
 				{
-					data = SpinProxiesRootResponse.FromJson(result);
+					result = client.DownloadString(
+						$"https://spinproxies.com/api/v1/proxylist?key={apiKey}&type=anonymous&protocols={normalizedProxyClass}&format=json"
+						);
 				}
 				catch { }
+
+				SpinProxiesRootResponse data = null;
+
+				if (!String.IsNullOrEmpty(result))
+				{
+					try
+					{
+						data = SpinProxiesRootResponse.FromJson(result);
+					}
+					catch { }
+				}
 
 				var masterProxyListFilePath = String.Format(masterProxyListFilePathFormat, normalizedProxyClass);
 

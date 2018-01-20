@@ -45,6 +45,20 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 		{
 			var proxyTester = ProxyTester.Instance;
 
+			UpdateListViewContent();
+
+			this.beanControls.StatusControl.UpdateProxies(proxyTester.state);
+
+			if (proxyTester.state.Done)
+			{
+				(sender as Timer).Stop();
+			}
+		}
+
+		private void UpdateListViewContent()
+		{
+			var proxyTester = ProxyTester.Instance;
+
 			var availableProxies =
 				proxyTester.GetAvailableProxies(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp, false);
 
@@ -75,13 +89,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			}
 
 			listViewProxies.EndUpdate();
-
-			this.beanControls.StatusControl.UpdateProxies(proxyTester.state);
-
-			if (proxyTester.state.Done)
-			{
-				(sender as Timer).Stop();
-			}
 		}
 	}
 }
