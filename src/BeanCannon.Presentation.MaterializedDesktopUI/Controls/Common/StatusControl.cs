@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BeanCannon.BusinessLogic.Core.Services;
 using static System.Windows.Forms.ListViewItem;
+using BeanCannon.BusinessLogic.Core.Models;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 {
@@ -39,6 +39,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 
 		public void UpdateProxies(ProxyTesterState state)
 		{
+			if (state == null)
+			{
+				throw new ArgumentNullException(nameof(state));
+			}
+
 			ListViewItem item = listViewProxies.Items[0];
 			ListViewSubItemCollection subItems = item.SubItems;
 
@@ -50,6 +55,29 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			subItems[4].Text = state.Tested.ToString();
 			subItems[5].Text = state.Failed.ToString();
 			subItems[6].Text = state.Available.ToString();
+
+			listViewProxies.EndUpdate();
+		}
+
+		public void UpdateAttacks(AttackState state)
+		{
+			if (state == null)
+			{
+				throw new ArgumentNullException(nameof(state));
+			}
+
+			ListViewItem item = listViewProxies.Items[0];
+			ListViewSubItemCollection subItems = item.SubItems;
+
+			listViewProxies.BeginUpdate();
+
+			subItems[0].Text = state.Idle.ToString();
+			subItems[1].Text = state.Connecting.ToString();
+			subItems[2].Text = state.Requesting.ToString();
+			subItems[3].Text = state.Downloading.ToString();
+			subItems[4].Text = state.Downloaded.ToString();
+			subItems[5].Text = state.Requested.ToString();
+			subItems[6].Text = state.Failed.ToString();
 
 			listViewProxies.EndUpdate();
 		}

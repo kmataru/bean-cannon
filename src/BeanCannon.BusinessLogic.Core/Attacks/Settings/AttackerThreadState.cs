@@ -2,7 +2,7 @@
 
 namespace Loic.BusinessLogic.Core.Attacks.Settings
 {
-	public class DosState
+	public class AttackerThreadState
 	{
 		public RequestStatus Status = RequestStatus.Ready;
 

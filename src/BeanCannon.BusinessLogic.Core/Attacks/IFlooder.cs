@@ -11,7 +11,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 {
 	public interface IFlooder
 	{
-		DosState State { get; }
+		AttackerThreadState State { get; }
 
 		Stopwatch Clock { get; }
 

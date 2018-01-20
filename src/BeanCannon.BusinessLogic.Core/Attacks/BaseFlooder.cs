@@ -24,7 +24,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 	/// </summary>
 	public abstract class BaseFlooder : IFlooder
 	{
-		public DosState State { get; } = new DosState();
+		public AttackerThreadState State { get; } = new AttackerThreadState();
 
 		public Stopwatch Clock { get; } = new Stopwatch();
 
