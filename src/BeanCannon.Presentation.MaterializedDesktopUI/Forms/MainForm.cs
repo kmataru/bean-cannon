@@ -10,19 +10,23 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 	public partial class MainForm : MaterialForm
 	{
 		private readonly MaterialSkinManager materialSkinManager;
-		private readonly ControlsStore BeanControls;
+		private readonly ControlsStore beanControls;
+		private readonly ApplicationSettings settings;
 
 		public MainForm()
 		{
 			InitializeComponent();
 
-			BeanControls = new ControlsStore(
+			beanControls = new ControlsStore(
 				this.proxySettingsControl,
 				this.targetControl,
 				this.attackOptionsControl,
 				this.workersControl,
 				this.statusControl
 				);
+			beanControls.Register();
+
+			settings = new ApplicationSettings(beanControls);
 
 			// Initialize MaterialSkinManager
 			materialSkinManager = MaterialSkinManager.Instance;
@@ -55,34 +59,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 					materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
 					break;
 			}
-		}
-
-		public struct ControlsStore
-		{
-			public ControlsStore(
-				ProxySettingsControl proxySettingsControl,
-				TargetControl targetControl,
-				AttackOptionsControl attackOptionsControl,
-				WorkersControl workersControl,
-				StatusControl statusControl
-				)
-			{
-				ProxySettingsControl = proxySettingsControl;
-				TargetControl = targetControl;
-				AttackOptionsControl = attackOptionsControl;
-				WorkersControl = workersControl;
-				StatusControl = statusControl;
-			}
-
-			public ProxySettingsControl ProxySettingsControl { get; }
-
-			public TargetControl TargetControl { get; }
-
-			public AttackOptionsControl AttackOptionsControl { get; }
-
-			public WorkersControl WorkersControl { get; }
-
-			public StatusControl StatusControl { get; }
 		}
 	}
 }

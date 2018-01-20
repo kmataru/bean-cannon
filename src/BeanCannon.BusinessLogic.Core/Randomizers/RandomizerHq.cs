@@ -3,47 +3,49 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 
 namespace BeanCannon.BusinessLogic.Core.Randomizers
 {
 	public static class RandomizerHq
 	{
-		private static readonly Random random = new Random(Guid.NewGuid().GetHashCode());
+		//private static readonly Random random = new Random(Guid.NewGuid().GetHashCode());
+		static ThreadLocal<Random> random = new ThreadLocal<Random>(() => new Random(Guid.NewGuid().GetHashCode()));
 
 		private static RandomUserAgent randomUserAgent = new RandomUserAgent();
 		private static RandomReferer randomReferer = new RandomReferer();
 
 		public static string RandomString(int length = 6)
 		{
-			lock (random)
+			//lock (random)
+			//{
+			StringBuilder builder = new StringBuilder();
+
+			char randomCharacter;
+			for (int i = 0; i < length; i++)
 			{
-				StringBuilder builder = new StringBuilder();
-
-				char randomCharacter;
-				for (int i = 0; i < length; i++)
+				if (random.Value.NextDouble() > 0.5)
 				{
-					if (random.NextDouble() > 0.5)
-					{
-						randomCharacter = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
-					}
-					else
-					{
-						randomCharacter = Convert.ToChar(Convert.ToInt32(Math.Floor(10 * random.NextDouble() + 48)));
-					}
-
-					builder.Append(randomCharacter);
+					randomCharacter = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.Value.NextDouble() + 65)));
+				}
+				else
+				{
+					randomCharacter = Convert.ToChar(Convert.ToInt32(Math.Floor(10 * random.Value.NextDouble() + 48)));
 				}
 
-				return builder.ToString();
+				builder.Append(randomCharacter);
 			}
+
+			return builder.ToString();
+			//}
 		}
 
 		public static int RandomInt(int min, int max)
 		{
-			lock (random)
-			{
-				return random.Next(min, max);
-			}
+			//lock (random)
+			//{
+			return random.Value.Next(min, max);
+			//}
 		}
 
 		public static string RandomUserAgent()
@@ -64,10 +66,10 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 			if (array.Length == 1)
 				return array[0];
 
-			lock (random)
-			{
-				return array[random.Next(array.Length)];
-			}
+			//lock (random)
+			//{
+			return array[random.Value.Next(array.Length)];
+			//}
 		}
 
 		public static Byte[] RandomByteArray(int count)

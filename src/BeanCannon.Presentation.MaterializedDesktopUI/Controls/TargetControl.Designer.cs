@@ -28,13 +28,16 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.listViewPaths = new MaterialSkin.Controls.MaterialListView();
-			this.columnHeaderPathAndQuery = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.columnHeaderFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.textFieldUrlOrIp = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.timerTextFieldUrlOrIp = new System.Windows.Forms.Timer(this.components);
+			this.columnHeaderPathAndQuery = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.checkBoxEnableCrawler = new MaterialSkin.Controls.MaterialCheckBox();
 			this.SuspendLayout();
 			// 
 			// listViewPaths
@@ -51,36 +54,15 @@
 			this.listViewPaths.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
 			this.listViewPaths.FullRowSelect = true;
 			this.listViewPaths.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listViewPaths.Location = new System.Drawing.Point(10, 106);
+			this.listViewPaths.Location = new System.Drawing.Point(3, 126);
 			this.listViewPaths.MouseLocation = new System.Drawing.Point(-1, -1);
 			this.listViewPaths.MouseState = MaterialSkin.MouseState.OUT;
 			this.listViewPaths.Name = "listViewPaths";
 			this.listViewPaths.OwnerDraw = true;
-			this.listViewPaths.Size = new System.Drawing.Size(690, 225);
+			this.listViewPaths.Size = new System.Drawing.Size(697, 205);
 			this.listViewPaths.TabIndex = 6;
 			this.listViewPaths.UseCompatibleStateImageBehavior = false;
 			this.listViewPaths.View = System.Windows.Forms.View.Details;
-			// 
-			// columnHeaderPathAndQuery
-			// 
-			this.columnHeaderPathAndQuery.Tag = "";
-			this.columnHeaderPathAndQuery.Text = "Path";
-			this.columnHeaderPathAndQuery.Weigth = 2;
-			this.columnHeaderPathAndQuery.Width = 237;
-			// 
-			// columnHeaderRequested
-			// 
-			this.columnHeaderRequested.MaximumWidth = 100;
-			this.columnHeaderRequested.Tag = "";
-			this.columnHeaderRequested.Text = "Requested";
-			this.columnHeaderRequested.Width = 101;
-			// 
-			// columnHeaderFailed
-			// 
-			this.columnHeaderFailed.MaximumWidth = 100;
-			this.columnHeaderFailed.Tag = "1,100";
-			this.columnHeaderFailed.Text = "Failed";
-			this.columnHeaderFailed.Width = 101;
 			// 
 			// materialLabel1
 			// 
@@ -88,9 +70,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.materialLabel1.Depth = 0;
 			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel1.Location = new System.Drawing.Point(10, 58);
-			this.materialLabel1.Margin = new System.Windows.Forms.Padding(5, 15, 5, 5);
+			this.materialLabel1.ForeColor = System.Drawing.Color.DarkRed;
+			this.materialLabel1.Location = new System.Drawing.Point(10, 48);
+			this.materialLabel1.Margin = new System.Windows.Forms.Padding(5);
 			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialLabel1.Name = "materialLabel1";
 			this.materialLabel1.Size = new System.Drawing.Size(690, 40);
@@ -134,12 +116,59 @@
 			this.textFieldUrlOrIp.TabIndex = 0;
 			this.textFieldUrlOrIp.TabStop = false;
 			this.textFieldUrlOrIp.UseSystemPasswordChar = false;
+			this.textFieldUrlOrIp.TextChanged += new System.EventHandler(this.textFieldUrlOrIp_TextChanged);
+			// 
+			// timerTextFieldUrlOrIp
+			// 
+			this.timerTextFieldUrlOrIp.Interval = 750;
+			this.timerTextFieldUrlOrIp.Tick += new System.EventHandler(this.timerTextFieldUrlOrIp_Tick);
+			// 
+			// columnHeaderPathAndQuery
+			// 
+			this.columnHeaderPathAndQuery.Tag = "";
+			this.columnHeaderPathAndQuery.Text = "Path";
+			this.columnHeaderPathAndQuery.Weigth = 2;
+			this.columnHeaderPathAndQuery.Width = 237;
+			// 
+			// columnHeaderRequested
+			// 
+			this.columnHeaderRequested.MaximumWidth = 100;
+			this.columnHeaderRequested.Tag = "";
+			this.columnHeaderRequested.Text = "Requested";
+			this.columnHeaderRequested.Width = 101;
+			// 
+			// columnHeaderFailed
+			// 
+			this.columnHeaderFailed.MaximumWidth = 100;
+			this.columnHeaderFailed.Tag = "1,100";
+			this.columnHeaderFailed.Text = "Failed";
+			this.columnHeaderFailed.Width = 101;
+			// 
+			// checkBoxEnableCrawler
+			// 
+			this.checkBoxEnableCrawler.AutoSize = true;
+			this.checkBoxEnableCrawler.Checked = true;
+			this.checkBoxEnableCrawler.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxEnableCrawler.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxEnableCrawler.Depth = 0;
+			this.checkBoxEnableCrawler.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxEnableCrawler.Location = new System.Drawing.Point(3, 93);
+			this.checkBoxEnableCrawler.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxEnableCrawler.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxEnableCrawler.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxEnableCrawler.Name = "checkBoxEnableCrawler";
+			this.checkBoxEnableCrawler.Ripple = true;
+			this.checkBoxEnableCrawler.Size = new System.Drawing.Size(120, 30);
+			this.checkBoxEnableCrawler.TabIndex = 10;
+			this.checkBoxEnableCrawler.Text = "Enable crawler";
+			this.checkBoxEnableCrawler.UseVisualStyleBackColor = true;
 			// 
 			// TargetControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
+			this.Controls.Add(this.checkBoxEnableCrawler);
 			this.Controls.Add(this.listViewPaths);
 			this.Controls.Add(this.materialLabel1);
 			this.Controls.Add(this.materialRaisedButton1);
@@ -159,5 +188,7 @@
 		private Components.ColumnHeaderEx columnHeaderFailed;
 		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldUrlOrIp;
 		public MaterialSkin.Controls.MaterialListView listViewPaths;
+		private System.Windows.Forms.Timer timerTextFieldUrlOrIp;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxEnableCrawler;
 	}
 }

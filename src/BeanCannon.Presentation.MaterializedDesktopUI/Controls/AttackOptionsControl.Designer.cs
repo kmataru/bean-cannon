@@ -49,6 +49,7 @@
 			this.radioButtonAttackMethodUdp = new MaterialSkin.Controls.MaterialRadioButton();
 			this.panelGenericInputs = new System.Windows.Forms.Panel();
 			this.panelRandomness = new System.Windows.Forms.Panel();
+			this.checkBoxUseRandomHeaderCommands = new MaterialSkin.Controls.MaterialCheckBox();
 			this.checkBoxUseRandomReferer = new MaterialSkin.Controls.MaterialCheckBox();
 			this.checkBoxUseRandomUserAgent = new MaterialSkin.Controls.MaterialCheckBox();
 			this.checkBoxAppendRandomCharactersToUrl = new MaterialSkin.Controls.MaterialCheckBox();
@@ -87,7 +88,7 @@
 			this.textFieldTimeout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textFieldTimeout.Depth = 0;
-			this.textFieldTimeout.Hint = "";
+			this.textFieldTimeout.Hint = "Timeout";
 			this.textFieldTimeout.Location = new System.Drawing.Point(0, 0);
 			this.textFieldTimeout.MaxLength = 32767;
 			this.textFieldTimeout.MouseState = MaterialSkin.MouseState.HOVER;
@@ -99,7 +100,7 @@
 			this.textFieldTimeout.Size = new System.Drawing.Size(136, 23);
 			this.textFieldTimeout.TabIndex = 0;
 			this.textFieldTimeout.TabStop = false;
-			this.textFieldTimeout.Text = "Timeout";
+			this.textFieldTimeout.Text = "30";
 			this.textFieldTimeout.UseSystemPasswordChar = false;
 			// 
 			// textFieldPort
@@ -107,7 +108,7 @@
 			this.textFieldPort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textFieldPort.Depth = 0;
-			this.textFieldPort.Hint = "";
+			this.textFieldPort.Hint = "Port";
 			this.textFieldPort.Location = new System.Drawing.Point(0, 30);
 			this.textFieldPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
 			this.textFieldPort.MaxLength = 32767;
@@ -120,7 +121,7 @@
 			this.textFieldPort.Size = new System.Drawing.Size(136, 23);
 			this.textFieldPort.TabIndex = 1;
 			this.textFieldPort.TabStop = false;
-			this.textFieldPort.Text = "Port";
+			this.textFieldPort.Text = "80";
 			this.textFieldPort.UseSystemPasswordChar = false;
 			// 
 			// textFieldThreads
@@ -128,7 +129,7 @@
 			this.textFieldThreads.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textFieldThreads.Depth = 0;
-			this.textFieldThreads.Hint = "";
+			this.textFieldThreads.Hint = "Threads";
 			this.textFieldThreads.Location = new System.Drawing.Point(0, 60);
 			this.textFieldThreads.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
 			this.textFieldThreads.MaxLength = 32767;
@@ -141,7 +142,7 @@
 			this.textFieldThreads.Size = new System.Drawing.Size(136, 23);
 			this.textFieldThreads.TabIndex = 2;
 			this.textFieldThreads.TabStop = false;
-			this.textFieldThreads.Text = "Threads";
+			this.textFieldThreads.Text = "10";
 			this.textFieldThreads.UseSystemPasswordChar = false;
 			// 
 			// textFieldSocketsPerThread
@@ -149,7 +150,7 @@
 			this.textFieldSocketsPerThread.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textFieldSocketsPerThread.Depth = 0;
-			this.textFieldSocketsPerThread.Hint = "";
+			this.textFieldSocketsPerThread.Hint = "Sockets / Thread";
 			this.textFieldSocketsPerThread.Location = new System.Drawing.Point(0, 90);
 			this.textFieldSocketsPerThread.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
 			this.textFieldSocketsPerThread.MaxLength = 32767;
@@ -162,7 +163,7 @@
 			this.textFieldSocketsPerThread.Size = new System.Drawing.Size(136, 23);
 			this.textFieldSocketsPerThread.TabIndex = 3;
 			this.textFieldSocketsPerThread.TabStop = false;
-			this.textFieldSocketsPerThread.Text = "Sockets / Threads";
+			this.textFieldSocketsPerThread.Text = "15";
 			this.textFieldSocketsPerThread.UseSystemPasswordChar = false;
 			// 
 			// radioButtonHttpMethodGet
@@ -246,7 +247,7 @@
 			// 
 			this.panel2.Controls.Add(this.materialLabel1);
 			this.panel2.Controls.Add(this.panelHttpMethod);
-			this.panel2.Location = new System.Drawing.Point(3, 39);
+			this.panel2.Location = new System.Drawing.Point(3, 46);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(624, 30);
 			this.panel2.TabIndex = 16;
@@ -255,7 +256,8 @@
 			// 
 			this.panel3.Controls.Add(this.materialLabel2);
 			this.panel3.Controls.Add(this.panel4);
-			this.panel3.Location = new System.Drawing.Point(3, 3);
+			this.panel3.Location = new System.Drawing.Point(3, 10);
+			this.panel3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(624, 30);
 			this.panel3.TabIndex = 17;
@@ -418,6 +420,7 @@
 			this.panelRandomness.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panelRandomness.Controls.Add(this.checkBoxUseRandomHeaderCommands);
 			this.panelRandomness.Controls.Add(this.checkBoxUseRandomReferer);
 			this.panelRandomness.Controls.Add(this.checkBoxUseRandomUserAgent);
 			this.panelRandomness.Controls.Add(this.checkBoxAppendRandomCharactersToUrl);
@@ -429,6 +432,25 @@
 			this.panelRandomness.Size = new System.Drawing.Size(245, 205);
 			this.panelRandomness.TabIndex = 20;
 			// 
+			// checkBoxUseRandomHeaderCommands
+			// 
+			this.checkBoxUseRandomHeaderCommands.AutoSize = true;
+			this.checkBoxUseRandomHeaderCommands.Checked = true;
+			this.checkBoxUseRandomHeaderCommands.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxUseRandomHeaderCommands.Cursor = System.Windows.Forms.Cursors.Default;
+			this.checkBoxUseRandomHeaderCommands.Depth = 0;
+			this.checkBoxUseRandomHeaderCommands.Font = new System.Drawing.Font("Roboto", 10F);
+			this.checkBoxUseRandomHeaderCommands.Location = new System.Drawing.Point(0, 60);
+			this.checkBoxUseRandomHeaderCommands.Margin = new System.Windows.Forms.Padding(0);
+			this.checkBoxUseRandomHeaderCommands.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.checkBoxUseRandomHeaderCommands.MouseState = MaterialSkin.MouseState.HOVER;
+			this.checkBoxUseRandomHeaderCommands.Name = "checkBoxUseRandomHeaderCommands";
+			this.checkBoxUseRandomHeaderCommands.Ripple = true;
+			this.checkBoxUseRandomHeaderCommands.Size = new System.Drawing.Size(147, 30);
+			this.checkBoxUseRandomHeaderCommands.TabIndex = 12;
+			this.checkBoxUseRandomHeaderCommands.Text = "Header commands";
+			this.checkBoxUseRandomHeaderCommands.UseVisualStyleBackColor = true;
+			// 
 			// checkBoxUseRandomReferer
 			// 
 			this.checkBoxUseRandomReferer.AutoSize = true;
@@ -437,7 +459,7 @@
 			this.checkBoxUseRandomReferer.Cursor = System.Windows.Forms.Cursors.Default;
 			this.checkBoxUseRandomReferer.Depth = 0;
 			this.checkBoxUseRandomReferer.Font = new System.Drawing.Font("Roboto", 10F);
-			this.checkBoxUseRandomReferer.Location = new System.Drawing.Point(0, 90);
+			this.checkBoxUseRandomReferer.Location = new System.Drawing.Point(0, 120);
 			this.checkBoxUseRandomReferer.Margin = new System.Windows.Forms.Padding(0);
 			this.checkBoxUseRandomReferer.MouseLocation = new System.Drawing.Point(-1, -1);
 			this.checkBoxUseRandomReferer.MouseState = MaterialSkin.MouseState.HOVER;
@@ -456,7 +478,7 @@
 			this.checkBoxUseRandomUserAgent.Cursor = System.Windows.Forms.Cursors.Default;
 			this.checkBoxUseRandomUserAgent.Depth = 0;
 			this.checkBoxUseRandomUserAgent.Font = new System.Drawing.Font("Roboto", 10F);
-			this.checkBoxUseRandomUserAgent.Location = new System.Drawing.Point(0, 60);
+			this.checkBoxUseRandomUserAgent.Location = new System.Drawing.Point(0, 90);
 			this.checkBoxUseRandomUserAgent.Margin = new System.Windows.Forms.Padding(0);
 			this.checkBoxUseRandomUserAgent.MouseLocation = new System.Drawing.Point(-1, -1);
 			this.checkBoxUseRandomUserAgent.MouseState = MaterialSkin.MouseState.HOVER;
@@ -522,7 +544,7 @@
 			// 
 			this.panel8.Controls.Add(this.materialLabel3);
 			this.panel8.Controls.Add(this.panelRandomness);
-			this.panel8.Location = new System.Drawing.Point(290, 87);
+			this.panel8.Location = new System.Drawing.Point(290, 94);
 			this.panel8.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel8.MinimumSize = new System.Drawing.Size(245, 120);
 			this.panel8.Name = "panel8";
@@ -533,7 +555,7 @@
 			// 
 			this.panel9.Controls.Add(this.materialLabel4);
 			this.panel9.Controls.Add(this.panelGenericButtons);
-			this.panel9.Location = new System.Drawing.Point(159, 87);
+			this.panel9.Location = new System.Drawing.Point(159, 94);
 			this.panel9.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel9.MinimumSize = new System.Drawing.Size(125, 100);
 			this.panel9.Name = "panel9";
@@ -607,7 +629,7 @@
 			// 
 			this.panel5.Controls.Add(this.materialLabel5);
 			this.panel5.Controls.Add(this.panelGenericInputs);
-			this.panel5.Location = new System.Drawing.Point(3, 87);
+			this.panel5.Location = new System.Drawing.Point(3, 94);
 			this.panel5.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel5.Name = "panel5";
 			this.panel5.Size = new System.Drawing.Size(150, 234);
@@ -630,7 +652,7 @@
 			// 
 			this.panel11.Controls.Add(this.materialLabel6);
 			this.panel11.Controls.Add(this.panelProxy);
-			this.panel11.Location = new System.Drawing.Point(541, 87);
+			this.panel11.Location = new System.Drawing.Point(541, 94);
 			this.panel11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel11.MinimumSize = new System.Drawing.Size(245, 120);
 			this.panel11.Name = "panel11";
@@ -730,6 +752,7 @@
 			this.Controls.Add(this.panel2);
 			this.Name = "AttackOptionsControl";
 			this.Size = new System.Drawing.Size(936, 365);
+			this.Load += new System.EventHandler(this.AttackOptionsControl_Load);
 			this.panelHttpMethod.ResumeLayout(false);
 			this.panelHttpMethod.PerformLayout();
 			this.panel2.ResumeLayout(false);
@@ -758,46 +781,46 @@
 		}
 
 		#endregion
-
-		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldTimeout;
-		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldPort;
-		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldThreads;
-		private MaterialSkin.Controls.MaterialSingleLineTextField textFieldSocketsPerThread;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodGet;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodPost;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodHead;
 		private System.Windows.Forms.Panel panelHttpMethod;
 		private MaterialSkin.Controls.MaterialLabel materialLabel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel3;
 		private MaterialSkin.Controls.MaterialLabel materialLabel2;
 		private System.Windows.Forms.Panel panel4;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodHttp;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodTcp;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodUdp;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodReCoil;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodIcmp;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodSlowLoic;
 		private System.Windows.Forms.Panel panelGenericInputs;
 		private System.Windows.Forms.Panel panelRandomness;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToUrl;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToMessage;
 		private MaterialSkin.Controls.MaterialLabel materialLabel3;
 		private System.Windows.Forms.Panel panel8;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomReferer;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomUserAgent;
 		private System.Windows.Forms.Panel panel9;
 		private MaterialSkin.Controls.MaterialLabel materialLabel4;
 		private System.Windows.Forms.Panel panelGenericButtons;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxWaitForReply;
-		private MaterialSkin.Controls.MaterialCheckBox checkBoxUseGzip;
 		private System.Windows.Forms.Panel panel5;
 		private MaterialSkin.Controls.MaterialLabel materialLabel5;
 		private System.Windows.Forms.Panel panel11;
 		private MaterialSkin.Controls.MaterialLabel materialLabel6;
 		private System.Windows.Forms.Panel panelProxy;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyChained;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyRandom;
-		private MaterialSkin.Controls.MaterialRadioButton radioButtonProxyNone;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldTimeout;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldPort;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldThreads;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldSocketsPerThread;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodGet;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodPost;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonHttpMethodHead;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodHttp;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodTcp;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodUdp;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodReCoil;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodIcmp;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonAttackMethodSlowLoic;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToUrl;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxAppendRandomCharactersToMessage;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomReferer;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomUserAgent;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxWaitForReply;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxUseGzip;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonProxyChained;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonProxyRandom;
+		public MaterialSkin.Controls.MaterialRadioButton radioButtonProxyNone;
+		public MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomHeaderCommands;
 	}
 }

@@ -18,5 +18,15 @@ namespace BeanCannon.BusinessLogic.Core.Extensions
 
 			return selected.Key;
 		}
+
+		public static double GetTestedProxyResponseTime(this ProxyDatum proxy, AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType)
+		{
+			var selected = proxy.Tests[addressFamily][socketType][protocolType]
+				.Where(w => w.Value >= 0)
+				.OrderBy(w => w.Value)
+				.FirstOrDefault();
+
+			return selected.Value;
+		}
 	}
 }

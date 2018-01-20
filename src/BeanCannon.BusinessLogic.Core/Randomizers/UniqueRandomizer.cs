@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace BeanCannon.BusinessLogic.Core.Randomizers
 {
@@ -10,7 +11,8 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 	/// </summary>
 	class UniqueRandomizer
 	{
-		static Random random = new Random();
+		//static Random random = new Random();
+		static ThreadLocal<Random> random = new ThreadLocal<Random>(() => new Random(Guid.NewGuid().GetHashCode()));
 
 		// Note, max is exclusive here!
 		public List<int> GenerateRandom(int count, int min, int max)
@@ -44,7 +46,7 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 				// May strike a duplicate.
 				// Need to add +1 to make inclusive generator
 				// +1 is safe even for MaxVal max value because top < max
-				if (!candidates.Add(random.Next(min, top + 1)))
+				if (!candidates.Add(random.Value.Next(min, top + 1)))
 				{
 					// collision, add inclusive max.
 					// which could not possibly have been added before.
@@ -60,7 +62,7 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 			// random-ordered results (e.g. max-1 will never be the first value)
 			for (int i = result.Count - 1; i > 0; i--)
 			{
-				int k = random.Next(i + 1);
+				int k = random.Value.Next(i + 1);
 				int tmp = result[k];
 				result[k] = result[i];
 				result[i] = tmp;

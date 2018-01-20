@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BeanCannon.BusinessLogic.Core.Services;
+using static System.Windows.Forms.ListViewItem;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 {
@@ -24,22 +26,32 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 
 		private void SeedListView()
 		{
-			var data = new[]
 			{
-				new []{ "1", "2", "3", "4", "5", "6", "7" }
-			};
-
-			foreach (string[] version in data)
-			{
-				var item = new ListViewItem(version);
+				var item = new ListViewItem(new[] { "Socks", "0", "0", "0", "0", "0", "0" });
 				listViewProxies.Items.Add(item);
 			}
 
-			foreach (string[] version in data)
 			{
-				var item = new ListViewItem(version);
+				var item = new ListViewItem(new[] { "0", "0", "0", "0", "0", "0", "0" });
 				listViewAttacks.Items.Add(item);
 			}
+		}
+
+		public void UpdateProxies(ProxyTesterState state)
+		{
+			ListViewItem item = listViewProxies.Items[0];
+			ListViewSubItemCollection subItems = item.SubItems;
+
+			listViewProxies.BeginUpdate();
+
+			subItems[1].Text = state.Total.ToString();
+			subItems[2].Text = state.Types.ToString();
+			subItems[3].Text = state.Testing.ToString();
+			subItems[4].Text = state.Tested.ToString();
+			subItems[5].Text = state.Failed.ToString();
+			subItems[6].Text = state.Available.ToString();
+
+			listViewProxies.EndUpdate();
 		}
 	}
 }

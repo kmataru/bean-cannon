@@ -61,6 +61,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.statusControl = new BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common.StatusControl();
+			this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
 			this.materialTabControlMain.SuspendLayout();
 			this.tabPageProxySettings.SuspendLayout();
 			this.tabPageTargetAndCrawler.SuspendLayout();
@@ -115,7 +116,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialDivider1.Margin = new System.Windows.Forms.Padding(0);
 			this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialDivider1.Name = "materialDivider1";
-			this.materialDivider1.Size = new System.Drawing.Size(968, 1);
+			this.materialDivider1.Size = new System.Drawing.Size(960, 1);
 			this.materialDivider1.TabIndex = 16;
 			this.materialDivider1.Text = "materialDivider1";
 			// 
@@ -145,7 +146,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialTabSelectorMain.Location = new System.Drawing.Point(0, 64);
 			this.materialTabSelectorMain.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabSelectorMain.Name = "materialTabSelectorMain";
-			this.materialTabSelectorMain.Size = new System.Drawing.Size(968, 48);
+			this.materialTabSelectorMain.Size = new System.Drawing.Size(960, 48);
 			this.materialTabSelectorMain.TabIndex = 17;
 			this.materialTabSelectorMain.Text = "materialTabSelector1";
 			// 
@@ -164,7 +165,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialTabControlMain.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabControlMain.Name = "materialTabControlMain";
 			this.materialTabControlMain.SelectedIndex = 0;
-			this.materialTabControlMain.Size = new System.Drawing.Size(934, 299);
+			this.materialTabControlMain.Size = new System.Drawing.Size(934, 298);
 			this.materialTabControlMain.TabIndex = 18;
 			// 
 			// tabPageProxySettings
@@ -172,7 +173,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageProxySettings.Controls.Add(this.proxySettingsControl);
 			this.tabPageProxySettings.Location = new System.Drawing.Point(4, 22);
 			this.tabPageProxySettings.Name = "tabPageProxySettings";
-			this.tabPageProxySettings.Size = new System.Drawing.Size(926, 273);
+			this.tabPageProxySettings.Size = new System.Drawing.Size(926, 272);
 			this.tabPageProxySettings.TabIndex = 6;
 			this.tabPageProxySettings.Text = "Proxy";
 			this.tabPageProxySettings.UseVisualStyleBackColor = true;
@@ -182,7 +183,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.proxySettingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.proxySettingsControl.Location = new System.Drawing.Point(0, 0);
 			this.proxySettingsControl.Name = "proxySettingsControl";
-			this.proxySettingsControl.Size = new System.Drawing.Size(926, 273);
+			this.proxySettingsControl.Size = new System.Drawing.Size(926, 272);
 			this.proxySettingsControl.TabIndex = 0;
 			// 
 			// tabPageTargetAndCrawler
@@ -190,7 +191,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageTargetAndCrawler.Controls.Add(this.targetControl);
 			this.tabPageTargetAndCrawler.Location = new System.Drawing.Point(4, 22);
 			this.tabPageTargetAndCrawler.Name = "tabPageTargetAndCrawler";
-			this.tabPageTargetAndCrawler.Size = new System.Drawing.Size(926, 273);
+			this.tabPageTargetAndCrawler.Size = new System.Drawing.Size(926, 272);
 			this.tabPageTargetAndCrawler.TabIndex = 5;
 			this.tabPageTargetAndCrawler.Text = "Target and Crawler";
 			this.tabPageTargetAndCrawler.UseVisualStyleBackColor = true;
@@ -201,7 +202,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.targetControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.targetControl.Location = new System.Drawing.Point(0, 0);
 			this.targetControl.Name = "targetControl";
-			this.targetControl.Size = new System.Drawing.Size(926, 273);
+			this.targetControl.Size = new System.Drawing.Size(926, 272);
 			this.targetControl.TabIndex = 0;
 			// 
 			// tabAttackOptions
@@ -209,7 +210,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabAttackOptions.Controls.Add(this.attackOptionsControl);
 			this.tabAttackOptions.Location = new System.Drawing.Point(4, 22);
 			this.tabAttackOptions.Name = "tabAttackOptions";
-			this.tabAttackOptions.Size = new System.Drawing.Size(926, 273);
+			this.tabAttackOptions.Size = new System.Drawing.Size(926, 272);
 			this.tabAttackOptions.TabIndex = 7;
 			this.tabAttackOptions.Text = "Attack options";
 			this.tabAttackOptions.UseVisualStyleBackColor = true;
@@ -219,7 +220,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.attackOptionsControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.attackOptionsControl.Location = new System.Drawing.Point(0, 0);
 			this.attackOptionsControl.Name = "attackOptionsControl";
-			this.attackOptionsControl.Size = new System.Drawing.Size(926, 273);
+			this.attackOptionsControl.Size = new System.Drawing.Size(926, 272);
 			this.attackOptionsControl.TabIndex = 0;
 			// 
 			// tabPageWorkers
@@ -227,7 +228,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageWorkers.Controls.Add(this.workersControl);
 			this.tabPageWorkers.Location = new System.Drawing.Point(4, 22);
 			this.tabPageWorkers.Name = "tabPageWorkers";
-			this.tabPageWorkers.Size = new System.Drawing.Size(926, 273);
+			this.tabPageWorkers.Size = new System.Drawing.Size(926, 272);
 			this.tabPageWorkers.TabIndex = 8;
 			this.tabPageWorkers.Text = "Workers";
 			this.tabPageWorkers.UseVisualStyleBackColor = true;
@@ -237,7 +238,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.workersControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.workersControl.Location = new System.Drawing.Point(0, 0);
 			this.workersControl.Name = "workersControl";
-			this.workersControl.Size = new System.Drawing.Size(926, 273);
+			this.workersControl.Size = new System.Drawing.Size(926, 272);
 			this.workersControl.TabIndex = 0;
 			// 
 			// tabPageAbout
@@ -245,7 +246,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageAbout.Controls.Add(this.aboutControl);
 			this.tabPageAbout.Location = new System.Drawing.Point(4, 22);
 			this.tabPageAbout.Name = "tabPageAbout";
-			this.tabPageAbout.Size = new System.Drawing.Size(926, 273);
+			this.tabPageAbout.Size = new System.Drawing.Size(926, 272);
 			this.tabPageAbout.TabIndex = 9;
 			this.tabPageAbout.Text = "About";
 			this.tabPageAbout.UseVisualStyleBackColor = true;
@@ -255,7 +256,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.aboutControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.aboutControl.Location = new System.Drawing.Point(0, 0);
 			this.aboutControl.Name = "aboutControl";
-			this.aboutControl.Size = new System.Drawing.Size(926, 273);
+			this.aboutControl.Size = new System.Drawing.Size(926, 272);
 			this.aboutControl.TabIndex = 0;
 			// 
 			// buttonChangeColorScheme
@@ -379,6 +380,20 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.statusControl.Size = new System.Drawing.Size(934, 231);
 			this.statusControl.TabIndex = 0;
 			// 
+			// materialDivider2
+			// 
+			this.materialDivider2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialDivider2.Depth = 0;
+			this.materialDivider2.Location = new System.Drawing.Point(0, 412);
+			this.materialDivider2.Margin = new System.Windows.Forms.Padding(0);
+			this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialDivider2.Name = "materialDivider2";
+			this.materialDivider2.Size = new System.Drawing.Size(960, 1);
+			this.materialDivider2.TabIndex = 24;
+			this.materialDivider2.Text = "materialDivider2";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +401,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(960, 700);
 			this.ContextMenuStrip = this.materialContextMenuStrip1;
+			this.Controls.Add(this.materialDivider2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.buttonChangeColorScheme);
 			this.Controls.Add(this.materialFlatButton3);
@@ -442,5 +458,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 		private Controls.WorkersControl workersControl;
 		private TabPage tabPageAbout;
 		private Controls.AboutControl aboutControl;
+		private MaterialDivider materialDivider2;
 	}
 }

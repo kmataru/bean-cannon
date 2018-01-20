@@ -1,4 +1,6 @@
-﻿namespace BeanCannon.BusinessLogic.Core.Attacks.Settings.Interfaces
+﻿using System.Net.Http;
+
+namespace BeanCannon.BusinessLogic.Core.Attacks.Settings.Interfaces
 {
 	public interface IFlooderSettingsGzip
 	{
@@ -13,7 +15,13 @@
 		/// <summary>
 		/// If set to TRUE it uses the GET-command - due to the fact that http-Ready mitigates this change this to FALSE to use POST.
 		/// </summary>
+		[System.Obsolete]
 		bool UseGet { get; }
+
+		/// <summary>
+		/// TODO: Add description.
+		/// </summary>
+		HttpMethod HttpRequestMethod { get; }
 	}
 
 	public interface IFlooderSettingsHost

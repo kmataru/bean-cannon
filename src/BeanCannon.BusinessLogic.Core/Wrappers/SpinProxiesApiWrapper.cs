@@ -103,20 +103,19 @@ namespace BeanCannon.BusinessLogic.Core.Wrappers
 
 		internal static void WriteTempContent(SpinProxiesRootResponse data, SpinProxiesProxyClass proxyClass)
 		{
-			string content = data.ToJson();
-
-			var normalizedProxyClass = proxyClass.ToString().ToLower();
-			var tempProxyListFilePath = String.Format(tempProxyListFilePathFormat, normalizedProxyClass);
-
-			lock (locker)
+			// For viewing live data
+			try
 			{
-				// For viewing live data
-				try
+				string content = data.ToJson();
+
+				var normalizedProxyClass = proxyClass.ToString().ToLower();
+				var tempProxyListFilePath = String.Format(tempProxyListFilePathFormat, normalizedProxyClass);
+				lock (locker)
 				{
 					File.WriteAllText(tempProxyListFilePath, content);
 				}
-				catch { }
 			}
+			catch { }
 		}
 	}
 }

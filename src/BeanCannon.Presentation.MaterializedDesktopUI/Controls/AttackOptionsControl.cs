@@ -16,6 +16,14 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 		public AttackOptionsControl()
 		{
 			InitializeComponent();
+		}
+
+		private void AttackOptionsControl_Load(object sender, EventArgs e)
+		{
+			if (this.DesignMode)
+			{
+				return;
+			}
 
 			new FluentControlActivator(AttackProtocol.HTTP)
 				.Disable(radioButtonHttpMethodPost).Check(radioButtonHttpMethodGet)

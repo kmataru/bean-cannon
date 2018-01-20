@@ -186,8 +186,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel11.Controls.Add(this.materialLabel6);
 			this.panel11.Controls.Add(this.panel12);
-			this.panel11.Location = new System.Drawing.Point(3, 0);
-			this.panel11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+			this.panel11.Location = new System.Drawing.Point(3, 5);
+			this.panel11.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
 			this.panel11.Name = "panel11";
 			this.panel11.Size = new System.Drawing.Size(1110, 114);
 			this.panel11.TabIndex = 26;
@@ -223,7 +223,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.Controls.Add(this.materialLabel1);
 			this.panel1.Controls.Add(this.panel2);
-			this.panel1.Location = new System.Drawing.Point(3, 117);
+			this.panel1.Location = new System.Drawing.Point(3, 122);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1110, 114);
 			this.panel1.TabIndex = 27;
@@ -261,7 +261,7 @@
 			this.Controls.Add(this.panel11);
 			this.MinimumSize = new System.Drawing.Size(425, 172);
 			this.Name = "StatusControl";
-			this.Size = new System.Drawing.Size(1116, 231);
+			this.Size = new System.Drawing.Size(1116, 236);
 			this.panel11.ResumeLayout(false);
 			this.panel11.PerformLayout();
 			this.panel12.ResumeLayout(false);

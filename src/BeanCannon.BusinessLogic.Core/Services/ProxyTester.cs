@@ -41,6 +41,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 		private readonly SpinProxiesRootResponse spinProxiesData;
 		private readonly SpinProxiesApiWrapper spinProxiesApiWrapper;
 
+		// TODO: Rename
 		public ProxyTesterState state { get; } = new ProxyTesterState();
 
 		private bool IsInit = false;
@@ -101,12 +102,19 @@ namespace BeanCannon.BusinessLogic.Core.Services
 		//public ReadOnlyCollection<ProxyDatum> GetAvailableProxies(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType)
 		public ProxyDatum[] GetAvailableProxies(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType)
 		{
+			return GetAvailableProxies(addressFamily, socketType, protocolType, true);
+		}
+
+		public ProxyDatum[] GetAvailableProxies(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType, bool checkMaximumConnectionTime)
+		{
 			List<ProxyDatum> filteredProxiesList;
 
 			lock (availableProxiesList)
 			{
+				//checkMaximumConnectionTime
+
 				filteredProxiesList = availableProxiesList
-					.Where(w => IsProxyValidCandidate(w, addressFamily, socketType, protocolType, MaximumConnectionTime))
+					.Where(w => IsProxyValidCandidate(w, addressFamily, socketType, protocolType, MaximumConnectionTime, checkMaximumConnectionTime))
 					.ToList();
 
 				/*
@@ -149,13 +157,36 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			TimeSpan maximumConnectionTime
 			)
 		{
+			return IsProxyValidCandidate(
+				proxy,
+				addressFamily, socketType, protocolType,
+				maximumConnectionTime,
+				true
+				);
+		}
+
+		public bool IsProxyValidCandidate(
+			ProxyDatum proxy,
+			AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType,
+			TimeSpan maximumConnectionTime,
+			bool checkMaximumConnectionTime
+			)
+		{
 			var isTested = IsProxyTested(proxy, addressFamily, socketType, protocolType);
 			if (isTested)
 			{
-				var maximumConnectionTimeInSeconds = maximumConnectionTime.TotalSeconds;
+				var testElement = proxy.Tests[addressFamily][socketType][protocolType];
 
-				return proxy.Tests[addressFamily][socketType][protocolType]
-					.Any(w => w.Value >= 0 && w.Value <= maximumConnectionTimeInSeconds);
+				if (checkMaximumConnectionTime)
+				{
+					var maximumConnectionTimeInSeconds = maximumConnectionTime.TotalSeconds;
+
+					return testElement
+						.Any(w => w.Value >= 0 && w.Value <= maximumConnectionTimeInSeconds);
+				}
+
+				return testElement
+					.Any(w => w.Value >= 0);
 			}
 
 			return false;
@@ -237,13 +268,13 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			foreach (var proxyTypeToTest in proxyTypesToTest)
 			{
-				bool isProxyValid = ProbeProxy(proxy, socketType, protocolType, proxyTypeToTest, MaximumConnectionTime);
+				bool isProxySocketValid = ProbeProxy(proxy, socketType, protocolType, proxyTypeToTest, MaximumConnectionTime);
 
 				SpinProxiesApiWrapper.WriteTempContent(spinProxiesData, SpinProxiesProxyClass.Socks5);
 
-				isProxyInvalid = (isProxyInvalid && !isProxyValid);
+				isProxyInvalid = (isProxyInvalid && !isProxySocketValid);
 
-				if (isProxyValid)
+				if (isProxySocketValid)
 				{
 					lock (state)
 					{

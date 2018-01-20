@@ -28,11 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.listViewProxies = new MaterialSkin.Controls.MaterialListView();
 			this.columnHeaderIp = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderPort = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderCountryCode = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderResponseTime = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderStatus = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.timerMain = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// listViewProxies
@@ -45,6 +48,7 @@
             this.columnHeaderIp,
             this.columnHeaderPort,
             this.columnHeaderCountryCode,
+            this.columnHeaderResponseTime,
             this.columnHeaderStatus});
 			this.listViewProxies.Depth = 0;
 			this.listViewProxies.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
@@ -76,11 +80,21 @@
 			this.columnHeaderCountryCode.Text = "Country";
 			this.columnHeaderCountryCode.Width = 148;
 			// 
+			// columnHeaderResponseTime
+			// 
+			this.columnHeaderResponseTime.Text = "Response time";
+			this.columnHeaderResponseTime.Width = 244;
+			// 
 			// columnHeaderStatus
 			// 
 			this.columnHeaderStatus.MaximumWidth = 100;
 			this.columnHeaderStatus.Text = "Status";
 			this.columnHeaderStatus.Width = 124;
+			// 
+			// timerMain
+			// 
+			this.timerMain.Interval = 1000;
+			this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
 			// 
 			// ProxySettingsControl
 			// 
@@ -89,6 +103,7 @@
 			this.Controls.Add(this.listViewProxies);
 			this.Name = "ProxySettingsControl";
 			this.Size = new System.Drawing.Size(880, 437);
+			this.Load += new System.EventHandler(this.ProxySettingsControl_Load);
 			this.ResumeLayout(false);
 
 		}
@@ -99,5 +114,7 @@
 		private Components.ColumnHeaderEx columnHeaderCountryCode;
 		private Components.ColumnHeaderEx columnHeaderStatus;
 		public MaterialSkin.Controls.MaterialListView listViewProxies;
+		private System.Windows.Forms.Timer timerMain;
+		private Components.ColumnHeaderEx columnHeaderResponseTime;
 	}
 }
