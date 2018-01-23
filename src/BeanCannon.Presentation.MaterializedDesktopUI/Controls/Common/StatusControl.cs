@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.ListViewItem;
 using BeanCannon.BusinessLogic.Core.Models;
+using BeanCannon.BusinessLogic.Core;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 {
@@ -32,7 +33,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			}
 
 			{
-				var item = new ListViewItem(new[] { "0", "0", "0", "0", "0", "0", "0" });
+				var item = new ListViewItem(new[] { "0", "0", "0", "0", "0", "0", "0", "0" });
 				listViewAttacks.Items.Add(item);
 			}
 		}
@@ -78,6 +79,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			subItems[4].Text = state.Downloaded.ToString();
 			subItems[5].Text = state.Requested.ToString();
 			subItems[6].Text = state.Failed.ToString();
+			subItems[7].Text = Format.Time(state.AverageResponseTime);
 
 			listViewAttacks.EndUpdate();
 		}

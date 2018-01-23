@@ -147,12 +147,15 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			if (floodersList.Count > 0)
 			{
+				TimeSpan totalResponseTime = TimeSpan.Zero;
+
 				for (int a = (floodersList.Count - 1); a >= 0; a--)
 				{
 					if (floodersList[a] != null && (floodersList[a] is BaseFlooder))
 					{
 						BaseFlooder flooder = (BaseFlooder)floodersList[a];
 
+						totalResponseTime += flooder.State.AverageResponseTime;
 						attackState.Downloaded += flooder.State.Downloaded;
 						attackState.Requested += flooder.State.Requested;
 						attackState.Failed += flooder.State.Failed;
@@ -180,6 +183,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 						if (isFlooding && !flooder.State.IsFlooding)
 						{
+							TimeSpan totalElepsedTime = flooder.State.TotalElepsedTime;
 							int iaDownloaded = flooder.State.Downloaded;
 							int iaRequested = flooder.State.Requested;
 							int iaFailed = flooder.State.Failed;
@@ -198,9 +202,11 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 								floodersList.RemoveAt(a);
 
+								newFlooder.State.TotalElepsedTime = totalElepsedTime;
 								newFlooder.State.Downloaded = iaDownloaded;
 								newFlooder.State.Requested = iaRequested;
 								newFlooder.State.Failed = iaFailed;
+
 								newFlooder.Start();
 
 								floodersList.Add(newFlooder);
@@ -208,6 +214,8 @@ namespace BeanCannon.BusinessLogic.Core.Services
 						}
 					}
 				}
+
+				attackState.AverageResponseTime = TimeSpan.FromSeconds(totalResponseTime.TotalSeconds / settings.Threads);
 
 				if (isFlooding)
 				{

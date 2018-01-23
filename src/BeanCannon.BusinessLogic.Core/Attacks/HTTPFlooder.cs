@@ -164,6 +164,8 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 					State.Status = RequestStatus.Completed;
 					State.Downloaded++;
 
+					State.TotalElepsedTime += Clock.Elapsed;
+
 					timepoll.Stop();
 					timepoll.Start();
 

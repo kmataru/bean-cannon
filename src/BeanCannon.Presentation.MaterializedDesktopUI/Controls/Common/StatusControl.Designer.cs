@@ -44,6 +44,7 @@
 			this.columnHeaderAttackDownloaded = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderAttackRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderAttackFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
+			this.columnHeaderAttackAverageResponse = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.panel11 = new System.Windows.Forms.Panel();
 			this.labelProxyTesterStatus = new MaterialSkin.Controls.MaterialLabel();
 			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
@@ -130,7 +131,8 @@
             this.columnHeaderAttackDownloading,
             this.columnHeaderAttackDownloaded,
             this.columnHeaderAttackRequested,
-            this.columnHeaderAttackFailed});
+            this.columnHeaderAttackFailed,
+            this.columnHeaderAttackAverageResponse});
 			this.listViewAttacks.Depth = 0;
 			this.listViewAttacks.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.listViewAttacks.Font = new System.Drawing.Font("Roboto", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
@@ -181,6 +183,10 @@
 			// 
 			this.columnHeaderAttackFailed.Text = "Failed";
 			this.columnHeaderAttackFailed.Width = 99;
+			// 
+			// columnHeaderAttackAverageResponse
+			// 
+			this.columnHeaderAttackAverageResponse.Text = "Average";
 			// 
 			// panel11
 			// 
@@ -327,5 +333,6 @@
 		public MaterialSkin.Controls.MaterialListView listViewAttacks;
 		internal MaterialSkin.Controls.MaterialLabel labelProxyTesterStatus;
 		internal MaterialSkin.Controls.MaterialLabel labelAttackStatus;
+		private Components.ColumnHeaderEx columnHeaderAttackAverageResponse;
 	}
 }

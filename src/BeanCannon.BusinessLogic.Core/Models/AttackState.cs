@@ -1,4 +1,5 @@
 ﻿using Loic.BusinessLogic.Core.Attacks.Settings;
+using System;
 
 namespace BeanCannon.BusinessLogic.Core.Models
 {
@@ -17,5 +18,7 @@ namespace BeanCannon.BusinessLogic.Core.Models
 		public int Requested { get; set; }
 
 		public int Failed { get; set; }
+
+		public TimeSpan AverageResponseTime { get; set; }
 	}
 }

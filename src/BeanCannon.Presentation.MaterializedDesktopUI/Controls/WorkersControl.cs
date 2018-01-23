@@ -19,8 +19,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
 	public partial class WorkersControl : UserControl, IBeanControl
 	{
-		private const string TimeFormat = "{0,6:#,##0.00}";
-
 		private ControlsStore beanControls;
 
 		public WorkersControl()
@@ -180,7 +178,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			const int ResponsivenessIndex = 5;
 
 			var elapsed = flooder.Clock.Elapsed;
-			var totalMilliseconds = elapsed.TotalMilliseconds;
+			//var totalMilliseconds = elapsed.TotalMilliseconds;
 			var totalSeconds = elapsed.TotalSeconds;
 
 			//
@@ -201,26 +199,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			//
 			// Responsiveness
 			{
-				String responsiveness = null;
-
-				if (totalMilliseconds < 1000)
-				{
-					responsiveness = String.Format($"{TimeFormat} ms", totalMilliseconds);
-				}
-				else
-				{
-					if (totalSeconds < 1000)
-					{
-						responsiveness = String.Format($"{TimeFormat} s", totalSeconds);
-					}
-					else
-					{
-						var totalMinutes = elapsed.TotalMinutes;
-						responsiveness = String.Format($"{TimeFormat} m", totalMinutes);
-					}
-				}
-
-				subItems[ResponsivenessIndex].Text = responsiveness;
+				subItems[ResponsivenessIndex].Text = Format.Time(elapsed);
 			}
 			//
 

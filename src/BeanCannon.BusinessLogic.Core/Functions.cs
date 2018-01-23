@@ -24,6 +24,7 @@ namespace BeanCannon.BusinessLogic.Core
 	public static class Format
 	{
 		static string[] sizeSuffixes = { String.Empty, "K", "M", "G", "T", "P", "E", "Z", "Y" };
+		private const string TimeFormat = "{0,6:#,##0.00}";
 
 		public static string Size(long size)
 		{
@@ -47,6 +48,33 @@ namespace BeanCannon.BusinessLogic.Core
 			return string.Format(
 				formatTemplate,
 				size < 0 ? "-" : null, normSize, sizeSuffixes[iUnit]);
+		}
+
+		public static string Time(TimeSpan time)
+		{
+			String responsiveness = null;
+
+			var totalMilliseconds = time.TotalMilliseconds;
+			var totalSeconds = time.TotalSeconds;
+
+			if (totalMilliseconds < 1000)
+			{
+				responsiveness = String.Format($"{TimeFormat} ms", totalMilliseconds);
+			}
+			else
+			{
+				if (totalSeconds < 1000)
+				{
+					responsiveness = String.Format($"{TimeFormat} s", totalSeconds);
+				}
+				else
+				{
+					var totalMinutes = time.TotalMinutes;
+					responsiveness = String.Format($"{TimeFormat} m", totalMinutes);
+				}
+			}
+
+			return responsiveness;
 		}
 	}
 }

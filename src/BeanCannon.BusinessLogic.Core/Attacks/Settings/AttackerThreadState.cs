@@ -1,4 +1,5 @@
 ﻿using BeanCannon.BusinessLogic.Core;
+using System;
 
 namespace Loic.BusinessLogic.Core.Attacks.Settings
 {
@@ -36,5 +37,21 @@ namespace Loic.BusinessLogic.Core.Attacks.Settings
 		/// Managed Worker Thread Id.
 		/// </summary>
 		public int ManagedThreadId { get; set; }
+
+		// TODO: Implement in all attackers
+		internal TimeSpan TotalElepsedTime { get; set; }
+
+		internal TimeSpan AverageResponseTime
+		{
+			get
+			{
+				if (TotalElepsedTime <= TimeSpan.Zero)
+				{
+					return TimeSpan.Zero;
+				}
+
+				return TimeSpan.FromSeconds(TotalElepsedTime.TotalSeconds / Downloaded);
+			}
+		}
 	}
 }
