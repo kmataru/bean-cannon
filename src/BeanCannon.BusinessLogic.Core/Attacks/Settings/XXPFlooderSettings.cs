@@ -18,8 +18,12 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 			this.WaitReply = settings.WaitReply;
 			this.StreamData = settings.StreamData;
 			this.UseRandomMessage = settings.UseRandomMessage;
-
 			this.Delay = settings.Delay;
+
+			if (settings.Protocol == AttackMethod.TCP)
+			{
+				this.ProxyConnectionType = settings.ProxyConnectionType;
+			}
 		}
 	}
 }

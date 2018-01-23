@@ -94,7 +94,8 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 							if (Settings.WaitReply)
 							{
 								do
-								{ // some damn fail checks (and resolving dynamic redirects -.-)
+								{
+									// some damn fail checks (and resolving dynamic redirects -.-)
 									if (redirect != "")
 									{
 										if (!socket.Connected)

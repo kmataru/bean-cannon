@@ -64,8 +64,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			new FluentControlActivator(AttackMethod.TCP)
 				.Disable(panelHttpMethod).Disable(checkBoxUseGzip)
 				.Disable(textFieldSocketsPerThread)
-				.Disable(checkBoxAppendRandomCharactersToUrl)
-				.Disable(panelProxy);
+				.Disable(checkBoxAppendRandomCharactersToUrl);
 
 			new FluentControlActivator(AttackMethod.UDP)
 				.Disable(panelHttpMethod).Disable(checkBoxUseGzip)
@@ -81,8 +80,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			new FluentControlActivator(AttackMethod.SlowLOIC)
 				.Disable(radioButtonHttpMethodHead).Check(radioButtonHttpMethodPost)
 				.Disable(checkBoxWaitForReply)
-				.Disable(checkBoxAppendRandomCharactersToMessage)
-				.Disable(panelProxy);
+				.Disable(checkBoxAppendRandomCharactersToMessage);
 
 			new FluentControlActivator(AttackMethod.ICMP)
 				.Disable(panelHttpMethod)

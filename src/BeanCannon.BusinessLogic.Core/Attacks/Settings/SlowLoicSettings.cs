@@ -24,8 +24,9 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 			this.Timeout = settings.Timeout;
 			this.Delay = settings.Delay;
 			this.UseRandomPath = settings.UseRandomPath;
-			this.UseRandomCommands = true;
+			this.UseRandomCommands = settings.UseRandomCommands;
 			this.AllowGzip = settings.AllowGzip;
+			this.ProxyConnectionType = settings.ProxyConnectionType;
 			this.HttpRequestMethod = settings.HttpRequestMethod;
 		}
 	}
