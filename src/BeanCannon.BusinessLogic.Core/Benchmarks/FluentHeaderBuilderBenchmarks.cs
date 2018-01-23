@@ -22,7 +22,7 @@ namespace BeanCannon.BusinessLogic.Core.Benchmarks
 		{
 			method = HttpMethod.Get;
 			subsite = "/";
-			host = "www.whoknowswins.com";
+			host = "www.example.com";
 			subsite_random = false;
 			keep_alive = 15;
 			gzip = false;
