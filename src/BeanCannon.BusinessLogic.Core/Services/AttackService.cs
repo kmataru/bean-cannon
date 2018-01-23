@@ -7,10 +7,11 @@ using System.Collections.ObjectModel;
 
 namespace BeanCannon.BusinessLogic.Core.Services
 {
-	// TODO: Add Cleaning
 	public enum AttackServiceStatus
 	{
 		Idle,
+		Cleaning,
+		HeatingUp,
 		InProgress
 	}
 
@@ -45,173 +46,63 @@ namespace BeanCannon.BusinessLogic.Core.Services
 		/// </summary>
 		/// <param name="toggle">Whether to toggle.</param>
 		/// <param name="on">Whether the attack should start.</param>
-		/// <param name="silent">Whether to silence error output.</param>
-		public void Attack(IApplicationSettings settings, bool toggle, bool on, bool silent = false)
+		public void Toggle(IApplicationSettings settings, bool toggle, bool on)
 		{
 			if ((Status == AttackServiceStatus.Idle && toggle) || (!toggle && on))
 			{
-				try
-				{
-					// Protect against race condition
-					//if (timerShowStats.Enabled) timerShowStats.Stop();
-
-					/*
-					if (!Functions.ParseInt(textPort.Text, 0, 65535, out settings._Port))
-					{
-						Wtf("I don't think ports are supposed to be written like THAT.", silent);
-						return;
-					}
-					*/
-
-					/*
-					if (!Functions.ParseInt(textThreads.Text, 1, 99, out iThreads))
-					{
-						Wtf("What on earth made you put THAT in the threads field?", silent);
-						return;
-					}
-					*/
-
-					/*
-					settings.Ip = textTarget.Text;
-					if (String.IsNullOrEmpty(settings.Ip) || String.IsNullOrEmpty(settings.Host) || String.Equals(settings.Ip, "N O N E !"))
-					{
-						throw new Exception("Select a target.");
-					}
-					*/
-
-					/*
-					if (Enum.TryParse(comboBoxMethod.Text, true, out AttackProtocol protocol))
-					{
-						settings.Protocol = protocol;
-					}
-					else
-					{
-						Wtf("Select a proper attack method.", silent);
-						return;
-					}
-					*/
-
-					/*
-					settings.StreamData = textData.Text.Replace(@"\r", "\r").Replace(@"\n", "\n");
-					if (String.IsNullOrEmpty(settings.StreamData) && (settings.Protocol == AttackProtocol.TCP || settings.Protocol == AttackProtocol.UDP))
-					{
-						Wtf("Gonna spam with no contents? You're a wise fellow, aren't ya? o.O", silent);
-						return;
-					}
-					*/
-
-					/*
-					settings.UrlPath = textSubsite.Text;
-					if (!settings.UrlPath.StartsWith("/") && (int)settings.Protocol >= (int)AttackProtocol.HTTP && (int)settings.Protocol != (int)AttackProtocol.ICMP)
-					{
-						Wtf("You have to enter a subsite (for example \"/\")", silent);
-						return;
-					}
-					*/
-
-					/*
-					if (!int.TryParse(textTimeout.Text, out settings._Timeout) || settings._Timeout < 1)
-					{
-						Wtf("What's up with something like that in the timeout box? =S", silent);
-						return;
-					}
-					*/
-
-					/*
-					if (settings._Timeout > 999)
-					{
-						settings._Timeout = 30;
-						textTimeout.Text = "30";
-					}
-					*/
-
-					/*
-					settings.WaitReply = checkBoxWaitReply.Checked;
-					*/
-
-					/*
-					if (settings.Protocol == AttackProtocol.SlowLOIC || settings.Protocol == AttackProtocol.ReCoil || settings.Protocol == AttackProtocol.ICMP)
-					{
-						if (!int.TryParse(textSocketsPerThread.Text, out settings._SocketsPerThread) || settings._SocketsPerThread < 1)
-						{
-							throw new Exception("A number is fine too!");
-						}
-					}
-					*/
-				}
-				catch (Exception ex)
-				{
-					/*
-					Wtf(ex.Message, silent);
-					*/
-
-					return;
-				}
-
-				/*
-				buttonAttack.Text = StopFloodingText;
-				//let's lock down the controls, that could actually change the creation of new sockets
-				checkBoxAllowGzip.Enabled = false;
-				checkBoxUseGet.Enabled = false;
-				checkBoxUseRandomMessage.Enabled = false;
-				checkBoxRandomPath.Enabled = false;
-				comboBoxMethod.Enabled = false;
-				checkBoxWaitReply.Enabled = false;
-				textSocketsPerThread.Enabled = false;
-				*/
-
-				if (floodersList.Count > 0)
-				{
-					foreach (IFlooder flooder in floodersList)
-					{
-						flooder.Stop();
-						flooder.State.IsFlooding = false;
-					}
-
-					floodersList.Clear();
-				}
-
-				for (int i = 0; i < settings.Threads; i++)
-				{
-					IFlooder flooder = attackFactory.Get(settings);
-
-					if (flooder != null)
-					{
-						flooder.Start();
-						floodersList.Add(flooder);
-					}
-				}
-
-				/*
-				timerShowStats.Start();
-				*/
-
-				Status = AttackServiceStatus.InProgress;
+				this.Start(settings);
 			}
 			else if (toggle || !on)
 			{
-				/*
-				buttonAttack.Text = AttackText;
-				checkBoxAllowGzip.Enabled = true;
-				checkBoxUseGet.Enabled = true;
-				checkBoxUseRandomMessage.Enabled = true;
-				checkBoxRandomPath.Enabled = true;
-				comboBoxMethod.Enabled = true;
-				checkBoxWaitReply.Enabled = true;
-				textSocketsPerThread.Enabled = true;
-				*/
+				this.Stop();
+			}
+		}
 
-				if (floodersList != null && floodersList.Count > 0)
+		public void Start(IApplicationSettings settings)
+		{
+			if (floodersList.Count > 0)
+			{
+				Status = AttackServiceStatus.Cleaning;
+
+				foreach (IFlooder flooder in floodersList)
 				{
-					foreach (IFlooder flooder in floodersList)
-					{
-						flooder.Stop();
-						flooder.State.IsFlooding = false;
-					}
+					flooder.Stop();
+					flooder.State.IsFlooding = false;
 				}
 
-				Status = AttackServiceStatus.Idle;
+				floodersList.Clear();
 			}
+
+			Status = AttackServiceStatus.HeatingUp;
+
+			for (int i = 0; i < settings.Threads; i++)
+			{
+				IFlooder flooder = attackFactory.Get(settings);
+
+				if (flooder != null)
+				{
+					flooder.Start();
+					floodersList.Add(flooder);
+				}
+			}
+
+			Status = AttackServiceStatus.InProgress;
+		}
+
+		public void Stop()
+		{
+			if (floodersList != null && floodersList.Count > 0)
+			{
+				Status = AttackServiceStatus.Cleaning;
+
+				foreach (IFlooder flooder in floodersList)
+				{
+					flooder.Stop();
+					flooder.State.IsFlooding = false;
+				}
+			}
+
+			Status = AttackServiceStatus.Idle;
 		}
 
 		public ReadOnlyCollection<IFlooder> GetFlooders()
@@ -344,20 +235,6 @@ namespace BeanCannon.BusinessLogic.Core.Services
 					}
 				}
 			}
-
-			/*
-			this.workersForm.UpdateWorkers(floodersList);
-			*/
-
-			/*
-			labelAttackFailed.Text = iFailed.ToString();
-			labelAttackRequested.Text = iRequested.ToString();
-			labelAttackDownloaded.Text = iDownloaded.ToString();
-			labelAttackDownloading.Text = iDownloading.ToString();
-			labelAttackRequesting.Text = iRequesting.ToString();
-			labelAttackConnecting.Text = iConnecting.ToString();
-			labelAttackIdle.Text = iIdle.ToString();
-			*/
 
 			intShowStats = false;
 

@@ -35,10 +35,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 
 					int[] computedWidths = new int[columnsCount];
 
-					// Get the sum of all column tags
+					// Get the sum of all column weights
 					for (int idx = 0; idx < columnsCount; idx++)
 					{
-						totalColumnWeigth += (listView.Columns[idx] as ColumnHeaderEx).Weigth;
+						totalColumnWeigth += (listView.Columns[idx] as ColumnHeaderEx).Weight;
 					}
 
 					var initialListViewWidth = listView.ClientRectangle.Width;
@@ -51,14 +51,14 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 					{
 						var column = (listView.Columns[idx] as ColumnHeaderEx);
 
-						float colPercentage = (column.Weigth / totalColumnWeigth);
+						float colPercentage = (column.Weight / totalColumnWeigth);
 						var width = (int)(colPercentage * listViewWidth);
 
 						if (column.MaximumWidth > 0 && width >= column.MaximumWidth)
 						{
 							computedWidths[idx] = column.MaximumWidth;
 							listViewWidth -= column.MaximumWidth;
-							totalColumnWeigthDelta -= column.Weigth;
+							totalColumnWeigthDelta -= column.Weight;
 						}
 					}
 
@@ -76,7 +76,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 						}
 						else
 						{
-							float colPercentage = (column.Weigth / totalColumnWeigth);
+							float colPercentage = (column.Weight / totalColumnWeigth);
 							width = (int)(colPercentage * listViewWidth);
 							computedWidths[idx] = width;
 						}
@@ -84,7 +84,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 						listView.Columns[idx].Width = width;
 
 						// Support for MaterialListViewEx
-						//*
 						if (idx == columnsCount - 1)
 						{
 							MaterialListViewEx materialListViewEx = listView as MaterialListViewEx;
@@ -93,7 +92,6 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 								materialListViewEx.OnLastColumnSizeChanged(new LastColumnSizeEventArgs(listView.TopItem?.Index, width));
 							}
 						}
-						//*/
 					}
 
 					/*

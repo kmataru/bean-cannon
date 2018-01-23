@@ -99,6 +99,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 				{
 					if (proxiesCount > storeDataListLength)
 					{
+						// TODO: Review
 						/*
 						if (proxiesCount - storeData.LastListLengthWhenRegenerated >= 3)
 						{

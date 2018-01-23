@@ -286,7 +286,6 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			}
 		}
 
-		// TODO: Rename to [Anal]ProbeProxy
 		public bool ProbeProxy(
 			ProxyDatum proxy,
 			SocketType socketType, ProtocolType protocolType, ProxyTypes proxyType,

@@ -70,7 +70,7 @@
 			// 
 			this.columnHeaderPathAndQuery.Tag = "";
 			this.columnHeaderPathAndQuery.Text = "Path";
-			this.columnHeaderPathAndQuery.Weigth = 2;
+			this.columnHeaderPathAndQuery.Weight = 2;
 			this.columnHeaderPathAndQuery.Width = 118;
 			// 
 			// columnHeaderRequested

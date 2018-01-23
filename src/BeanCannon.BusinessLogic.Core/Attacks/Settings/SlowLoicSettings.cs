@@ -10,7 +10,6 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 		public string UrlPath { get; internal set; }
 		public bool UseRandomPath { get; internal set; }
 		public bool UseRandomCommands { get; internal set; }
-		public bool UseGet { get; internal set; }
 		public bool AllowGzip { get; internal set; }
 		public int SocketsPerThread { get; internal set; }
 		public HttpMethod HttpRequestMethod { get; internal set; }

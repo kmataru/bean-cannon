@@ -67,7 +67,7 @@
 			// columnHeaderIp
 			// 
 			this.columnHeaderIp.Text = "Ip";
-			this.columnHeaderIp.Weigth = 2;
+			this.columnHeaderIp.Weight = 2;
 			// 
 			// columnHeaderPort
 			// 

@@ -10,8 +10,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 	public partial class MainForm : MaterialForm
 	{
 		private readonly MaterialSkinManager materialSkinManager;
-		private /*readonly*/ ControlsStore beanControls;
-		internal /*readonly*/ ApplicationSettingsProvider settings;
+		private ControlsStore beanControls;
+		internal ApplicationSettingsProvider settings;
 
 		public MainForm()
 		{

@@ -27,7 +27,7 @@ namespace BeanCannon.BusinessLogic.Core
 			}
 		}
 
-		// TODO : Review
+		// TODO: Review
 		public static ILog Log
 		{
 			get

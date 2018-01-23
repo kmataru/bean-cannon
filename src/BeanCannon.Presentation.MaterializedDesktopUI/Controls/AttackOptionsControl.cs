@@ -111,7 +111,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 				timerMain.Stop();
 			}
 
-			AttackService.Instance.Attack(settings, true, false, false);
+			AttackService.Instance.Toggle(settings, true, false);
 
 			(sender as Button).Enabled = true;
 

@@ -6,9 +6,8 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 {
 	class RandomReferer
 	{
-		// TODO: Read more @ https://en.wikipedia.org/wiki/List_of_search_engines
+		// Read more @ https://en.wikipedia.org/wiki/List_of_search_engines
 		/*
-			('http://www.usatoday.com/search/results?q=')
 			('http://' + host + '/')
 		*/
 		private static readonly IRandomReferer[] referers = {
