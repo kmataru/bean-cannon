@@ -12,6 +12,7 @@ using BeanCannon.BusinessLogic.Core.Services;
 using BeanCannon.BusinessLogic.Core.Models;
 using BeanCannon.BusinessLogic.Core.Attacks.Settings;
 using System.Net.Http;
+using BeanCannon.BusinessLogic.Core.Extensions;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
@@ -135,6 +136,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			var settings = this.beanControls.MainForm.settings;
 			if (attackService.GetStatistics(settings, out AttackState attackState))
 			{
+				this.beanControls.StatusControl.labelAttackStatus.Text = attackService.Status.GetEnumDescription();
 				this.beanControls.StatusControl.UpdateAttacks(attackState);
 
 				var flooders = attackService.GetFlooders();

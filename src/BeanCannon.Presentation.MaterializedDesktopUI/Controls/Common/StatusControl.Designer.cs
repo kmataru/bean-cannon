@@ -45,9 +45,11 @@
 			this.columnHeaderAttackRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderAttackFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.panel11 = new System.Windows.Forms.Panel();
+			this.labelProxyTesterStatus = new MaterialSkin.Controls.MaterialLabel();
 			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel12 = new System.Windows.Forms.Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.labelAttackStatus = new MaterialSkin.Controls.MaterialLabel();
 			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel11.SuspendLayout();
@@ -184,6 +186,7 @@
 			// 
 			this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel11.Controls.Add(this.labelProxyTesterStatus);
 			this.panel11.Controls.Add(this.materialLabel6);
 			this.panel11.Controls.Add(this.panel12);
 			this.panel11.Location = new System.Drawing.Point(3, 5);
@@ -191,6 +194,19 @@
 			this.panel11.Name = "panel11";
 			this.panel11.Size = new System.Drawing.Size(1110, 114);
 			this.panel11.TabIndex = 26;
+			// 
+			// labelProxyTesterStatus
+			// 
+			this.labelProxyTesterStatus.AutoSize = true;
+			this.labelProxyTesterStatus.Depth = 0;
+			this.labelProxyTesterStatus.Font = new System.Drawing.Font("Roboto", 11F);
+			this.labelProxyTesterStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.labelProxyTesterStatus.Location = new System.Drawing.Point(114, 0);
+			this.labelProxyTesterStatus.MouseState = MaterialSkin.MouseState.HOVER;
+			this.labelProxyTesterStatus.Name = "labelProxyTesterStatus";
+			this.labelProxyTesterStatus.Size = new System.Drawing.Size(49, 19);
+			this.labelProxyTesterStatus.TabIndex = 22;
+			this.labelProxyTesterStatus.Text = "          ";
 			// 
 			// materialLabel6
 			// 
@@ -221,12 +237,26 @@
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.Controls.Add(this.labelAttackStatus);
 			this.panel1.Controls.Add(this.materialLabel1);
 			this.panel1.Controls.Add(this.panel2);
 			this.panel1.Location = new System.Drawing.Point(3, 122);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1110, 114);
 			this.panel1.TabIndex = 27;
+			// 
+			// labelAttackStatus
+			// 
+			this.labelAttackStatus.AutoSize = true;
+			this.labelAttackStatus.Depth = 0;
+			this.labelAttackStatus.Font = new System.Drawing.Font("Roboto", 11F);
+			this.labelAttackStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.labelAttackStatus.Location = new System.Drawing.Point(114, 0);
+			this.labelAttackStatus.MouseState = MaterialSkin.MouseState.HOVER;
+			this.labelAttackStatus.Name = "labelAttackStatus";
+			this.labelAttackStatus.Size = new System.Drawing.Size(49, 19);
+			this.labelAttackStatus.TabIndex = 22;
+			this.labelAttackStatus.Text = "          ";
 			// 
 			// materialLabel1
 			// 
@@ -295,5 +325,7 @@
 		private System.Windows.Forms.Panel panel2;
 		public MaterialSkin.Controls.MaterialListView listViewProxies;
 		public MaterialSkin.Controls.MaterialListView listViewAttacks;
+		internal MaterialSkin.Controls.MaterialLabel labelProxyTesterStatus;
+		internal MaterialSkin.Controls.MaterialLabel labelAttackStatus;
 	}
 }

@@ -47,6 +47,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 			UpdateListViewContent();
 
+			this.beanControls.StatusControl.labelProxyTesterStatus.Text = proxyTester.Status.GetEnumDescription();
 			this.beanControls.StatusControl.UpdateProxies(proxyTester.State);
 
 			if (proxyTester.State.Done)

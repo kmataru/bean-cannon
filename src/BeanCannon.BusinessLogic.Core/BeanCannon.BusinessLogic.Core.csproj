@@ -172,6 +172,7 @@
   <ItemGroup>
     <Compile Include="Attacks\Settings\AttackerThreadState.cs" />
     <Compile Include="Attacks\Settings\ProxyConnectionType.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="Models\AttackState.cs" />
     <Compile Include="Models\ProxyTesterState.cs" />
     <Compile Include="Net\Interfaces\IProxy.cs" />

@@ -17,9 +17,26 @@ using System.Threading.Tasks;
 
 namespace BeanCannon.BusinessLogic.Core.Services
 {
+	public enum ProxyTesterStatus
+	{
+		[Description("Idle")]
+		Idle,
+
+		[Description("Heating up")]
+		HeatingUp,
+
+		[Description("In progress")]
+		InProgress,
+
+		[Description("Done")]
+		Done,
+	}
+
 	public class ProxyTester
 	{
 		private static readonly Object locker = new Object();
+
+		public ProxyTesterStatus Status = ProxyTesterStatus.Idle;
 
 		private readonly SpinProxiesRootResponse spinProxiesData;
 		private readonly SpinProxiesApiWrapper spinProxiesApiWrapper;
@@ -191,6 +208,8 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
+			Status = ProxyTesterStatus.HeatingUp;
+
 			var currentThread = System.Threading.Thread.CurrentThread;
 			currentThread.Name = $"ProxyTester-{currentThread.ManagedThreadId}";
 
@@ -216,6 +235,8 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			State.Total = proxies.Count();
 			State.Types = proxyTypesToTest.Length;
 
+			Status = ProxyTesterStatus.InProgress;
+
 			// TODO: Convert to array
 			//var tasks = new List<Task>();
 
@@ -227,6 +248,8 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			}
 
 			//Task.WaitAll(tasks.ToArray());
+
+			Status = ProxyTesterStatus.Done;
 
 			Logger.Log.Debug("Done testing proxies.");
 

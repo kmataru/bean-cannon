@@ -4,14 +4,22 @@ using BeanCannon.BusinessLogic.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace BeanCannon.BusinessLogic.Core.Services
 {
 	public enum AttackServiceStatus
 	{
+		[Description("Idle")]
 		Idle,
+
+		[Description("Cleaning")]
 		Cleaning,
+
+		[Description("Heating up")]
 		HeatingUp,
+
+		[Description("In progress")]
 		InProgress
 	}
 
