@@ -1,0 +1,3 @@
+[submodule "Modules/MaterialSkin"]
+	path = Modules/MaterialSkin
+	url = https://github.com/IgnaceMaes/MaterialSkin.git

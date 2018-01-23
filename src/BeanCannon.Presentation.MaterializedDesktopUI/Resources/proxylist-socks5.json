@@ -1,0 +1,5056 @@
+{
+  "message": "ok",
+  "data": {
+    "proxies": [
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "185.93.3.123",
+        "port": 8080,
+        "country_code": "ES",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "122.155.202.206",
+        "port": 57648,
+        "country_code": "TH",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.222.78.6",
+        "port": 65000,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "172.98.172.161",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "37.46.131.98",
+        "port": 80,
+        "country_code": "RU",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "119.28.140.233",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.870671
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 39785,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "106.75.137.20",
+        "port": 10092,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "97.64.55.234",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "117.102.83.101",
+        "port": 3128,
+        "country_code": "ID",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "13.68.76.243",
+        "port": 80,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.101.6",
+        "port": 64664,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "151.80.100.147",
+        "port": 51348,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "99.194.107.193",
+        "port": 62047,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "78.94.172.42",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "74.208.131.36",
+        "port": 29819,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "219.128.78.134",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "112.5.52.102",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "59.126.56.15",
+        "port": 28871,
+        "country_code": "TW",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "107.21.56.41",
+        "port": 8080,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "99.194.102.121",
+        "port": 65000,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.118.116",
+        "port": 61418,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "95.110.186.48",
+        "port": 25579,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "107.21.56.41",
+        "port": 443,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "101.53.136.137",
+        "port": 80,
+        "country_code": "IN",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.63.11.105",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.63.158.154",
+        "port": 61419,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "87.128.39.173",
+        "port": 8080,
+        "country_code": "DE",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "147.135.210.114",
+        "port": 54566,
+        "country_code": "PL",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "74.222.79.57",
+        "port": 30289,
+        "country_code": "KY",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "141.0.119.14",
+        "port": 64014,
+        "country_code": "NO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "184.172.179.6",
+        "port": 9233,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 64733,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 6130,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "70.178.213.60",
+        "port": 3973,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.154.17",
+        "port": 56814,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "142.217.204.247",
+        "port": 12696,
+        "country_code": "CA",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "82.208.140.164",
+        "port": 44482,
+        "country_code": "RO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "103.215.49.101",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.161",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "107.6.194.166",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "85.214.28.49",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 9.5062065,
+                "Socks5": 4.9067536
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.85",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "104.151.241.182",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "107.21.56.41",
+        "port": 3128,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "184.172.179.5",
+        "port": 9233,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.194.245",
+        "port": 14848,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.194.245",
+        "port": 10993,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "138.68.88.246",
+        "port": 3240,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 1.4881763,
+                "Socks5": 12.580465499999999
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.74.229.179",
+        "port": 9064,
+        "country_code": "SG",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.105",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.229.182",
+        "port": 23246,
+        "country_code": "IT",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "80.211.240.206",
+        "port": 1080,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.0997272
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.194.245",
+        "port": 28038,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.135.186.183",
+        "port": 3128,
+        "country_code": "FR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "116.58.227.208",
+        "port": 42421,
+        "country_code": "TH",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "115.238.247.205",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.75976579999999994
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "188.165.42.116",
+        "port": 80,
+        "country_code": "FR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.55.169.78",
+        "port": 46973,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "23.254.153.203",
+        "port": 22234,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "61.5.207.102",
+        "port": 80,
+        "country_code": "AF",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "80.211.249.13",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "184.172.179.3",
+        "port": 9233,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "78.46.29.107",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.194.245",
+        "port": 53135,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "180.114.229.69",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "184.178.172.25",
+        "port": 15291,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 4.7631915,
+                "Socks5": 1.9296825
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "109.169.21.205",
+        "port": 8080,
+        "country_code": "GB",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "107.6.194.172",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "181.220.69.240",
+        "port": 11807,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.66",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.221",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.177",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "68.234.207.180",
+        "port": 10200,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 9.5703123999999988,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.79.219.154",
+        "port": 63189,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 1.9837751,
+                "Socks5": 1.3546232999999999
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "99.194.138.152",
+        "port": 10152,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "119.29.154.46",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.96736899999999992
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "104.151.241.202",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.194.245",
+        "port": 31986,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "202.128.4.215",
+        "port": 48609,
+        "country_code": "GU",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.81",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "209.182.115.214",
+        "port": 10200,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "54.36.180.143",
+        "port": 3128,
+        "country_code": "FR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "202.5.48.20",
+        "port": 1806,
+        "country_code": "BD",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.76",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "144.76.176.72",
+        "port": 8080,
+        "country_code": "DE",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "104.151.241.171",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "202.153.230.46",
+        "port": 1080,
+        "country_code": "ID",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 1.5542002,
+                "Socks5": 2.1647388
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "69.128.154.46",
+        "port": 44056,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "117.135.132.107",
+        "port": 3000,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.7166441
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.233.103",
+        "port": 23937,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.63.158.154",
+        "port": 13179,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "37.59.56.88",
+        "port": 4065,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.181",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.112.26",
+        "port": 64026,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "104.152.185.106",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.232.177",
+        "port": 23639,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.208.125",
+        "port": 52325,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "119.23.14.55",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.115.99",
+        "port": 63843,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "77.55.218.205",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1271346
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.226",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "184.172.179.4",
+        "port": 9233,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "207.224.13.243",
+        "port": 11217,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "217.244.8.138",
+        "port": 3128,
+        "country_code": "DE",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.157.27",
+        "port": 15915,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "159.89.39.79",
+        "port": 1911,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "47.52.61.212",
+        "port": 8080,
+        "country_code": "HK",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.144.113",
+        "port": 19367,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.145.53",
+        "port": 19683,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "172.98.172.194",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "186.88.113.138",
+        "port": 8080,
+        "country_code": "VE",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "185.126.203.24",
+        "port": 1080,
+        "country_code": "IR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.244",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.199",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.144.165",
+        "port": 19283,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "118.184.84.45",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.62334309999999993
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 18177,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "207.224.15.104",
+        "port": 10570,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "99.194.151.58",
+        "port": 17482,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "116.206.102.209",
+        "port": 80,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.51",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "80.211.241.187",
+        "port": 1080,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1000032
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "80.211.251.249",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.7388537
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "1.229.165.34",
+        "port": 12389,
+        "country_code": "KR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.9060861,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "121.199.1.198",
+        "port": 8080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "107.6.203.87",
+        "port": 9999,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "172.98.172.159",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "117.48.213.201",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "80.211.255.219",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 10.654725599999999,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.90.102.176",
+        "port": 38111,
+        "country_code": "HK",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 5.0374414
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "122.4.161.117",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.99463629999999992
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "80.211.241.114",
+        "port": 1080,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1345326
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "58.20.41.172",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 5.5069605,
+                "Socks5": 2.3100226
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "47.88.25.0",
+        "port": 7789,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.188.193.88",
+        "port": 8085,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.79.215.85",
+        "port": 64026,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.5056895,
+                "Socks5": 14.102466199999999
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.188.193.29",
+        "port": 8085,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "117.64.54.198",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "83.240.110.190",
+        "port": 7866,
+        "country_code": "CZ",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.226.102",
+        "port": 56191,
+        "country_code": "IT",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "193.104.119.88",
+        "port": 8080,
+        "country_code": "IL",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "185.87.49.185",
+        "port": 6969,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "121.206.217.165",
+        "port": 8888,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "94.130.44.101",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "13.127.5.170",
+        "port": 1080,
+        "country_code": "IN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.48118059999999996
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.55.169.78",
+        "port": 49947,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "185.87.49.185",
+        "port": 9941,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "198.57.162.184",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "80.211.254.233",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "125.122.119.133",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.229.182",
+        "port": 7740,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "88.198.34.2",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "89.37.0.68",
+        "port": 8080,
+        "country_code": "IR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "223.242.247.95",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "60.171.14.176",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "173.249.1.123",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "58.246.39.27",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "35.186.161.201",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.2277749
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "200.46.174.9",
+        "port": 8080,
+        "country_code": "PA",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "194.226.171.166",
+        "port": 6969,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 1.9592729999999998,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "151.80.140.233",
+        "port": 54566,
+        "country_code": "FR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "182.86.190.53",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "183.130.109.150",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "104.151.241.187",
+        "port": 10925,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 17841,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "220.227.72.235",
+        "port": 8090,
+        "country_code": "IN",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "149.154.69.49",
+        "port": 41756,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "77.55.218.191",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.223.250.96",
+        "port": 20415,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "216.98.88.44",
+        "port": 32846,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "106.75.137.20",
+        "port": 10139,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "171.246.83.213",
+        "port": 1080,
+        "country_code": "VN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "111.68.60.190",
+        "port": 21498,
+        "country_code": "PH",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "99.194.149.188",
+        "port": 20545,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.226.126",
+        "port": 63723,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.226.91",
+        "port": 30918,
+        "country_code": "IT",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "77.55.218.188",
+        "port": 1080,
+        "country_code": "PL",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1286816
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.63.158.154",
+        "port": 48978,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "137.74.168.174",
+        "port": 8080,
+        "country_code": "FR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.102.59",
+        "port": 11264,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "114.55.236.62",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "174.138.21.73",
+        "port": 1999,
+        "country_code": "SG",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.44363189999999997
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "95.110.226.126",
+        "port": 43388,
+        "country_code": "IT",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "54.38.22.48",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.0932016
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "52.179.97.251",
+        "port": 3128,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "179.111.212.62",
+        "port": 8080,
+        "country_code": "BR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.226.102",
+        "port": 30918,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "82.208.140.164",
+        "port": 17413,
+        "country_code": "RO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.220.53.40",
+        "port": 49705,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "223.197.193.197",
+        "port": 56449,
+        "country_code": "HK",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "149.154.69.49",
+        "port": 54413,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.89.250.33",
+        "port": 1088,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.62246709999999994
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.118.25",
+        "port": 15330,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "65.130.76.3",
+        "port": 13208,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.144.106",
+        "port": 37234,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.52.245.2",
+        "port": 80,
+        "country_code": "HK",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.31.138",
+        "port": 32065,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "188.3.33.33",
+        "port": 1080,
+        "country_code": "TR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "199.167.213.238",
+        "port": 14681,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.203",
+        "port": 41824,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "141.0.119.14",
+        "port": 14479,
+        "country_code": "NO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "84.43.90.36",
+        "port": 52366,
+        "country_code": "GB",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "67.197.29.242",
+        "port": 17402,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "207.224.35.97",
+        "port": 60808,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.226.166",
+        "port": 63723,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "99.194.156.23",
+        "port": 65000,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "107.175.150.77",
+        "port": 1080,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "194.15.120.42",
+        "port": 10668,
+        "country_code": "PL",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "61.6.92.182",
+        "port": 55561,
+        "country_code": "MY",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "90.224.24.70",
+        "port": 64031,
+        "country_code": "SE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.223.200.204",
+        "port": 35953,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "69.36.85.50",
+        "port": 43183,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "95.110.194.245",
+        "port": 17226,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "118.200.216.208",
+        "port": 15793,
+        "country_code": "SG",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.222.4.38",
+        "port": 16538,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "88.113.132.187",
+        "port": 25715,
+        "country_code": "FI",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.223.248.100",
+        "port": 48345,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "99.194.97.138",
+        "port": 50231,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "99.194.112.26",
+        "port": 54695,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "81.227.47.215",
+        "port": 50829,
+        "country_code": "SE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "138.68.59.157",
+        "port": 1210,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "69.10.49.115",
+        "port": 80,
+        "country_code": "GB",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "88.198.86.121",
+        "port": 8080,
+        "country_code": "DE",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "45.77.178.122",
+        "port": 1080,
+        "country_code": "JP",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "174.64.234.29",
+        "port": 17501,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 10.4982585,
+                "Socks5": 2.4137812999999997
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "223.245.170.96",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.55.169.78",
+        "port": 60567,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.2532389
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "178.32.96.184",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "194.126.37.94",
+        "port": 8080,
+        "country_code": "KW",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "149.154.69.49",
+        "port": 11497,
+        "country_code": "RU",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.229.182",
+        "port": 44468,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 3.0110455999999997,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "13.127.37.69",
+        "port": 1080,
+        "country_code": "IN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 4508,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1404493
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "202.169.52.205",
+        "port": 1080,
+        "country_code": "ID",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "188.165.32.59",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.0905677
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.203",
+        "port": 34042,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.205",
+        "port": 41824,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 31151,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1409933
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "113.120.186.160",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "37.187.204.53",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.0958545
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.205",
+        "port": 22087,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "192.157.192.226",
+        "port": 3128,
+        "country_code": "US",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "45.55.169.78",
+        "port": 10340,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.2680665
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "45.63.57.232",
+        "port": 8888,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "117.57.241.120",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "54.36.153.19",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.11343199999999999
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "120.197.179.170",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.59674379999999994
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "39.108.6.173",
+        "port": 8888,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.90.62.177",
+        "port": 8080,
+        "country_code": "HK",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 39148,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 1.884336,
+                "Socks5": 5.811502
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.59.254.130",
+        "port": 19385,
+        "country_code": "CO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.62546079999999993
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "69.10.49.50",
+        "port": 80,
+        "country_code": "GB",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "223.245.170.123",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "5.175.2.90",
+        "port": 1080,
+        "country_code": "DE",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 3.0866208,
+                "Socks5": 0.1219454
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "23.254.153.206",
+        "port": 22087,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "37.191.205.105",
+        "port": 10200,
+        "country_code": "NO",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.135.142.60",
+        "port": 19884,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.48223509999999997
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "5.196.183.169",
+        "port": 1080,
+        "country_code": "FR",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.14204719999999999
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "194.126.37.93",
+        "port": 8080,
+        "country_code": "KW",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "123.207.58.149",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.8125985
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "200.255.122.174",
+        "port": 8080,
+        "country_code": "BR",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.203",
+        "port": 22087,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "185.87.48.42",
+        "port": 1080,
+        "country_code": "RU",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.1546927
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "23.254.153.204",
+        "port": 22087,
+        "country_code": "US",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.91.252.239",
+        "port": 6666,
+        "country_code": "HK",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": 0.8975896
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "111.38.169.150",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.5726899
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "95.110.186.48",
+        "port": 25726,
+        "country_code": "IT",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.143065
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "121.196.207.36",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": 0.89111829999999992
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "117.64.55.202",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks4",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "221.234.195.132",
+        "port": 1080,
+        "country_code": "CN",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "47.52.231.140",
+        "port": 8080,
+        "country_code": "HK",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "181.220.66.55",
+        "port": 59921,
+        "country_code": "BR",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "207.224.32.177",
+        "port": 10841,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "200.46.175.34",
+        "port": 56350,
+        "country_code": "PA",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "207.224.35.97",
+        "port": 10153,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "124.13.85.101",
+        "port": 37498,
+        "country_code": "MY",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.154.218",
+        "port": 15376,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "190.198.140.230",
+        "port": 8080,
+        "country_code": "VE",
+        "protocol": "http",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "slow",
+        "ip": "207.224.68.115",
+        "port": 26507,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "medium",
+        "ip": "97.82.41.68",
+        "port": 62212,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "anonymous",
+        "speed": "fast",
+        "ip": "99.194.106.46",
+        "port": 58868,
+        "country_code": "US",
+        "protocol": "socks5",
+        "Tests": {
+          "InterNetwork": {
+            "Stream": {
+              "Tcp": {
+                "Socks4": -60.0,
+                "Socks5": -60.0
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "request_id": null
+}
