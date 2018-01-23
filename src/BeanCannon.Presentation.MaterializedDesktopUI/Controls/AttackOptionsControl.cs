@@ -8,14 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BeanCannon.BusinessLogic.Core.Attacks;
+using BeanCannon.BusinessLogic.Core.Services;
+using BeanCannon.BusinessLogic.Core.Models;
+using BeanCannon.BusinessLogic.Core.Attacks.Settings;
+using System.Net.Http;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
-	public partial class AttackOptionsControl : UserControl
+	public partial class AttackOptionsControl : UserControl, IBeanControl
 	{
+		private ControlsStore beanControls;
+
 		public AttackOptionsControl()
 		{
 			InitializeComponent();
+		}
+
+		public void RegisterControlsStore(ControlsStore beanControls)
+		{
+			this.beanControls = beanControls;
 		}
 
 		private void AttackOptionsControl_Load(object sender, EventArgs e)
@@ -24,6 +35,25 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			{
 				return;
 			}
+
+			//
+			// Set up radio buttons tags
+			radioButtonAttackMethodHttp.Tag = AttackProtocol.HTTP;
+			radioButtonAttackMethodTcp.Tag = AttackProtocol.TCP;
+			radioButtonAttackMethodUdp.Tag = AttackProtocol.UDP;
+			radioButtonAttackMethodReCoil.Tag = AttackProtocol.ReCoil;
+			radioButtonAttackMethodSlowLoic.Tag = AttackProtocol.SlowLOIC;
+			radioButtonAttackMethodIcmp.Tag = AttackProtocol.ICMP;
+
+			radioButtonHttpMethodHead.Tag = HttpMethod.Head;
+			radioButtonHttpMethodGet.Tag = HttpMethod.Get;
+			radioButtonHttpMethodPost.Tag = HttpMethod.Post;
+
+			radioButtonProxyNone.Tag = ProxyConnectionType.None;
+			radioButtonProxyRandom.Tag = ProxyConnectionType.Random;
+			radioButtonProxyChained.Tag = ProxyConnectionType.Chained;
+			//
+			//
 
 			new FluentControlActivator(AttackProtocol.HTTP)
 				.Disable(radioButtonHttpMethodPost).Check(radioButtonHttpMethodGet)
@@ -62,40 +92,47 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			FluentControlActivator.Activate(AttackProtocol.HTTP);
 		}
 
-		private void materialRadioButtonAttackMethodHttp_CheckedChanged(object sender, EventArgs e)
+		private void radioButtonAttackMethod_CheckedChanged(object sender, EventArgs e)
 		{
 			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.HTTP, button.Checked);
+
+			var attackProtocol = (AttackProtocol)button.Tag;
+			FluentControlActivator.Set(attackProtocol, button.Checked);
 		}
 
-		private void materialRadioButtonAttackMethodTcp_CheckedChanged(object sender, EventArgs e)
+		private void buttonStart_Click(object sender, EventArgs e)
 		{
-			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.TCP, button.Checked);
+			(sender as Button).Enabled = false;
+
+			var settings = this.beanControls.MainForm.settings;
+
+			if (AttackService.Instance.Status == AttackServiceStatus.Idle)
+			{
+				timerMain.Stop();
+			}
+
+			AttackService.Instance.Attack(settings, true, false, false);
+
+			(sender as Button).Enabled = true;
+
+			if (AttackService.Instance.Status == AttackServiceStatus.InProgress)
+			{
+				timerMain.Start();
+				(sender as Button).Text = "Stop";
+			}
+			else
+			{
+				(sender as Button).Text = "Start";
+			}
 		}
 
-		private void materialRadioButtonAttackMethodUdp_CheckedChanged(object sender, EventArgs e)
+		private void timerMain_Tick(object sender, EventArgs e)
 		{
-			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.UDP, button.Checked);
-		}
-
-		private void materialRadioButtonAttackMethodReCoil_CheckedChanged(object sender, EventArgs e)
-		{
-			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.ReCoil, button.Checked);
-		}
-
-		private void materialRadioButtonAttackMethodSlowLoic_CheckedChanged(object sender, EventArgs e)
-		{
-			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.SlowLOIC, button.Checked);
-		}
-
-		private void materialRadioButtonAttackMethodIcmp_CheckedChanged(object sender, EventArgs e)
-		{
-			var button = sender as RadioButton;
-			FluentControlActivator.Set(AttackProtocol.ICMP, button.Checked);
+			var settings = this.beanControls.MainForm.settings;
+			if (AttackService.Instance.GetStatistics(settings, out AttackState attackState))
+			{
+				this.beanControls.StatusControl.UpdateAttacks(attackState);
+			}
 		}
 	}
 }

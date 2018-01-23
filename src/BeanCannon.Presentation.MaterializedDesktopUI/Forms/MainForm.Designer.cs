@@ -76,7 +76,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.materialDivider1.Depth = 0;
-			this.materialDivider1.Location = new System.Drawing.Point(0, 650);
+			this.materialDivider1.Location = new System.Drawing.Point(0, 710);
 			this.materialDivider1.Margin = new System.Windows.Forms.Padding(0);
 			this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialDivider1.Name = "materialDivider1";
@@ -91,7 +91,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.buttonChangeTheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.buttonChangeTheme.Depth = 0;
 			this.buttonChangeTheme.Icon = null;
-			this.buttonChangeTheme.Location = new System.Drawing.Point(14, 657);
+			this.buttonChangeTheme.Location = new System.Drawing.Point(14, 717);
 			this.buttonChangeTheme.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
 			this.buttonChangeTheme.MouseState = MaterialSkin.MouseState.HOVER;
 			this.buttonChangeTheme.Name = "buttonChangeTheme";
@@ -130,7 +130,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.materialTabControlMain.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabControlMain.Name = "materialTabControlMain";
 			this.materialTabControlMain.SelectedIndex = 0;
-			this.materialTabControlMain.Size = new System.Drawing.Size(934, 298);
+			this.materialTabControlMain.Size = new System.Drawing.Size(934, 358);
 			this.materialTabControlMain.TabIndex = 18;
 			// 
 			// tabPageProxySettings
@@ -175,7 +175,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabAttackOptions.Controls.Add(this.attackOptionsControl);
 			this.tabAttackOptions.Location = new System.Drawing.Point(4, 22);
 			this.tabAttackOptions.Name = "tabAttackOptions";
-			this.tabAttackOptions.Size = new System.Drawing.Size(926, 272);
+			this.tabAttackOptions.Size = new System.Drawing.Size(926, 332);
 			this.tabAttackOptions.TabIndex = 7;
 			this.tabAttackOptions.Text = "Attack options";
 			this.tabAttackOptions.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.attackOptionsControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.attackOptionsControl.Location = new System.Drawing.Point(0, 0);
 			this.attackOptionsControl.Name = "attackOptionsControl";
-			this.attackOptionsControl.Size = new System.Drawing.Size(926, 272);
+			this.attackOptionsControl.Size = new System.Drawing.Size(926, 332);
 			this.attackOptionsControl.TabIndex = 0;
 			// 
 			// tabPageWorkers
@@ -231,7 +231,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.buttonChangeColorScheme.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.buttonChangeColorScheme.Depth = 0;
 			this.buttonChangeColorScheme.Icon = null;
-			this.buttonChangeColorScheme.Location = new System.Drawing.Point(145, 657);
+			this.buttonChangeColorScheme.Location = new System.Drawing.Point(145, 717);
 			this.buttonChangeColorScheme.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
 			this.buttonChangeColorScheme.MouseState = MaterialSkin.MouseState.HOVER;
 			this.buttonChangeColorScheme.Name = "buttonChangeColorScheme";
@@ -314,7 +314,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.Controls.Add(this.statusControl);
-			this.panel1.Location = new System.Drawing.Point(14, 416);
+			this.panel1.Location = new System.Drawing.Point(14, 476);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(934, 231);
 			this.panel1.TabIndex = 23;
@@ -334,7 +334,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.materialDivider2.Depth = 0;
-			this.materialDivider2.Location = new System.Drawing.Point(0, 412);
+			this.materialDivider2.Location = new System.Drawing.Point(0, 472);
 			this.materialDivider2.Margin = new System.Windows.Forms.Padding(0);
 			this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialDivider2.Name = "materialDivider2";
@@ -349,7 +349,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.buttonNext.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.buttonNext.Depth = 0;
 			this.buttonNext.Icon = null;
-			this.buttonNext.Location = new System.Drawing.Point(893, 657);
+			this.buttonNext.Location = new System.Drawing.Point(893, 717);
 			this.buttonNext.MouseState = MaterialSkin.MouseState.HOVER;
 			this.buttonNext.Name = "buttonNext";
 			this.buttonNext.Primary = true;
@@ -364,7 +364,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(960, 700);
+			this.ClientSize = new System.Drawing.Size(960, 760);
 			this.ContextMenuStrip = this.materialContextMenuStrip1;
 			this.Controls.Add(this.buttonNext);
 			this.Controls.Add(this.materialDivider2);
@@ -375,9 +375,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.Controls.Add(this.materialTabControlMain);
 			this.Controls.Add(this.materialDivider1);
 			this.MaximizeBox = false;
-			this.MinimumSize = new System.Drawing.Size(800, 600);
+			this.MinimumSize = new System.Drawing.Size(800, 760);
 			this.Name = "MainForm";
 			this.Text = "Planetarium Destruction with an Improvised Bean Cannon";
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.materialTabControlMain.ResumeLayout(false);
 			this.tabPageProxySettings.ResumeLayout(false);
 			this.tabPageTargetAndCrawler.ResumeLayout(false);

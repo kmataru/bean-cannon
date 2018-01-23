@@ -13,7 +13,7 @@ using BeanCannon.BusinessLogic.Core.Extensions;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
-	public partial class ProxySettingsControl : UserControl
+	public partial class ProxySettingsControl : UserControl, IBeanControl
 	{
 		private ControlsStore beanControls;
 

@@ -13,13 +13,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings.Interfaces
 	public interface IFlooderSettingsHttpMethod
 	{
 		/// <summary>
-		/// If set to TRUE it uses the GET-command - due to the fact that http-Ready mitigates this change this to FALSE to use POST.
-		/// </summary>
-		[System.Obsolete]
-		bool UseGet { get; }
-
-		/// <summary>
-		/// TODO: Add description.
+		/// Represents an HTTP protocol method.
 		/// </summary>
 		HttpMethod HttpRequestMethod { get; }
 	}

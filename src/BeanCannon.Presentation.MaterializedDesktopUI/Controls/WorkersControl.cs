@@ -17,9 +17,11 @@ using BeanCannon.BusinessLogic.Core.Attacks;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
-	public partial class WorkersControl : UserControl
+	public partial class WorkersControl : UserControl, IBeanControl
 	{
 		private const string TimeFormat = "{0,6:#,##0.00}";
+
+		private ControlsStore beanControls;
 
 		// TODO: Review events.
 		public WorkersControl()
@@ -31,6 +33,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			this.listViewWorkers.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
 			this.listViewWorkers.LastColumnSizeChanged += MaterialListView1_LastColumnSizeChanged;
 			this.listViewWorkers.TopItemChanged += MaterialListView1_TopItemChanged;
+		}
+
+		public void RegisterControlsStore(ControlsStore beanControls)
+		{
+			this.beanControls = beanControls;
 		}
 
 		private void MaterialListView1_LastColumnSizeChanged(object sender, LastColumnSizeEventArgs e)

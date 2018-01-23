@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="ApplicationSettingsProvider.cs" />
     <Compile Include="CommonEvents.cs" />
     <Compile Include="Components\ColumnHeaderEx.cs">
       <SubType>Component</SubType>
@@ -66,6 +66,10 @@
     <Compile Include="Controls\AttackOptionsControl.Designer.cs">
       <DependentUpon>AttackOptionsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AttackOptionsControl.Validators.cs">
+      <DependentUpon>AttackOptionsControl.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\Common\MaterialListViewEx.cs" />
     <Compile Include="Controls\Common\StatusControl.cs">
       <SubType>UserControl</SubType>
@@ -73,6 +77,7 @@
     <Compile Include="Controls\Common\StatusControl.Designer.cs">
       <DependentUpon>StatusControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\IBeanControl.cs" />
     <Compile Include="Controls\TargetControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

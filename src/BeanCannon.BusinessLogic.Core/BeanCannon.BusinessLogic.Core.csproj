@@ -238,6 +238,7 @@
     <Compile Include="Randomizers\Referers\RandomYahooReferer.cs" />
     <Compile Include="Randomizers\Referers\RandomYandexReferer.cs" />
     <Compile Include="RequestStatus.cs" />
+    <Compile Include="Services\AttackService.cs" />
     <Compile Include="Services\ProxyTester.cs" />
     <Compile Include="Services\RandomChainedProxy.cs" />
     <Compile Include="Services\RandomProxy.cs" />

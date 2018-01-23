@@ -33,7 +33,7 @@
 			this.columnHeaderPathAndQuery = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderRequested = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
 			this.columnHeaderFailed = ((BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx)(new BeanCannon.Presentation.MaterializedDesktopUI.Components.ColumnHeaderEx()));
-			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+			this.labelTargetIp = new MaterialSkin.Controls.MaterialLabel();
 			this.buttonLockOn = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.textFieldUrlOrIp = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.timerTextFieldUrlOrIp = new System.Windows.Forms.Timer(this.components);
@@ -87,21 +87,21 @@
 			this.columnHeaderFailed.Text = "Failed";
 			this.columnHeaderFailed.Width = 101;
 			// 
-			// materialLabel1
+			// labelTargetIp
 			// 
-			this.materialLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.labelTargetIp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.materialLabel1.Depth = 0;
-			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel1.Location = new System.Drawing.Point(10, 48);
-			this.materialLabel1.Margin = new System.Windows.Forms.Padding(5);
-			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialLabel1.Name = "materialLabel1";
-			this.materialLabel1.Size = new System.Drawing.Size(735, 40);
-			this.materialLabel1.TabIndex = 5;
-			this.materialLabel1.Text = "No Target";
-			this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.labelTargetIp.Depth = 0;
+			this.labelTargetIp.Font = new System.Drawing.Font("Roboto", 11F);
+			this.labelTargetIp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.labelTargetIp.Location = new System.Drawing.Point(10, 48);
+			this.labelTargetIp.Margin = new System.Windows.Forms.Padding(5);
+			this.labelTargetIp.MouseState = MaterialSkin.MouseState.HOVER;
+			this.labelTargetIp.Name = "labelTargetIp";
+			this.labelTargetIp.Size = new System.Drawing.Size(735, 40);
+			this.labelTargetIp.TabIndex = 5;
+			this.labelTargetIp.Text = "No Target";
+			this.labelTargetIp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// buttonLockOn
 			// 
@@ -160,9 +160,9 @@
 			this.checkBoxEnableCrawler.MouseState = MaterialSkin.MouseState.HOVER;
 			this.checkBoxEnableCrawler.Name = "checkBoxEnableCrawler";
 			this.checkBoxEnableCrawler.Ripple = true;
-			this.checkBoxEnableCrawler.Size = new System.Drawing.Size(120, 30);
+			this.checkBoxEnableCrawler.Size = new System.Drawing.Size(213, 30);
 			this.checkBoxEnableCrawler.TabIndex = 10;
-			this.checkBoxEnableCrawler.Text = "Enable crawler";
+			this.checkBoxEnableCrawler.Text = "Enable crawler (coming soon)";
 			this.checkBoxEnableCrawler.UseVisualStyleBackColor = true;
 			this.checkBoxEnableCrawler.CheckedChanged += new System.EventHandler(this.checkBoxEnableCrawler_CheckedChanged);
 			// 
@@ -185,7 +185,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
 			this.Controls.Add(this.panelCrawler);
-			this.Controls.Add(this.materialLabel1);
+			this.Controls.Add(this.labelTargetIp);
 			this.Controls.Add(this.buttonLockOn);
 			this.Controls.Add(this.textFieldUrlOrIp);
 			this.Name = "TargetControl";
@@ -199,14 +199,14 @@
 
 		#endregion
 		private MaterialSkin.Controls.MaterialRaisedButton buttonLockOn;
-		private MaterialSkin.Controls.MaterialLabel materialLabel1;
 		private Components.ColumnHeaderEx columnHeaderPathAndQuery;
 		private Components.ColumnHeaderEx columnHeaderRequested;
 		private Components.ColumnHeaderEx columnHeaderFailed;
 		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldUrlOrIp;
-		public MaterialSkin.Controls.MaterialListView listViewPaths;
+		internal MaterialSkin.Controls.MaterialListView listViewPaths;
 		private System.Windows.Forms.Timer timerTextFieldUrlOrIp;
 		public MaterialSkin.Controls.MaterialCheckBox checkBoxEnableCrawler;
 		private System.Windows.Forms.Panel panelCrawler;
+		internal MaterialSkin.Controls.MaterialLabel labelTargetIp;
 	}
 }

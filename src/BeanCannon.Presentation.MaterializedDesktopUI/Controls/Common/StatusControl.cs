@@ -66,10 +66,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 				throw new ArgumentNullException(nameof(state));
 			}
 
-			ListViewItem item = listViewProxies.Items[0];
+			ListViewItem item = listViewAttacks.Items[0];
 			ListViewSubItemCollection subItems = item.SubItems;
 
-			listViewProxies.BeginUpdate();
+			listViewAttacks.BeginUpdate();
 
 			subItems[0].Text = state.Idle.ToString();
 			subItems[1].Text = state.Connecting.ToString();
@@ -79,7 +79,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			subItems[5].Text = state.Requested.ToString();
 			subItems[6].Text = state.Failed.ToString();
 
-			listViewProxies.EndUpdate();
+			listViewAttacks.EndUpdate();
 		}
 	}
 }

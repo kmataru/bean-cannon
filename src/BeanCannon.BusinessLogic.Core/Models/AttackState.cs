@@ -6,7 +6,7 @@ namespace BeanCannon.BusinessLogic.Core.Models
 	{
 		public int Idle { get; set; }
 
-		public bool Connecting { get; set; }
+		public int Connecting { get; set; }
 
 		public int Requesting { get; set; }
 

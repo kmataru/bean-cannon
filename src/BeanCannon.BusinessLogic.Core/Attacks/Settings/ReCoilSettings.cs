@@ -15,7 +15,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 
 		public ReCoilSettings(IFactorySettings settings)
 		{
-			this.Host = (settings.Host == "") ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
+			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
 			this.Ip = settings.Ip;
 			this.Port = settings.Port;
 			this.UrlPath = settings.UrlPath;

@@ -17,7 +17,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 
 		public SlowLoicSettings(IFactorySettings settings)
 		{
-			this.Host = (settings.Host == "") ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
+			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
 			this.Ip = settings.Ip;
 			this.Port = settings.Port;
 			this.UrlPath = settings.UrlPath;
@@ -26,10 +26,8 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 			this.Delay = settings.Delay;
 			this.UseRandomPath = settings.UseRandomPath;
 			this.UseRandomCommands = true;
-			this.UseGet = settings.UseGet;
 			this.AllowGzip = settings.AllowGzip;
-
-			this.HttpRequestMethod = this.UseGet ? HttpMethod.Get : HttpMethod.Post;
+			this.HttpRequestMethod = settings.HttpRequestMethod;
 		}
 	}
 }

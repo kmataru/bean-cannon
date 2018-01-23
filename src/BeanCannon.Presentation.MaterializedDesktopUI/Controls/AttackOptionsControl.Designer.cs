@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.textFieldTimeout = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.textFieldPort = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.textFieldThreads = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -69,6 +70,10 @@
 			this.radioButtonProxyChained = new MaterialSkin.Controls.MaterialRadioButton();
 			this.radioButtonProxyRandom = new MaterialSkin.Controls.MaterialRadioButton();
 			this.radioButtonProxyNone = new MaterialSkin.Controls.MaterialRadioButton();
+			this.buttonStart = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.timerMain = new System.Windows.Forms.Timer(this.components);
+			this.trackBarDelay = new System.Windows.Forms.TrackBar();
+			this.textFieldMessageStream = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.panelHttpMethod.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.panel3.SuspendLayout();
@@ -81,6 +86,7 @@
 			this.panel5.SuspendLayout();
 			this.panel11.SuspendLayout();
 			this.panelProxy.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarDelay)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textFieldTimeout
@@ -102,6 +108,7 @@
 			this.textFieldTimeout.TabStop = false;
 			this.textFieldTimeout.Text = "30";
 			this.textFieldTimeout.UseSystemPasswordChar = false;
+			this.textFieldTimeout.Validating += new System.ComponentModel.CancelEventHandler(this.textFieldTimeout_Validating);
 			// 
 			// textFieldPort
 			// 
@@ -305,7 +312,7 @@
 			this.radioButtonAttackMethodIcmp.TabIndex = 16;
 			this.radioButtonAttackMethodIcmp.Text = "ICMP";
 			this.radioButtonAttackMethodIcmp.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodIcmp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodIcmp_CheckedChanged);
+			this.radioButtonAttackMethodIcmp.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// radioButtonAttackMethodSlowLoic
 			// 
@@ -323,7 +330,7 @@
 			this.radioButtonAttackMethodSlowLoic.TabIndex = 15;
 			this.radioButtonAttackMethodSlowLoic.Text = "SlowLOIC";
 			this.radioButtonAttackMethodSlowLoic.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodSlowLoic.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodSlowLoic_CheckedChanged);
+			this.radioButtonAttackMethodSlowLoic.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// radioButtonAttackMethodReCoil
 			// 
@@ -341,7 +348,7 @@
 			this.radioButtonAttackMethodReCoil.TabIndex = 13;
 			this.radioButtonAttackMethodReCoil.Text = "ReCoil";
 			this.radioButtonAttackMethodReCoil.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodReCoil.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodReCoil_CheckedChanged);
+			this.radioButtonAttackMethodReCoil.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// radioButtonAttackMethodHttp
 			// 
@@ -361,7 +368,7 @@
 			this.radioButtonAttackMethodHttp.TabStop = true;
 			this.radioButtonAttackMethodHttp.Text = "HTTP";
 			this.radioButtonAttackMethodHttp.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodHttp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodHttp_CheckedChanged);
+			this.radioButtonAttackMethodHttp.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// radioButtonAttackMethodTcp
 			// 
@@ -379,7 +386,7 @@
 			this.radioButtonAttackMethodTcp.TabIndex = 10;
 			this.radioButtonAttackMethodTcp.Text = "TCP";
 			this.radioButtonAttackMethodTcp.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodTcp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodTcp_CheckedChanged);
+			this.radioButtonAttackMethodTcp.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// radioButtonAttackMethodUdp
 			// 
@@ -397,7 +404,7 @@
 			this.radioButtonAttackMethodUdp.TabIndex = 11;
 			this.radioButtonAttackMethodUdp.Text = "UDP";
 			this.radioButtonAttackMethodUdp.UseVisualStyleBackColor = true;
-			this.radioButtonAttackMethodUdp.CheckedChanged += new System.EventHandler(this.materialRadioButtonAttackMethodUdp_CheckedChanged);
+			this.radioButtonAttackMethodUdp.CheckedChanged += new System.EventHandler(this.radioButtonAttackMethod_CheckedChanged);
 			// 
 			// panelGenericInputs
 			// 
@@ -412,7 +419,7 @@
 			this.panelGenericInputs.Margin = new System.Windows.Forms.Padding(7, 10, 7, 3);
 			this.panelGenericInputs.MinimumSize = new System.Drawing.Size(125, 140);
 			this.panelGenericInputs.Name = "panelGenericInputs";
-			this.panelGenericInputs.Size = new System.Drawing.Size(136, 201);
+			this.panelGenericInputs.Size = new System.Drawing.Size(136, 146);
 			this.panelGenericInputs.TabIndex = 19;
 			// 
 			// panelRandomness
@@ -492,8 +499,6 @@
 			// checkBoxAppendRandomCharactersToUrl
 			// 
 			this.checkBoxAppendRandomCharactersToUrl.AutoSize = true;
-			this.checkBoxAppendRandomCharactersToUrl.Checked = true;
-			this.checkBoxAppendRandomCharactersToUrl.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.checkBoxAppendRandomCharactersToUrl.Cursor = System.Windows.Forms.Cursors.Default;
 			this.checkBoxAppendRandomCharactersToUrl.Depth = 0;
 			this.checkBoxAppendRandomCharactersToUrl.Font = new System.Drawing.Font("Roboto", 10F);
@@ -511,8 +516,6 @@
 			// checkBoxAppendRandomCharactersToMessage
 			// 
 			this.checkBoxAppendRandomCharactersToMessage.AutoSize = true;
-			this.checkBoxAppendRandomCharactersToMessage.Checked = true;
-			this.checkBoxAppendRandomCharactersToMessage.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.checkBoxAppendRandomCharactersToMessage.Cursor = System.Windows.Forms.Cursors.Default;
 			this.checkBoxAppendRandomCharactersToMessage.Depth = 0;
 			this.checkBoxAppendRandomCharactersToMessage.Font = new System.Drawing.Font("Roboto", 10F);
@@ -559,7 +562,7 @@
 			this.panel9.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel9.MinimumSize = new System.Drawing.Size(125, 100);
 			this.panel9.Name = "panel9";
-			this.panel9.Size = new System.Drawing.Size(125, 234);
+			this.panel9.Size = new System.Drawing.Size(125, 179);
 			this.panel9.TabIndex = 23;
 			// 
 			// materialLabel4
@@ -586,7 +589,7 @@
 			this.panelGenericButtons.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
 			this.panelGenericButtons.MinimumSize = new System.Drawing.Size(125, 100);
 			this.panelGenericButtons.Name = "panelGenericButtons";
-			this.panelGenericButtons.Size = new System.Drawing.Size(125, 205);
+			this.panelGenericButtons.Size = new System.Drawing.Size(125, 150);
 			this.panelGenericButtons.TabIndex = 20;
 			// 
 			// checkBoxWaitForReply
@@ -609,8 +612,6 @@
 			// checkBoxUseGzip
 			// 
 			this.checkBoxUseGzip.AutoSize = true;
-			this.checkBoxUseGzip.Checked = true;
-			this.checkBoxUseGzip.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.checkBoxUseGzip.Cursor = System.Windows.Forms.Cursors.Default;
 			this.checkBoxUseGzip.Depth = 0;
 			this.checkBoxUseGzip.Font = new System.Drawing.Font("Roboto", 10F);
@@ -632,7 +633,7 @@
 			this.panel5.Location = new System.Drawing.Point(3, 94);
 			this.panel5.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
 			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(150, 234);
+			this.panel5.Size = new System.Drawing.Size(150, 179);
 			this.panel5.TabIndex = 24;
 			// 
 			// materialLabel5
@@ -740,10 +741,63 @@
 			this.radioButtonProxyNone.Text = "None";
 			this.radioButtonProxyNone.UseVisualStyleBackColor = true;
 			// 
+			// buttonStart
+			// 
+			this.buttonStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.buttonStart.AutoSize = true;
+			this.buttonStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.buttonStart.Depth = 0;
+			this.buttonStart.Icon = null;
+			this.buttonStart.Location = new System.Drawing.Point(633, 7);
+			this.buttonStart.MouseState = MaterialSkin.MouseState.HOVER;
+			this.buttonStart.Name = "buttonStart";
+			this.buttonStart.Primary = true;
+			this.buttonStart.Size = new System.Drawing.Size(64, 36);
+			this.buttonStart.TabIndex = 26;
+			this.buttonStart.Text = "Start";
+			this.buttonStart.UseVisualStyleBackColor = true;
+			this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+			// 
+			// timerMain
+			// 
+			this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
+			// 
+			// trackBarDelay
+			// 
+			this.trackBarDelay.Location = new System.Drawing.Point(3, 279);
+			this.trackBarDelay.Maximum = 50;
+			this.trackBarDelay.Name = "trackBarDelay";
+			this.trackBarDelay.Size = new System.Drawing.Size(281, 45);
+			this.trackBarDelay.TabIndex = 27;
+			// 
+			// textFieldMessageStream
+			// 
+			this.textFieldMessageStream.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.textFieldMessageStream.Depth = 0;
+			this.textFieldMessageStream.Hint = "Message stream";
+			this.textFieldMessageStream.Location = new System.Drawing.Point(792, 127);
+			this.textFieldMessageStream.MaxLength = 32767;
+			this.textFieldMessageStream.MouseState = MaterialSkin.MouseState.HOVER;
+			this.textFieldMessageStream.Name = "textFieldMessageStream";
+			this.textFieldMessageStream.PasswordChar = '\0';
+			this.textFieldMessageStream.SelectedText = "";
+			this.textFieldMessageStream.SelectionLength = 0;
+			this.textFieldMessageStream.SelectionStart = 0;
+			this.textFieldMessageStream.Size = new System.Drawing.Size(221, 23);
+			this.textFieldMessageStream.TabIndex = 28;
+			this.textFieldMessageStream.TabStop = false;
+			this.textFieldMessageStream.Text = "There\'s no other laik bean in den";
+			this.textFieldMessageStream.UseSystemPasswordChar = false;
+			// 
 			// AttackOptionsControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.textFieldMessageStream);
+			this.Controls.Add(this.trackBarDelay);
+			this.Controls.Add(this.buttonStart);
 			this.Controls.Add(this.panel11);
 			this.Controls.Add(this.panel5);
 			this.Controls.Add(this.panel9);
@@ -751,7 +805,7 @@
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
 			this.Name = "AttackOptionsControl";
-			this.Size = new System.Drawing.Size(936, 365);
+			this.Size = new System.Drawing.Size(1016, 365);
 			this.Load += new System.EventHandler(this.AttackOptionsControl_Load);
 			this.panelHttpMethod.ResumeLayout(false);
 			this.panelHttpMethod.PerformLayout();
@@ -776,7 +830,9 @@
 			this.panel11.PerformLayout();
 			this.panelProxy.ResumeLayout(false);
 			this.panelProxy.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarDelay)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -822,5 +878,9 @@
 		public MaterialSkin.Controls.MaterialRadioButton radioButtonProxyRandom;
 		public MaterialSkin.Controls.MaterialRadioButton radioButtonProxyNone;
 		public MaterialSkin.Controls.MaterialCheckBox checkBoxUseRandomHeaderCommands;
+		private MaterialSkin.Controls.MaterialRaisedButton buttonStart;
+		private System.Windows.Forms.Timer timerMain;
+		public System.Windows.Forms.TrackBar trackBarDelay;
+		public MaterialSkin.Controls.MaterialSingleLineTextField textFieldMessageStream;
 	}
 }

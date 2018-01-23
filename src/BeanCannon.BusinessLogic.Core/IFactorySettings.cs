@@ -4,6 +4,7 @@ using System;
 
 namespace BeanCannon.BusinessLogic.Core
 {
+	// TODO: Change to IApplicationSettings
 	public interface IFactorySettings :
 		IHttpFlooderSettings,
 		IIcmpSettings,
@@ -14,8 +15,12 @@ namespace BeanCannon.BusinessLogic.Core
 		string Ip { get; }
 
 		int Port { get; }
+
 		TimeSpan Delay { get; }
+
 		TimeSpan Timeout { get; }
+
+		int Threads { get; }
 
 		ProxyConnectionType ProxyConnectionType { get; }
 	}

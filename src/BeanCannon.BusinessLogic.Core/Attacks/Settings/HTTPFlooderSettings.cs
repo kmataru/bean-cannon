@@ -16,7 +16,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 
 		public HTTPFlooderSettings(IFactorySettings settings)
 		{
-			this.Host = (settings.Host == "") ? settings.Ip : settings.Host;
+			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host;
 			this.Ip = settings.Ip;
 			this.Port = settings.Port;
 			this.UrlPath = settings.UrlPath;
@@ -24,11 +24,9 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 			this.Delay = settings.Delay;
 			this.Timeout = settings.Timeout;
 			this.UseRandomPath = settings.UseRandomPath;
-			this.UseGet = settings.UseGet;
 			this.AllowGzip = settings.AllowGzip;
 			this.ProxyConnectionType = settings.ProxyConnectionType;
-
-			this.HttpRequestMethod = this.UseGet ? HttpMethod.Get : HttpMethod.Head;
+			this.HttpRequestMethod = settings.HttpRequestMethod;
 		}
 	}
 }

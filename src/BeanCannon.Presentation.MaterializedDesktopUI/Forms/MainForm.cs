@@ -10,14 +10,28 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 	public partial class MainForm : MaterialForm
 	{
 		private readonly MaterialSkinManager materialSkinManager;
-		private readonly ControlsStore beanControls;
-		private readonly ApplicationSettings settings;
+		private /*readonly*/ ControlsStore beanControls;
+		internal /*readonly*/ ApplicationSettingsProvider settings;
 
 		public MainForm()
 		{
 			InitializeComponent();
 
+			buttonNext.Visible = false;
+
+			(tabAttackOptions as Control).Enabled = false;
+
+			// Initialize MaterialSkinManager
+			materialSkinManager = MaterialSkinManager.Instance;
+			materialSkinManager.AddFormToManage(this);
+			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+		}
+
+		private void MainForm_Load(object sender, EventArgs e)
+		{
 			beanControls = new ControlsStore(
+				this,
 				this.proxySettingsControl,
 				this.targetControl,
 				this.attackOptionsControl,
@@ -25,19 +39,9 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 				this.statusControl,
 				this.tabAttackOptions
 				);
+
+			settings = new ApplicationSettingsProvider(beanControls);
 			beanControls.Register();
-
-			buttonNext.Visible = false;
-
-			(tabAttackOptions as Control).Enabled = false;
-
-			settings = new ApplicationSettings(beanControls);
-
-			// Initialize MaterialSkinManager
-			materialSkinManager = MaterialSkinManager.Instance;
-			materialSkinManager.AddFormToManage(this);
-			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 		}
 
 		private void ButtonChangeTheme_Click(object sender, EventArgs e)

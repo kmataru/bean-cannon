@@ -14,7 +14,7 @@ using static System.Windows.Forms.ListViewItem;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 {
-	public partial class TargetControl : UserControl
+	public partial class TargetControl : UserControl, IBeanControl
 	{
 		private ControlsStore beanControls;
 
@@ -40,8 +40,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 		private void SetErrorMessage(string message)
 		{
-			materialLabel1.ForeColor = Color.DarkRed;
-			materialLabel1.Text = message;
+			labelTargetIp.ForeColor = Color.DarkRed;
+			labelTargetIp.Text = message;
 		}
 
 		private void textFieldUrlOrIp_TextChanged(object sender, EventArgs e)
@@ -97,9 +97,9 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 				{
 					IPHostEntry hostInfo = Dns.GetHostEntry(testText);
 
-					materialLabel1.ForeColor = Color.FromArgb(222, 0, 0, 0);
+					labelTargetIp.ForeColor = Color.FromArgb(222, 0, 0, 0);
 					//materialLabel1.Text = String.Join("; ", hostInfo.AddressList.Select(w => w.ToString()));
-					materialLabel1.Text = hostInfo.AddressList[0].ToString();
+					labelTargetIp.Text = hostInfo.AddressList[0].ToString();
 
 					(beanControls.TabAttackOptions as Control).Enabled = true;
 					panelCrawler.Enabled = true;

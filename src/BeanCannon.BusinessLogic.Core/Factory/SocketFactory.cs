@@ -71,7 +71,8 @@ namespace BeanCannon.BusinessLogic.Core.Factory
 
 						proxySocket.ProxyType = proxy.GetTestedProxyType(addressFamily, socketType, protocolType);
 
-						return proxySocket.ActLike<ISocket>();
+						//return proxySocket.ActLike<ISocket>();
+						return proxySocket;
 					}
 
 				case ProxyConnectionType.Chained:
@@ -121,7 +122,8 @@ namespace BeanCannon.BusinessLogic.Core.Factory
 								chainedProxySocket.AddChainedProxy(nextProxy, addressFamily, socketType, protocolType);
 						}
 
-						return chainedProxySocket.ActLike<ISocket>();
+						//return chainedProxySocket.ActLike<ISocket>();
+						return chainedProxySocket;
 					}
 
 				default:

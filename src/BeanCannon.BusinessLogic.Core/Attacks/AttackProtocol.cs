@@ -11,6 +11,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 	/// <summary>
 	/// Protocol.
 	/// </summary>
+	// TODO: Rename to AttackMethod
 	public enum AttackProtocol
 	{
 		/// <summary>
