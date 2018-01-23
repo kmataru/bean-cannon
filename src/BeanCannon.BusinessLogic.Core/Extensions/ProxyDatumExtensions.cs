@@ -1,0 +1,31 @@
+﻿using BeanCannon.BusinessLogic.Core.Models;
+using BeanCannon.BusinessLogic.Core.Services;
+using Org.Mentalis.Network.ProxySocket;
+using System.Linq;
+using System.Net.Sockets;
+
+namespace BeanCannon.BusinessLogic.Core.Extensions
+{
+	public static class ProxyDatumExtensions
+	{
+		public static ProxyTypes GetTestedProxyType(this ProxyDatum proxy, AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType)
+		{
+			var selected = proxy.Tests[addressFamily][socketType][protocolType]
+				.Where(w => w.Value >= 0 && w.Value <= ProxyTester.MaximumConnectionTime.TotalSeconds)
+				.OrderBy(w => w.Value)
+				.FirstOrDefault();
+
+			return selected.Key;
+		}
+
+		public static double GetTestedProxyResponseTime(this ProxyDatum proxy, AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType)
+		{
+			var selected = proxy.Tests[addressFamily][socketType][protocolType]
+				.Where(w => w.Value >= 0)
+				.OrderBy(w => w.Value)
+				.FirstOrDefault();
+
+			return selected.Value;
+		}
+	}
+}
