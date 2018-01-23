@@ -15,7 +15,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 		public int SocketsPerThread { get; internal set; }
 		public HttpMethod HttpRequestMethod { get; internal set; }
 
-		public SlowLoicSettings(IFactorySettings settings)
+		public SlowLoicSettings(IApplicationSettings settings)
 		{
 			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
 			this.Ip = settings.Ip;

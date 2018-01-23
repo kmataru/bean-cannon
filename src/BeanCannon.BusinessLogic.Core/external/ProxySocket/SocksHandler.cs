@@ -86,7 +86,7 @@ namespace Org.Mentalis.Network.ProxySocket
 			{
 				var read = Server.Receive(buffer, received, count - received, SocketFlags.None);
 
-				// TODO : Put a nice description here
+				// Workaround
 				if (read == 0)
 				{
 					break;

@@ -77,6 +77,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls.Common
 			base.WndProc(ref m);
 		}
 
+		public void TriggerSizeChangedEvents()
+		{
+			OnSizeChanged(EventArgs.Empty);
+		}
+
 		private struct NMHDR
 		{
 			public IntPtr hwndFrom;

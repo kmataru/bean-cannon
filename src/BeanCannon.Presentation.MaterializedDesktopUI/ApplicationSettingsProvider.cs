@@ -7,12 +7,12 @@ using System.Windows.Forms;
 
 namespace BeanCannon.Presentation.MaterializedDesktopUI
 {
-	class ApplicationSettingsProvider : IFactorySettings
+	class ApplicationSettingsProvider : IApplicationSettings
 	{
 		private readonly ControlsStore store;
 
 		private HttpMethod _HttpRequestMethod = HttpMethod.Get;
-		private AttackProtocol _Protocol = AttackProtocol.HTTP;
+		private AttackMethod _Protocol = AttackMethod.HTTP;
 		private ProxyConnectionType _ProxyConnectionType = ProxyConnectionType.Random;
 		private int _Delay = 1,
 			_Port = 80,
@@ -70,7 +70,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			var button = sender as RadioButton;
 			if (button.Checked)
 			{
-				_Protocol = (AttackProtocol)button.Tag;
+				_Protocol = (AttackMethod)button.Tag;
 			}
 		}
 
@@ -92,7 +92,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			}
 		}
 
-		public AttackProtocol Protocol => _Protocol;
+		public AttackMethod Protocol => _Protocol;
 
 		public string StreamData => store.AttackOptionsControl.textFieldMessageStream.Text;
 

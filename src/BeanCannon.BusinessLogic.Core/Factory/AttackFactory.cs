@@ -5,7 +5,7 @@ namespace BeanCannon.BusinessLogic.Core.Factory
 {
 	public class AttackFactory
 	{
-		public IFlooder Get(IFactorySettings settings)
+		public IFlooder Get(IApplicationSettings settings)
 		{
 			Logger.Log.InfoFormat(
 				"Creating new {0} Flooder",
@@ -14,36 +14,36 @@ namespace BeanCannon.BusinessLogic.Core.Factory
 
 			switch (settings.Protocol)
 			{
-				case AttackProtocol.HTTP:
+				case AttackMethod.HTTP:
 					{
 						var attackSettings = new HTTPFlooderSettings(settings);
 
 						return new HTTPFlooder(attackSettings);
 					}
 
-				case AttackProtocol.ICMP:
+				case AttackMethod.ICMP:
 					{
 						var attackSettings = new ICMPSettings(settings);
 
 						return new ICMP(attackSettings);
 					}
 
-				case AttackProtocol.ReCoil:
+				case AttackMethod.ReCoil:
 					{
 						var attackSettings = new ReCoilSettings(settings);
 
 						return new ReCoil(attackSettings);
 					}
 
-				case AttackProtocol.SlowLOIC:
+				case AttackMethod.SlowLOIC:
 					{
 						var attackSettings = new SlowLoicSettings(settings);
 
 						return new SlowLoic(attackSettings);
 					}
 
-				case AttackProtocol.TCP:
-				case AttackProtocol.UDP:
+				case AttackMethod.TCP:
+				case AttackMethod.UDP:
 					{
 						var attackSettings = new XXPFlooderSettings(settings);
 

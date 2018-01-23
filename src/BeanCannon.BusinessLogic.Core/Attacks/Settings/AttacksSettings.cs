@@ -17,7 +17,8 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 		public TimeSpan Timeout { get; set; }
 
 		/// <summary>
-		/// TODO: Add description.
+		/// Connection type.
+		/// Usually we want the traffic transfered via a proxy or a chain of proxies.
 		/// </summary>
 		public ProxyConnectionType ProxyConnectionType { get; set; }
 

@@ -13,7 +13,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 
 		public int SocketsPerThread;
 
-		public ReCoilSettings(IFactorySettings settings)
+		public ReCoilSettings(IApplicationSettings settings)
 		{
 			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host; //hopefully they know what they are doing :)
 			this.Ip = settings.Ip;

@@ -30,7 +30,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 				SocketType socketType = SocketType.Unknown;
 				ProtocolType protocolType = ProtocolType.Unknown;
 
-				if (Settings.Protocol == AttackProtocol.TCP)
+				if (Settings.Protocol == AttackMethod.TCP)
 				{
 					socketType = SocketType.Stream;
 					protocolType = ProtocolType.Tcp;
@@ -50,7 +50,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 						socket.NoDelay = true;
 						State.Status = RequestStatus.Connecting; // SET STATE TO CONNECTING //
 
-						if (Settings.Protocol == AttackProtocol.TCP)
+						if (Settings.Protocol == AttackMethod.TCP)
 						{
 							try
 							{
@@ -72,7 +72,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 								State.Requested++;
 								byte[] buf = System.Text.Encoding.ASCII.GetBytes(String.Concat(Settings.StreamData, (Settings.UseRandomMessage ? RandomizerHq.RandomString() : "")));
 
-								if (Settings.Protocol == AttackProtocol.TCP)
+								if (Settings.Protocol == AttackMethod.TCP)
 								{
 									socket.Send(buf);
 								}

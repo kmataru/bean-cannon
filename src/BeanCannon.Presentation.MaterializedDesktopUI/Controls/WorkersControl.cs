@@ -23,16 +23,13 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 		private ControlsStore beanControls;
 
-		// TODO: Review events.
 		public WorkersControl()
 		{
 			InitializeComponent();
 
-			SeedListView();
-
 			this.listViewWorkers.SizeChanged += CommonEvents.MaterialListView_SizeChanged;
-			this.listViewWorkers.LastColumnSizeChanged += MaterialListView1_LastColumnSizeChanged;
-			this.listViewWorkers.TopItemChanged += MaterialListView1_TopItemChanged;
+			this.listViewWorkers.LastColumnSizeChanged += ListViewWorkers_LastColumnSizeChanged;
+			this.listViewWorkers.TopItemChanged += ListViewWorkers_TopItemChanged;
 		}
 
 		public void RegisterControlsStore(ControlsStore beanControls)
@@ -40,7 +37,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			this.beanControls = beanControls;
 		}
 
-		private void MaterialListView1_LastColumnSizeChanged(object sender, LastColumnSizeEventArgs e)
+		private void ListViewWorkers_LastColumnSizeChanged(object sender, LastColumnSizeEventArgs e)
 		{
 			var listView = sender as MaterialListViewEx;
 
@@ -70,7 +67,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			}
 		}
 
-		private void MaterialListView1_TopItemChanged(object sender, TopItemIndexEventArgs e)
+		private void ListViewWorkers_TopItemChanged(object sender, TopItemIndexEventArgs e)
 		{
 			var listView = sender as ListView;
 
@@ -97,37 +94,36 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			}
 		}
 
-		[Obsolete]
-		private void SeedListView()
+		public void ClearListViewContent()
 		{
-			for (int idx = 1; idx <= 10; ++idx)
+			listViewWorkers.Items.Clear();
+			listViewWorkers.Controls.Clear();
+		}
+
+		public void UpdateWorkers(IList<IFlooder> floodersList)
+		{
+			if (floodersList == null)
 			{
-				var item = new ListViewItem(new[] { $"W-0{idx}", "Downloading", "999M", "999M", "999M", "999.99ms" });
-				listViewWorkers.Items.Add(item);
+				throw new ArgumentNullException(nameof(floodersList));
+			}
 
-				{
-					MaterialProgressBar materialProgressBar = new MaterialProgressBar();
-					materialProgressBar.Depth = 0;
-					materialProgressBar.Location = new Point(834, 64);
-					materialProgressBar.MouseState = MaterialSkin.MouseState.HOVER;
-					materialProgressBar.Name = $"materialProgressBar{idx}";
-					materialProgressBar.Size = new Size(157, 5);
-					materialProgressBar.Maximum = 10;
-					materialProgressBar.Value = idx;
-
-					listViewWorkers.Controls.Add(materialProgressBar);
-				}
+			for (int idx = floodersList.Count - 1; idx >= 0; --idx)
+			{
+				this.AddOrUpdateToListViewContent(floodersList[idx]);
 			}
 		}
 
-		public void AddOrUpdateToListViewContent(IFlooder flooder)
+		private void AddOrUpdateToListViewContent(IFlooder flooder)
 		{
+			if (flooder == null)
+			{
+				throw new ArgumentNullException(nameof(flooder));
+			}
+
 			if (flooder.State.ManagedThreadId == 0)
 			{
 				return;
 			}
-
-			ListViewSubItemCollection currentSubItems;
 
 			ListViewItem currentListViewItem = listViewWorkers.Items.Cast<ListViewItem>()
 				.FirstOrDefault(w => w.Text == $"W-{flooder.State.ManagedThreadId}");
@@ -160,19 +156,17 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 					progressBar.Value = 0;
 
 					listViewWorkers.Controls.Add(progressBar);
+
+					listViewWorkers.TriggerSizeChangedEvents();
 				}
 
-				currentSubItems = item.SubItems;
-			}
-			else
-			{
-				currentSubItems = currentListViewItem.SubItems;
+				currentListViewItem = item;
 			}
 
 			var currentIndex = listViewWorkers.Items.IndexOf(currentListViewItem);
 			var currentProgressBar = (listViewWorkers.Controls[currentIndex] as ProgressBar);
 
-			UpdateWorkerData(currentSubItems, currentProgressBar, flooder);
+			UpdateWorkerData(currentListViewItem.SubItems, currentProgressBar, flooder);
 
 			listViewWorkers.EndUpdate();
 		}
@@ -190,36 +184,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			var totalSeconds = elapsed.TotalSeconds;
 
 			//
-			// Generic
-			/*
-			if (flooder.State.ManagedThreadId > 0)
-			{
-				this.Enabled = true;
-			}
-			else
-			{
-				this.Enabled = false;
-			}
-			*/
-			//
-
-			//
-			// Worker Thread Id
-			/*
-			if (flooder.State.ManagedThreadId > 0)
-			{
-				this.labelWorkerName.Text = $"W-{flooder.State.ManagedThreadId}";
-			}
-			else
-			{
-				this.labelWorkerName.Text = $"N/A";
-			}
-			*/
-			//
-
-			//
 			// Time Progress
-			//if (flooder.State.ManagedThreadId > 0)
 			{
 				responsivenessProgressBar.Maximum = (int)flooder.Settings.Timeout.TotalSeconds;
 				if (totalSeconds > responsivenessProgressBar.Maximum)
@@ -231,18 +196,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 					responsivenessProgressBar.Value = (int)totalSeconds;
 				}
 			}
-			/*
-			else
-			{
-				this.progressBarWorkerResponsiveness.Maximum = 1;
-				this.progressBarWorkerResponsiveness.Value = 0;
-			}
-			*/
 			//
 
 			//
 			// Responsiveness
-			//if (flooder.State.ManagedThreadId > 0)
 			{
 				String responsiveness = null;
 
@@ -265,17 +222,10 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 				subItems[ResponsivenessIndex].Text = responsiveness;
 			}
-			/*
-			else
-			{
-				subItems[ResponsivenessIndex].Text = String.Empty;
-			}
-			*/
 			//
 
 			//
 			// State
-			//if (flooder.State.ManagedThreadId > 0)
 			{
 				subItems[StatusIndex].Text = flooder.State.Status.ToString();
 				subItems[RequestedIndex].Text = Format.Size(flooder.State.Requested).ToString();

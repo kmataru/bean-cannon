@@ -5,12 +5,12 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 {
 	public class XXPFlooderSettings : AttackSettings, IXxpFlooderSettings
 	{
-		public AttackProtocol Protocol { get; internal set; }
+		public AttackMethod Protocol { get; internal set; }
 		public bool WaitReply { get; internal set; }
 		public string StreamData { get; internal set; }
 		public bool UseRandomMessage { get; internal set; }
 
-		public XXPFlooderSettings(IFactorySettings settings)
+		public XXPFlooderSettings(IApplicationSettings settings)
 		{
 			this.Ip = settings.Ip;
 			this.Port = settings.Port;

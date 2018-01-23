@@ -3,6 +3,7 @@ using BeanCannon.BusinessLogic.Core.Factory;
 using BeanCannon.BusinessLogic.Core.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace BeanCannon.BusinessLogic.Core.Services
 {
@@ -45,7 +46,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 		/// <param name="toggle">Whether to toggle.</param>
 		/// <param name="on">Whether the attack should start.</param>
 		/// <param name="silent">Whether to silence error output.</param>
-		public void Attack(IFactorySettings settings, bool toggle, bool on, bool silent = false)
+		public void Attack(IApplicationSettings settings, bool toggle, bool on, bool silent = false)
 		{
 			if ((Status == AttackServiceStatus.Idle && toggle) || (!toggle && on))
 			{
@@ -213,12 +214,17 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			}
 		}
 
+		public ReadOnlyCollection<IFlooder> GetFlooders()
+		{
+			return floodersList.AsReadOnly();
+		}
+
 		bool intShowStats;
 
 		/// <summary>
 		/// Handles the tShowStats Tick event.
 		/// </summary>
-		public bool GetStatistics(IFactorySettings settings, out AttackState attackState)
+		public bool GetStatistics(IApplicationSettings settings, out AttackState attackState)
 		{
 			// TODO: Use lock
 

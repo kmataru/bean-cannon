@@ -68,7 +68,7 @@ namespace BeanCannon.BusinessLogic.Core.Extensions
 			{
 				var read = socket.Receive(bytes, total, size - total, SocketFlags.None);
 
-				// TODO : Put a nice description here
+				// Workaround
 				if (read == 0)
 				{
 					//If it gets here and you received 0 bytes it means that the Socket has Disconnected gracefully (without throwing exception) so you will need to handle that here

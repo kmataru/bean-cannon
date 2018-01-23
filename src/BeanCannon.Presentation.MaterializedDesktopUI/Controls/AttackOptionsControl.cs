@@ -38,12 +38,12 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 			//
 			// Set up radio buttons tags
-			radioButtonAttackMethodHttp.Tag = AttackProtocol.HTTP;
-			radioButtonAttackMethodTcp.Tag = AttackProtocol.TCP;
-			radioButtonAttackMethodUdp.Tag = AttackProtocol.UDP;
-			radioButtonAttackMethodReCoil.Tag = AttackProtocol.ReCoil;
-			radioButtonAttackMethodSlowLoic.Tag = AttackProtocol.SlowLOIC;
-			radioButtonAttackMethodIcmp.Tag = AttackProtocol.ICMP;
+			radioButtonAttackMethodHttp.Tag = AttackMethod.HTTP;
+			radioButtonAttackMethodTcp.Tag = AttackMethod.TCP;
+			radioButtonAttackMethodUdp.Tag = AttackMethod.UDP;
+			radioButtonAttackMethodReCoil.Tag = AttackMethod.ReCoil;
+			radioButtonAttackMethodSlowLoic.Tag = AttackMethod.SlowLOIC;
+			radioButtonAttackMethodIcmp.Tag = AttackMethod.ICMP;
 
 			radioButtonHttpMethodHead.Tag = HttpMethod.Head;
 			radioButtonHttpMethodGet.Tag = HttpMethod.Get;
@@ -55,48 +55,48 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 			//
 			//
 
-			new FluentControlActivator(AttackProtocol.HTTP)
+			new FluentControlActivator(AttackMethod.HTTP)
 				.Disable(radioButtonHttpMethodPost).Check(radioButtonHttpMethodGet)
 				.Disable(textFieldSocketsPerThread)
 				.Disable(checkBoxAppendRandomCharactersToMessage);
 
-			new FluentControlActivator(AttackProtocol.TCP)
+			new FluentControlActivator(AttackMethod.TCP)
 				.Disable(panelHttpMethod).Disable(checkBoxUseGzip)
 				.Disable(textFieldSocketsPerThread)
 				.Disable(checkBoxAppendRandomCharactersToUrl)
 				.Disable(panelProxy);
 
-			new FluentControlActivator(AttackProtocol.UDP)
+			new FluentControlActivator(AttackMethod.UDP)
 				.Disable(panelHttpMethod).Disable(checkBoxUseGzip)
 				.Disable(textFieldSocketsPerThread)
 				.Disable(checkBoxAppendRandomCharactersToUrl)
 				.Disable(panelProxy);
 
-			new FluentControlActivator(AttackProtocol.ReCoil)
+			new FluentControlActivator(AttackMethod.ReCoil)
 				.Disable(panelHttpMethod)
 				.Disable(checkBoxAppendRandomCharactersToMessage)
 				.Disable(panelProxy);
 
-			new FluentControlActivator(AttackProtocol.SlowLOIC)
+			new FluentControlActivator(AttackMethod.SlowLOIC)
 				.Disable(radioButtonHttpMethodHead).Check(radioButtonHttpMethodPost)
 				.Disable(checkBoxWaitForReply)
 				.Disable(checkBoxAppendRandomCharactersToMessage)
 				.Disable(panelProxy);
 
-			new FluentControlActivator(AttackProtocol.ICMP)
+			new FluentControlActivator(AttackMethod.ICMP)
 				.Disable(panelHttpMethod)
 				.Disable(checkBoxWaitForReply)
 				.Disable(checkBoxAppendRandomCharactersToUrl)
 				.Disable(panelProxy);
 
-			FluentControlActivator.Activate(AttackProtocol.HTTP);
+			FluentControlActivator.Activate(AttackMethod.HTTP);
 		}
 
 		private void radioButtonAttackMethod_CheckedChanged(object sender, EventArgs e)
 		{
 			var button = sender as RadioButton;
 
-			var attackProtocol = (AttackProtocol)button.Tag;
+			var attackProtocol = (AttackMethod)button.Tag;
 			FluentControlActivator.Set(attackProtocol, button.Checked);
 		}
 
@@ -117,6 +117,8 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 			if (AttackService.Instance.Status == AttackServiceStatus.InProgress)
 			{
+				this.beanControls.WorkersControl.ClearListViewContent();
+
 				timerMain.Start();
 				(sender as Button).Text = "Stop";
 			}
@@ -128,10 +130,15 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 		private void timerMain_Tick(object sender, EventArgs e)
 		{
+			var attackService = AttackService.Instance;
+
 			var settings = this.beanControls.MainForm.settings;
-			if (AttackService.Instance.GetStatistics(settings, out AttackState attackState))
+			if (attackService.GetStatistics(settings, out AttackState attackState))
 			{
 				this.beanControls.StatusControl.UpdateAttacks(attackState);
+
+				var flooders = attackService.GetFlooders();
+				this.beanControls.WorkersControl.UpdateWorkers(flooders);
 			}
 		}
 	}

@@ -24,8 +24,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 		private readonly SpinProxiesRootResponse spinProxiesData;
 		private readonly SpinProxiesApiWrapper spinProxiesApiWrapper;
 
-		// TODO: Rename
-		public ProxyTesterState state { get; } = new ProxyTesterState();
+		public ProxyTesterState State { get; } = new ProxyTesterState();
 
 		private bool IsInit = false;
 
@@ -214,8 +213,8 @@ namespace BeanCannon.BusinessLogic.Core.Services
 					return !isProxyTested || hasValidValues;
 				});
 
-			state.Total = proxies.Count();
-			state.Types = proxyTypesToTest.Length;
+			State.Total = proxies.Count();
+			State.Types = proxyTypesToTest.Length;
 
 			// TODO: Convert to array
 			//var tasks = new List<Task>();
@@ -231,7 +230,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			Logger.Log.Debug("Done testing proxies.");
 
-			state.Done = true;
+			State.Done = true;
 		}
 
 		void DoWorkInternal(object actionState)
@@ -244,9 +243,9 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			bool isProxyInvalid = true;
 
-			lock (state)
+			lock (State)
 			{
-				++state.Testing;
+				++State.Testing;
 			}
 
 			foreach (var proxyTypeToTest in proxyTypesToTest)
@@ -259,9 +258,9 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 				if (isProxySocketValid)
 				{
-					lock (state)
+					lock (State)
 					{
-						++state.Available;
+						++State.Available;
 					}
 
 					lock (availableProxiesList)
@@ -273,16 +272,16 @@ namespace BeanCannon.BusinessLogic.Core.Services
 				}
 			}
 
-			lock (state)
+			lock (State)
 			{
-				++state.Tested;
+				++State.Tested;
 			}
 
 			if (isProxyInvalid)
 			{
-				lock (state)
+				lock (State)
 				{
-					++state.Failed;
+					++State.Failed;
 				}
 			}
 		}

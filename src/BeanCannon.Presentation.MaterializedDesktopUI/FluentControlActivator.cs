@@ -10,11 +10,11 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 {
 	class FluentControlActivator
 	{
-		static Dictionary<AttackProtocol, List<Data>> Actions { get; } = new Dictionary<AttackProtocol, List<Data>>();
+		static Dictionary<AttackMethod, List<Data>> Actions { get; } = new Dictionary<AttackMethod, List<Data>>();
 
-		AttackProtocol Name { get; }
+		AttackMethod Name { get; }
 
-		public FluentControlActivator(AttackProtocol name)
+		public FluentControlActivator(AttackMethod name)
 		{
 			if (Actions.ContainsKey(name))
 			{
@@ -46,7 +46,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			return this;
 		}
 
-		public static void Set(AttackProtocol name, bool state)
+		public static void Set(AttackMethod name, bool state)
 		{
 			if (state)
 			{
@@ -58,7 +58,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			}
 		}
 
-		public static void Activate(AttackProtocol name)
+		public static void Activate(AttackMethod name)
 		{
 			if (!Actions.ContainsKey(name))
 			{
@@ -83,7 +83,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI
 			}
 		}
 
-		public static void Deactivate(AttackProtocol name)
+		public static void Deactivate(AttackMethod name)
 		{
 			if (!Actions.ContainsKey(name))
 			{

@@ -47,9 +47,9 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Controls
 
 			UpdateListViewContent();
 
-			this.beanControls.StatusControl.UpdateProxies(proxyTester.state);
+			this.beanControls.StatusControl.UpdateProxies(proxyTester.State);
 
-			if (proxyTester.state.Done)
+			if (proxyTester.State.Done)
 			{
 				(sender as Timer).Stop();
 			}

@@ -176,8 +176,8 @@
     <Compile Include="Models\ProxyTesterState.cs" />
     <Compile Include="Net\Interfaces\IProxy.cs" />
     <Compile Include="Net\Interfaces\IProxySocket.cs" />
-    <Compile Include="IFactorySettings.cs" />
-    <Compile Include="Attacks\AttackProtocol.cs" />
+    <Compile Include="IApplicationSettings.cs" />
+    <Compile Include="Attacks\AttackMethod.cs" />
     <Compile Include="Attacks\BaseFlooder.cs" />
     <Compile Include="Attacks\HTTPFlooder.cs" />
     <Compile Include="Attacks\ICMP.cs" />

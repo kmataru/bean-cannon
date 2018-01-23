@@ -3,16 +3,12 @@
  * Enjoy getting v&, kids.
  */
 
-using System;
-
 namespace BeanCannon.BusinessLogic.Core.Attacks
 {
-
 	/// <summary>
-	/// Protocol.
+	/// Attack method/protocol.
 	/// </summary>
-	// TODO: Rename to AttackMethod
-	public enum AttackProtocol
+	public enum AttackMethod
 	{
 		/// <summary>
 		/// No (invalid) protocol.
@@ -40,7 +36,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 		SlowLOIC = 4,
 
 		/// <summary>
-		/// XXX: Must be documented.
+		/// "Reverse" DDOS method.
 		/// </summary>
 		ReCoil = 5,
 

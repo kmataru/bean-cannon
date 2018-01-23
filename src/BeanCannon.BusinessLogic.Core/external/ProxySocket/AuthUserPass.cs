@@ -80,7 +80,7 @@ namespace Org.Mentalis.Network.ProxySocket.Authentication
 			{
 				var read = Server.Receive(buffer, received, 2 - received, SocketFlags.None);
 
-				// TODO : Put a nice description here
+				// Workaround
 				if (read == 0)
 				{
 					break;

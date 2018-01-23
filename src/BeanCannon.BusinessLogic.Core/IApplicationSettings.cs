@@ -4,8 +4,7 @@ using System;
 
 namespace BeanCannon.BusinessLogic.Core
 {
-	// TODO: Change to IApplicationSettings
-	public interface IFactorySettings :
+	public interface IApplicationSettings :
 		IHttpFlooderSettings,
 		IIcmpSettings,
 		IReCoilSettings,

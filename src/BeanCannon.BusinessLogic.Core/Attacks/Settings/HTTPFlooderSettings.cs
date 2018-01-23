@@ -14,7 +14,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 		public bool AllowGzip { get; internal set; }
 		public HttpMethod HttpRequestMethod { get; internal set; }
 
-		public HTTPFlooderSettings(IFactorySettings settings)
+		public HTTPFlooderSettings(IApplicationSettings settings)
 		{
 			this.Host = String.IsNullOrEmpty(settings.Host) ? settings.Ip : settings.Host;
 			this.Ip = settings.Ip;

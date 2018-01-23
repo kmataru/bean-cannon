@@ -8,7 +8,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks.Settings
 		public int SocketsPerThread { get; internal set; }
 		public bool UseRandomMessage { get; internal set; }
 
-		public ICMPSettings(IFactorySettings settings)
+		public ICMPSettings(IApplicationSettings settings)
 		{
 			this.Delay = settings.Delay;
 

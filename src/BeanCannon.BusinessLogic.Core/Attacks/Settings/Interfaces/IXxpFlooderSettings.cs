@@ -4,7 +4,7 @@
 		IFlooderSettingsRandomMessage,
 		IFlooderSettingsWaitReply
 	{
-		AttackProtocol Protocol { get; }
+		AttackMethod Protocol { get; }
 
 		string StreamData { get; }
 	}
