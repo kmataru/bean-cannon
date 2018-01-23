@@ -1,0 +1,6 @@
+language: csharp
+solution: src/BeanCannon.sln
+install:
+  - nuget restore src/BeanCannon.sln
+script:
+  - xbuild /p:Configuration=Release src/BeanCannon.sln
