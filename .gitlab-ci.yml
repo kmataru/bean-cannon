@@ -6,7 +6,6 @@ before_script:
   - echo "Downloading NuGet..."
   - wget -O .nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
   - echo "Restoring NuGet Packages..."
-  - .nuget/nuget.exe # Output NuGet's version number
   - .nuget/nuget.exe restore "src/%PROJECT_NAME%.sln"
 stages:
   - build
