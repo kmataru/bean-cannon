@@ -55,9 +55,16 @@ This tool is released for educational purposes only, with the intent of helping 
 
 |                    |HTTP                |TCP                 |UDP                 |ReCoil              |SlowLOIC            |ICMP                |
 |:-------------------|:-------------------|:-------------------|:-------------------|:-------------------|:-------------------|:-------------------|
-|Proxy               |*Random*, *Chained* |*Random*, *Chained* |<span style="color:#C56D21">TBD<span>|<span style="color:#B72637">Needs more tests<span>|*Random*, *Chained* |<span style="color:#C56D21">TBD<span>|
+|Random Proxy        |Yes                 |Yes                 |<span style="color:#C56D21">TBD<span>|<span style="color:#B72637">Needs more tests<span>|Yes                 |<span style="color:#C56D21">TBD<span>|
+|Chained Proxy       |Yes                 |Yes                 |<span style="color:#C56D21">TBD<span>|<span style="color:#B72637">Needs more tests<span>|Yes                 |<span style="color:#C56D21">TBD<span>|
 |Random user agent   |Yes                 |-                   |-                   |Yes                 |-                   |-                   |
 |Random referrer     |Yes                 |-                   |-                   |Yes                 |-                   |-                   |
+
+#### Chained proxy
+
+<p align="center">
+    <img src="./images/proxy-chained-full.png">
+</p>
 
 ## Directory Contents
 
