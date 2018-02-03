@@ -110,8 +110,6 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			lock (availableProxiesList)
 			{
-				//checkMaximumConnectionTime
-
 				filteredProxiesList = availableProxiesList
 					.Where(w => IsProxyValidCandidate(w, addressFamily, socketType, protocolType, MaximumConnectionTime, checkMaximumConnectionTime))
 					.ToList();
@@ -364,8 +362,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 				SetTestValidity(proxy, addressFamily, socketType, protocolType, proxyType, testedConnectionTime);
 			}, parentThread.Name);
 
-			// TODO : Use as multiplier 1.25
-			if (!task.Wait(TimeSpan.FromSeconds(maximumConnectionTime.TotalSeconds * 2)))
+			if (!task.Wait(TimeSpan.FromSeconds(maximumConnectionTime.TotalSeconds * 1.25)))
 			{
 				SetTestValidity(proxy, addressFamily, socketType, protocolType, proxyType, InvalidProxyConnectionTime);
 
@@ -392,15 +389,13 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 			try
 			{
-				//stopWatch.Start();
-
 				byte[] recvBuf = new byte[128];
 
-				// TODO: Get IP from DNS
-				IPEndPoint RHost = new IPEndPoint(IPAddress.Parse("104.20.2.47"), 80);
-				addressFamily = RHost.AddressFamily;
+				var targetIpAddress = Dns.GetHostEntry("example.com").AddressList[0];
+				IPEndPoint endPoint = new IPEndPoint(targetIpAddress, 80);
+				addressFamily = endPoint.AddressFamily;
 
-				using (ProxySocket proxySocket = new ProxySocket(RHost.AddressFamily, socketType, protocolType))
+				using (ProxySocket proxySocket = new ProxySocket(endPoint.AddressFamily, socketType, protocolType))
 				{
 					proxySocket.ProxyEndPoint = new IPEndPoint(IPAddress.Parse(proxy.Ip), proxy.Port);
 					proxySocket.ProxyType = proxyType;
@@ -411,7 +406,7 @@ namespace BeanCannon.BusinessLogic.Core.Services
 
 					try
 					{
-						proxySocket.Connect(RHost);
+						proxySocket.Connect(endPoint);
 					}
 					catch (SocketException) { return false; }
 

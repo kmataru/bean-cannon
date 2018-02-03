@@ -138,9 +138,9 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageProxySettings.Controls.Add(this.proxySettingsControl);
 			this.tabPageProxySettings.Location = new System.Drawing.Point(4, 22);
 			this.tabPageProxySettings.Name = "tabPageProxySettings";
-			this.tabPageProxySettings.Size = new System.Drawing.Size(926, 272);
+			this.tabPageProxySettings.Size = new System.Drawing.Size(926, 332);
 			this.tabPageProxySettings.TabIndex = 6;
-			this.tabPageProxySettings.Text = "Proxy";
+			this.tabPageProxySettings.Text = "Proxies";
 			this.tabPageProxySettings.UseVisualStyleBackColor = true;
 			// 
 			// proxySettingsControl
@@ -148,7 +148,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.proxySettingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.proxySettingsControl.Location = new System.Drawing.Point(0, 0);
 			this.proxySettingsControl.Name = "proxySettingsControl";
-			this.proxySettingsControl.Size = new System.Drawing.Size(926, 272);
+			this.proxySettingsControl.Size = new System.Drawing.Size(926, 332);
 			this.proxySettingsControl.TabIndex = 0;
 			// 
 			// tabPageTargetAndCrawler
@@ -156,7 +156,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageTargetAndCrawler.Controls.Add(this.targetControl);
 			this.tabPageTargetAndCrawler.Location = new System.Drawing.Point(4, 22);
 			this.tabPageTargetAndCrawler.Name = "tabPageTargetAndCrawler";
-			this.tabPageTargetAndCrawler.Size = new System.Drawing.Size(926, 272);
+			this.tabPageTargetAndCrawler.Size = new System.Drawing.Size(926, 332);
 			this.tabPageTargetAndCrawler.TabIndex = 5;
 			this.tabPageTargetAndCrawler.Text = "Target and Crawler";
 			this.tabPageTargetAndCrawler.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.targetControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.targetControl.Location = new System.Drawing.Point(0, 0);
 			this.targetControl.Name = "targetControl";
-			this.targetControl.Size = new System.Drawing.Size(926, 272);
+			this.targetControl.Size = new System.Drawing.Size(926, 332);
 			this.targetControl.TabIndex = 0;
 			// 
 			// tabAttackOptions
@@ -193,7 +193,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageWorkers.Controls.Add(this.workersControl);
 			this.tabPageWorkers.Location = new System.Drawing.Point(4, 22);
 			this.tabPageWorkers.Name = "tabPageWorkers";
-			this.tabPageWorkers.Size = new System.Drawing.Size(926, 272);
+			this.tabPageWorkers.Size = new System.Drawing.Size(926, 332);
 			this.tabPageWorkers.TabIndex = 8;
 			this.tabPageWorkers.Text = "Workers";
 			this.tabPageWorkers.UseVisualStyleBackColor = true;
@@ -203,7 +203,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.workersControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.workersControl.Location = new System.Drawing.Point(0, 0);
 			this.workersControl.Name = "workersControl";
-			this.workersControl.Size = new System.Drawing.Size(926, 272);
+			this.workersControl.Size = new System.Drawing.Size(926, 332);
 			this.workersControl.TabIndex = 0;
 			// 
 			// tabPageAbout
@@ -211,7 +211,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.tabPageAbout.Controls.Add(this.aboutControl);
 			this.tabPageAbout.Location = new System.Drawing.Point(4, 22);
 			this.tabPageAbout.Name = "tabPageAbout";
-			this.tabPageAbout.Size = new System.Drawing.Size(926, 272);
+			this.tabPageAbout.Size = new System.Drawing.Size(926, 332);
 			this.tabPageAbout.TabIndex = 9;
 			this.tabPageAbout.Text = "About";
 			this.tabPageAbout.UseVisualStyleBackColor = true;
@@ -221,7 +221,7 @@ namespace BeanCannon.Presentation.MaterializedDesktopUI.Forms
 			this.aboutControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.aboutControl.Location = new System.Drawing.Point(0, 0);
 			this.aboutControl.Name = "aboutControl";
-			this.aboutControl.Size = new System.Drawing.Size(926, 272);
+			this.aboutControl.Size = new System.Drawing.Size(926, 332);
 			this.aboutControl.TabIndex = 0;
 			// 
 			// buttonChangeColorScheme

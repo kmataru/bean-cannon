@@ -32,6 +32,8 @@ Is an astral projection of NewEraCracker's project at [LOIC](https://github.com/
 based on Praetox's LOIC project at [loic](https://sourceforge.net/projects/loic/).
 Influenced by [hulk.py](https://github.com/Saurav07/hulk.py) and designed with [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin).
 
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/)
+
 ## Disclaimer
 
 This tool is released for educational purposes only, with the intent of helping server owners develop a "Hacker Defense" attitude. This tool comes without any warranty at all.
