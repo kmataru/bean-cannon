@@ -51,6 +51,10 @@
     <Reference Include="CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
     </Reference>
+    <Reference Include="FormatWith">
+      <HintPath>..\packages\FormatWith.2.2.1\lib\netstandard2.0\FormatWith.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.7.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\Abot.1.5.1.83\lib\net40\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -78,17 +82,11 @@
     <Reference Include="Microsoft.Win32.Registry, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.4.3.0\lib\net46\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
-    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
-      <HintPath>..\packages\SuperXML.3.0.2.0\lib\net46\NCalc.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Robots, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NRobotsPatched.1.0.8.0\lib\net40\Robots.dll</HintPath>
-    </Reference>
-    <Reference Include="SuperXML, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SuperXML.3.0.2.0\lib\net46\SuperXML.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -198,7 +196,6 @@
     <Compile Include="Attacks\Settings\XXPFlooderSettings.cs" />
     <Compile Include="Attacks\SlowLoic.cs" />
     <Compile Include="Attacks\XXPFlooder.cs" />
-    <Compile Include="Benchmarks\FluentHeaderBuilderBenchmarks.cs" />
     <Compile Include="Collections\CircularList.cs" />
     <Compile Include="Extensions\ProxyDatumExtensions.cs" />
     <Compile Include="Extensions\ISocketExtensions.cs" />
@@ -226,7 +223,6 @@
     <Compile Include="Models\SpinProxiesModels.cs" />
     <Compile Include="Net\Interfaces\IChainedProxySocket.cs" />
     <Compile Include="Net\Interfaces\ISocket.cs" />
-    <Compile Include="Patterns\Facade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Randomizers\RandomizerHq.cs" />
     <Compile Include="Randomizers\RandomReferer.cs" />

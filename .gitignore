@@ -288,4 +288,8 @@ __pycache__/
 *.xsd.cs
 
 #Others
+src/BeanCannon.Presentation.DesktopUI/
+src/IRC/
+images/logos/
 builds/
+icons/

@@ -1,7 +1,7 @@
-﻿using CsQuery.ExtensionMethods;
-using BeanCannon.BusinessLogic.Core.Collections;
+﻿using BeanCannon.BusinessLogic.Core.Collections;
 using System;
 using System.Collections.Generic;
+using FormatWith;
 
 namespace BeanCannon.BusinessLogic.Core.Randomizers
 {
@@ -153,17 +153,7 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 			var formattedAgent = FormattedUserAgents[value];
 			var processedFormattedAgent = formattedAgent;
 
-			SuperXML.Compiler compiler = new SuperXML.Compiler();
-
-			templateFields.ForEach(w =>
-			{
-				if (formattedAgent.Contains(w.Key))
-				{
-					compiler.AddKey(w.Key, w.Value());
-				}
-			});
-
-			return compiler.CompileString(formattedAgent);
+			return formattedAgent.FormatWith(templateFields as IDictionary<string, object>);
 		}
 	}
 }

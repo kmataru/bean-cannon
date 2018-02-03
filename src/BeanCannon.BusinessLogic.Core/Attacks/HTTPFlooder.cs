@@ -14,7 +14,7 @@ using System.ComponentModel;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
-using System.Windows.Forms;
+using System.Timers;
 
 namespace BeanCannon.BusinessLogic.Core.Attacks
 {
@@ -35,7 +35,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 			Clock.Start();
 
 			timepoll = new Timer();
-			timepoll.Tick += timepoll_Tick;
+			timepoll.Elapsed += Timepoll_Elapsed;
 			timepoll.Start();
 		}
 
@@ -47,7 +47,7 @@ namespace BeanCannon.BusinessLogic.Core.Attacks
 			timepoll.Enabled = false;
 		}
 
-		private void timepoll_Tick(object sender, EventArgs e)
+		private void Timepoll_Elapsed(object sender, ElapsedEventArgs e)
 		{
 			// Protect against race condition
 			if (showStats) return; showStats = true;
