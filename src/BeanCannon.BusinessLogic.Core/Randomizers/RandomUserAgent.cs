@@ -1,7 +1,6 @@
 ﻿using BeanCannon.BusinessLogic.Core.Collections;
 using System;
 using System.Collections.Generic;
-using FormatWith;
 
 namespace BeanCannon.BusinessLogic.Core.Randomizers
 {
@@ -153,7 +152,13 @@ namespace BeanCannon.BusinessLogic.Core.Randomizers
 			var formattedAgent = FormattedUserAgents[value];
 			var processedFormattedAgent = formattedAgent;
 
-			return formattedAgent.FormatWith(templateFields as IDictionary<string, object>);
+			foreach (var pair in templateFields)
+			{
+				// TODO: Review. Maybe use a new template system.
+				processedFormattedAgent = processedFormattedAgent.Replace("{{" + pair.Key + "}}", pair.Value().ToString());
+			}
+
+			return processedFormattedAgent;
 		}
 	}
 }

@@ -51,10 +51,6 @@
     <Reference Include="CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
     </Reference>
-    <Reference Include="FormatWith">
-      <HintPath>..\packages\FormatWith.2.2.1\lib\netstandard2.0\FormatWith.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.7.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\Abot.1.5.1.83\lib\net40\HtmlAgilityPack.dll</HintPath>
     </Reference>
