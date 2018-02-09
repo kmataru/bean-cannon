@@ -204,7 +204,25 @@ namespace BeanCannon.BusinessLogic.Core.Services
 			}
 		}
 
+		public void Run()
+		{
+			lock (locker)
+			{
+				if (!IsInit)
+				{
+					DoWork();
+
+					IsInit = true;
+				}
+			}
+		}
+
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+		{
+			DoWork();
+		}
+
+		private void DoWork()
 		{
 			Status = ProxyTesterStatus.HeatingUp;
 
