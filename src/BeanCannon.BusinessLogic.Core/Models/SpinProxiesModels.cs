@@ -7,6 +7,7 @@ namespace BeanCannon.BusinessLogic.Core.Models
 {
 	public partial class SpinProxiesRootResponse
 	{
+		[JsonConstructor]
 		public SpinProxiesRootResponse() { }
 
 		[JsonProperty("message")]
@@ -21,6 +22,7 @@ namespace BeanCannon.BusinessLogic.Core.Models
 
 	public partial class SpinProxiesData
 	{
+		[JsonConstructor]
 		public SpinProxiesData() { }
 
 		[JsonProperty("proxies")]
@@ -29,6 +31,7 @@ namespace BeanCannon.BusinessLogic.Core.Models
 
 	public partial class ProxyDatum
 	{
+		[JsonConstructor]
 		public ProxyDatum() { }
 
 		[JsonProperty("type")]
